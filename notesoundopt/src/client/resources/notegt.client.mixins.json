@@ -3,7 +3,11 @@
 	"package": "com.notegt.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"NoteGTClientMixin"
+		"NoteGTClientMixin",
+		"SoundBufferAccess",
+		"SoundBufferLibraryAccessor",
+		"SoundBufferLibraryMixin",
+		"SoundBufferMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
