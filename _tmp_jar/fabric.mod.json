@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "notegt",
-	"version": "${version}",
+	"version": "0.1.0",
 	"name": "NoteGT",
 	"description": "Note-block sound optimization for Minecraft: per-instrument L0 sample shaping routing, L1 voice merge (2gt window + release-cancel), L2 loop sustain. Client-side only.",
 	"authors": [

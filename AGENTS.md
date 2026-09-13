@@ -64,20 +64,25 @@
   23. **打击乐 48ms 零重叠域确认（第四轮）**：按**文件时间、名义 p=1.0**（48ms 文件 p=1.0 播 48ms<50ms 零重叠；p=0.5 播 96ms 约 1 层重叠）。低八度不必也无法零重叠（一个乐器一份文件、pitch 全靠 AL_PITCH；要 24ms 会切掉一半 attack），打击乐宽带/噪声性无相干 20Hz 锯齿、重叠区是已淡出弱尾撞瞬态掩蔽极强，已远好于原版（0.4-0.5s 尾=8-10 层重叠）。维持 48ms+4ms 不压平峰值归一。
 24. **L2 判据 v4（第五轮，loopdetect v4，SHA `BB1510EC…` 20576B）**：启用循环点交叉淡化后，接缝 click/phase 指标**结构性失效**——Hy4 注入误差对照证实 clickDb 从 −41.3 到 −16.7 乱跳且与注入误差无关、注入 180° 误差 phaseDeg 仍读 0.0°（我们 v3 移植版读出的 banjo/bassattack/didgeridoo phase≈0.0° 不构成"接缝干净"证据）。新判据三件套：`periodErrDeg`（循环长度偏离整数周期的角度，PASS ≤10°）、`fadeNcc`（淡化混合两段 NCC，PASS ≥0.95）、`fadeDipDb`（淡化中点电平塌陷，PASS ≥−1.0dB）；**loop 长度门限 150ms→120ms**（循环率 ≤8.3Hz）；ripple/mod 维持 <2.0dB 且 <−40dBc（≥4.0dB FAIL）。10° 档是工程折中（5°→ncc 0.982/dip −0.04，20°→0.777/−0.51）非听阈——A/B 时顺带验 10–15° 一带。clickDb/phaseDeg 降为 advisory 仅排序、不进 verdict。**取代 #21 的四条件为现行判据。**纪律：Hy4 自认上一版"给了指标却没先做注入验证"→ 门限一律按"未经听感验证"标注，最终以我方 A/B 为准。
 25. **真原版基线已验证 + NBS 命名映射（2026-08）**：vanilla bank 与 Mojang CDN 1.21.11/26.2 官方 SHA1 **逐字节一致**（16+4，`_sources/vanilla-baseline-verify.md`）；**1.21.11 与 26.2 的 16 经典声音逐字节相同**（26.x 未重录）；note_block 事件数：1.21.11 = **22（16 经典 + 6 imitate 拟态，imitate 早已存在，非 26.x 新增）**，26.1 起 +4 铜管 = **26**（[1.21.11 已验证] sounds.json 实查）。NBS Archive 命名映射经 NCC 全矩阵确认：bdrum=basedrum(note/bd)、dbass=bass(note/bassattack)、click=hat、sdrum=snare、xylobone=xylophone；**harp = 1.9 前遗留旧 harp.ogg（NCC 1.0000，44.1k）而非现行 harp2**；bell/flute/guitar/xylobone/icechime 五件是**与现行官方不同的旧录音**（NCC 0.04~0.79）。→ **默认预设以 CDN 现行官方为基准**（非 NBS Archive）；用户游戏若加载 NBS 声音集，这 6 件需按 NBS 样本单独定参。didgeridoo(用户) 官方报 ripple 6.09 的真因 = **attack 3805ms 慢起音污染度量窗**，稳态 loop 极干净（10 周期窗 pp 0.11dB / 50ms 窗 0.31dB / mod@0.84Hz −77dBc / 无趋势）。
+26. **L2 判据 v5（第六轮，loopdetect v5，SHA `06c2cdb5…` 23602B，2026-08）**：Hy4 注入对照证实 **perr 在长 loop 上测的是 f0 精度不是接缝**（噪声底 = 360·k·ε，k=280 时 ε=0.01% 即 10°；ε=0.1% 时 perr 在 δ=0 与 δ=0.02 间不可分辨，fadeNcc 可以）。**判据换血**：`seamErrDeg`（`seam_err_cycles` 互相关分数延迟直接量测接缝错位，对 f0 误差免疫）≤10 PASS / 10–25 **WARN_SEAM** / >25 FAIL；`periodErrDeg` 降级 advisory；`fadeNcc` 降为参考（窗口相关，δ=0.02 时 1ms→0.984 / 5ms→0.949）；`fadeDipDb` <−1.0 FAIL、120ms 门、ripple/mod 门维持。**v5 全库 41 文件：11 PASS / 2 WARN_SEAM / 6 FAIL / 22 REJECT**（v4 只有 1 PASS）——长 loop 的 f0 假象全部消失（bit-user 65.98°→seam 4.15 PASS 等）。v5 新字段：`sr`（原生采样率）、`fadeTrace`（淡化升级轨迹）、`--span-cycles`（搜索范围，默认 0.5，高 perr 长 loop 试 1.0–1.5）、`diagWindowSamples`（诊断窗 ≥4ms）。**Q4（v3/v4 差异）已定位**：guitar 原生 44.1k（无 SR 泄漏）；`--xfade 0.040` 精确复现 v3 数字（1.5/−54.57）→ 真因 = v3 keep-best 无条件保留最后候选（40ms）vs v4/v5 keep-best 保留 5ms；且真实样本上长 xfade 方向与合成预测相反（40ms 使 seam 4.88°→1.73°、lp 2.49→1.50，代价 mod −58.14→−54.57）。**didgeridoo(用户) 3.8s attack 真身 = 起始 breath burst（0–100ms，−4.5~−7dB）的 3.6s 衰减尾**（−7→−34.6dB）：非 lead-in 非 swell；loop（1190.9ms/seam 1.77°）干净，FAIL 是衰减段入窗（mod −23.0）→ 路线 A（250ms burst+level-match）/ B（安静 200ms+10ms 淡入）待 Hy4 第七轮裁决（试听 `ab/didgeridoo/didg-{A,B,C}.wav`）。**dbass(用户) lp 7.09 真因 = loop 内容内 ~85–95ms 的 ghost pluck 瞬态**（30ms 包络归一后仍 +7.09dB，2.1Hz 周期重复；起点按周期平移 0–15 期 pp 不变 6.07–7.09）→ 与接缝无关，待裁决（接受/换短 L/要新 take）。**查表退役**：fadeNcc 反查表 vs seamErr 直接量测双向偏差 0.18×–2.2×，路由表直接用 seamErrDeg。guitar(用户)@0.90：seam 4.88° PASS 但 Hy4 按查表倾向不通过（12.8°）→ A/B 裁决中（`ab/guitar/ngs-gtr-{A,B,C}.wav`：A=5ms xfade / B=硬循环 / C=40ms）。`_verdict` 有 return 后死代码（无行为影响，下版删）。
 
 ## 四、目录约定
 
 ```
-NoteGT/
+NoteGT/                              # = GitHub 仓库 LuYuxiaoPKU/NoteGT（main）
 ├── AGENTS.md                 # 本文件
+├── README.md                 # 仓库门面
+├── .github/workflows/build.yml  # CI：push/PR 构建 notesoundopt（JDK 21）
+├── notesoundopt/             # Fabric 模组工程（gradle，Mojang 官方 mappings，mod id = notegt）
 ├── docs/                     # 中文解析文档（交付物）
+├── tools/                    # Python 离线工具链（l0shape / verify_l0 / nbs_stat）
 ├── _sources/                 # 原始证据：反编译产物、sounds.json、wiki、jar（不入库可删）
 │   ├── dec262/  dec262b/  dec262c/   # 26.2 命名类 CFR 反编译
 │   ├── dec12111b/                           # 1.21.11 混淆类 CFR 反编译
 │   ├── dec1218/                             # 1.21.8 混淆类
+│   ├── loopdetect-run/                      # loopdetect 工具 + 结果 JSON + 试听 ab/
 │   └── ...
-├── _hy4/                     # Hy4 材料（导出 zip 解压区、loopdetect.py、对比图）
-└── (未来) src/ 或独立 gradle 工程
+└── _hy4/                     # Hy4 材料（导出 zip 解压区、loopdetect.py、对比图）
 ```
 
 ## 五、环境与工具
