@@ -1,0 +1,43 @@
+﻿[
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\flute.ogg",
+    "ok": true,
+    "sr": 48000,
+    "f0": 740.06,
+    "attackEnd": 2649,
+    "loopStart": 2649,
+    "loopEnd": 14600,
+    "loopSamples": 11951,
+    "periods": 184,
+    "loopMs": 248.98,
+    "attackMs": 55.19,
+    "loopRateHz": 4.02,
+    "ncc": 0.9079,
+    "loopRippleDb": 4.64,
+    "longRippleDb": 2.98,
+    "modDbc": -34.96,
+    "seamRatio": 0.41,
+    "seamFundRatio": 1.09,
+    "periodErrDeg": 93.43,
+    "seamErrCycles": 0.15762,
+    "seamErrDeg": 56.74,
+    "fadeNcc": 0.5594,
+    "fadeDipDb": -1.08,
+    "xfadeSamples": 240,
+    "diagWindowSamples": 240,
+    "fadeTrace": [
+      {
+        "xfadeMs": 5.0,
+        "seamRatio": 0.412,
+        "used": true
+      }
+    ],
+    "f0Source": "fundamental",
+    "verdict": "FAIL",
+    "pitchCheck": {
+      "0.5x": 2.77,
+      "1.0x": 3.18,
+      "2.0x": 3.21
+    }
+  }
+]

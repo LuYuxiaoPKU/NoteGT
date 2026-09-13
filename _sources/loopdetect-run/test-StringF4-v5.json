@@ -1,0 +1,43 @@
+﻿[
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\test-bank\\StringF#4.ogg",
+    "ok": true,
+    "sr": 44100,
+    "f0": 185.4736,
+    "attackEnd": 45850,
+    "loopStart": 45850,
+    "loopEnd": 51099,
+    "loopSamples": 5249,
+    "periods": 22,
+    "loopMs": 119.02,
+    "attackMs": 1039.68,
+    "loopRateHz": 8.4,
+    "ncc": 0.9028,
+    "loopRippleDb": 0.28,
+    "longRippleDb": 3.61,
+    "modDbc": -33.3,
+    "seamRatio": 1.26,
+    "seamFundRatio": 81.86,
+    "periodErrDeg": 27.36,
+    "seamErrCycles": null,
+    "seamErrDeg": null,
+    "fadeNcc": 0.9213,
+    "fadeDipDb": -0.17,
+    "xfadeSamples": 220,
+    "diagWindowSamples": 220,
+    "fadeTrace": [
+      {
+        "xfadeMs": 5.0,
+        "seamRatio": 1.259,
+        "used": true
+      }
+    ],
+    "f0Source": "fundamental",
+    "verdict": "FAIL",
+    "pitchCheck": {
+      "0.5x": 0.03,
+      "1.0x": 0.07,
+      "2.0x": 0.09
+    }
+  }
+]

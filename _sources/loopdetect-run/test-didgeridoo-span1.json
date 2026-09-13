@@ -1,0 +1,43 @@
+﻿[
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\didgeridoo.ogg",
+    "ok": true,
+    "sr": 48000,
+    "f0": 92.5158,
+    "attackEnd": 4906,
+    "loopStart": 4906,
+    "loopEnd": 11172,
+    "loopSamples": 6266,
+    "periods": 12,
+    "loopMs": 130.54,
+    "attackMs": 102.21,
+    "loopRateHz": 7.66,
+    "ncc": 0.9132,
+    "loopRippleDb": 0.76,
+    "longRippleDb": 0.11,
+    "modDbc": -49.78,
+    "seamRatio": 0.57,
+    "seamFundRatio": 155.96,
+    "periodErrDeg": 27.78,
+    "seamErrCycles": 0.02339,
+    "seamErrDeg": 8.42,
+    "fadeNcc": 0.8722,
+    "fadeDipDb": -0.29,
+    "xfadeSamples": 240,
+    "diagWindowSamples": 240,
+    "fadeTrace": [
+      {
+        "xfadeMs": 5.0,
+        "seamRatio": 0.573,
+        "used": true
+      }
+    ],
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.03,
+      "1.0x": 0.1,
+      "2.0x": 0.11
+    }
+  }
+]
