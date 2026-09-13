@@ -27,45 +27,36 @@ jobs:
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
 
-      - name: diagnose gradle plugin resolution
-        working-directory: notesoundopt
+      - name: diagnose CDN connectivity (fabric maven + Mojang)
         run: |
-          mkdir -p /tmp/loomtest
-          cat > /tmp/loomtest/settings.gradle <<'EOF'
-          pluginManagement {
-            repositories {
-              maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
-              mavenCentral()
-              gradlePluginPortal()
-            }
-          }
-          rootProject.name = 'loomtest'
-          EOF
-          cat > /tmp/loomtest/build.gradle <<'EOF'
-          plugins { id 'net.fabricmc.fabric-loom-remap' version '1.17.20' }
-          EOF
-          ./gradlew -p /tmp/loomtest help --info > /tmp/loomtest.log 2>&1 || true
-          echo '=== resource fetches (fabric) ==='
-          grep -E 'maven\.fabricmc' /tmp/loomtest.log | head -30
-          echo '=== errors ==='
-          grep -Ei 'error|fail|not found|missing' /tmp/loomtest.log | head -15
-          echo '=== tail ==='
-          tail -15 /tmp/loomtest.log
-
-      - name: diagnose fabric maven connectivity
-        run: |
-          echo '--- DNS ---'
-          getent hosts maven.fabricmc.net || true
-          echo '--- curl marker pom (1.17.20) ---'
+          echo '--- control: fabric maven plugin pom ---'
           curl -sS -o /dev/null -w 'http=%{http_code} time=%{time_total}s\n' \
             'https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/1.17.20/net.fabricmc.fabric-loom-remap.gradle.plugin-1.17.20.pom' || true
-          echo '--- curl maven-metadata (first 8 lines) ---'
-          curl -sS 'https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/maven-metadata.xml' | head -8 || true
-          echo '--- curl maven central (control) ---'
-          curl -sS -o /dev/null -w 'http=%{http_code}\n' 'https://repo1.maven.org/maven2/org/slf4j/slf4j-api/maven-metadata.xml' || true
+          echo '--- Mojang: version manifest ---'
+          curl -sS -o /dev/null -w 'http=%{http_code} time=%{time_total}s\n' \
+            'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json' || true
+          echo '--- Mojang: 1.21.11 version json ---'
+          VER_URL=$(curl -sS 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json' \
+            | python3 -c 'import sys,json;print(json.load(sys.stdin)["versions"][0]["url"])' 2>/dev/null)
+          # find 1.21.11 specifically
+          VER_URL=$(curl -sS 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json' \
+            | python3 -c 'import sys,json;vs=json.load(sys.stdin)["versions"];print(next(v["url"] for v in vs if v["id"]=="1.21.11"))')
+          echo "ver_url=$VER_URL"
+          curl -sS -o /dev/null -w 'verjson http=%{http_code}\n' "$VER_URL" || true
+          echo '--- Mojang: client.jar (HEAD) + mappings (HEAD) ---'
+          curl -sS "$VER_URL" | python3 -c 'import sys,json;j=json.load(sys.stdin);print("jar:",j["downloads"]["client"]["url"]);print("map:",j["downloads"]["client_mappings"]["url"])' \
+            | while read -r k u; do
+                name=${k%%:*}; u=${u#* };
+                curl -sS -o /dev/null -w "${name} http=%{http_code} size=%{size_download} time=%{time_total}s\n" "$u" || true;
+              done
+          echo '--- Mojang: piston-data control (HEAD jar) ---'
+          curl -sS -I 'https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar' | head -5 || true
 
       - name: build
-        run: ./gradlew build
+        run: |
+          # Mojang/fabric CDN 偶发瞬态 404（2026-09-13 观测：冷缓存下 fabric maven 与 piston-data 均出现过）
+          # → 失败后整建重试一次（第二次带热缓存 + 瞬态已恢复）。
+          ./gradlew build --stacktrace || { echo '=== first build failed; retrying in 30s ==='; sleep 30; ./gradlew build; }
 
       - name: capture build artifacts
         uses: actions/upload-artifact@v7
