@@ -190,46 +190,6 @@ def period_err_deg(f0, L):
     return float(frac * 360.0)
 
 
-def _ncc_shift(u, v, lag):
-    n = len(u)
-    if lag >= 0:
-        aa, bb = u[lag:], v[:n - lag]
-    else:
-        aa, bb = u[:n + lag], v[-lag:]
-    m = min(len(aa), len(bb))
-    if m < 16:
-        return -2.0
-    return ncc(aa[:m], bb[:m])
-
-
-def seam_err_cycles(head, tail, P):
-    """直接量测接缝相位误差（单位 = 周期）—— perr 的替代品
-
-    perr = (f0·L/SR mod 1)·360 把 f0 的相对误差 ε 放大成 360·k·ε
-    （k = 周期数），长 loop 上噪声底可达上百度的量级，测的是 f0 精度
-    而不是接缝。本函数用波形互相关的分数延迟 τ 直接求错位，
-    f0 仅作为 τ→周期的换算尺度，残余误差 ~ε 而非 k·ε。
-
-    实测（f0 注入 0~0.4% 误差，同一条 loop）：
-        perr    0.1° → 158.3°（剧烈摆动）
-        seamErr 0.0002 → 0.0002 周期（稳定）
-    """
-    if P <= 0:
-        return float('nan'), float('nan')
-    maxlag = max(int(P / 2), 8)
-    lags = np.arange(-maxlag, maxlag + 1)
-    c = np.array([_ncc_shift(head, tail, int(l)) for l in lags])
-    i = int(np.argmax(c))
-    if i <= 0 or i >= len(c) - 1:
-        return float('nan'), float('nan')
-    a, b, cc = c[i - 1], c[i], c[i + 1]
-    d = 0.5 * (a - cc) / (a - 2 * b + cc + 1e-30)
-    if abs(d) > 1:
-        d = 0.0
-    tau = lags[i] + d
-    return float(abs(tau) / P), float(tau / P)
-
-
 def fade_quality(src_head, src_tail):
     """被交叉淡化混合的两段：同相程度 + 混合后电平塌陷
 
@@ -249,7 +209,7 @@ def fade_quality(src_head, src_tail):
 # ─────────────────────── 阶段③④⑤ 循环点搜索 ───────────────────────
 def find_loop(x, snr_min=20.0, W=0.060, fwin=0.030, Lmax_s=1.2,
               ncc_min=0.95, nper_min=5, Lmin_s=0.080, dynrange=40.0,
-              subharm=True, fmin=30.0, span_cycles=0.5):
+              subharm=True, fmin=30.0):
     """阶段③-⑥: 返回 dict 或 (None, 拒绝原因)"""
     f0, subharm_mult = est_f0_full(x, subharm=subharm, fmin=fmin)
     if f0 <= 0:
@@ -288,7 +248,7 @@ def find_loop(x, snr_min=20.0, W=0.060, fwin=0.030, Lmax_s=1.2,
             Li = k * P
             if a + 2 * Li + Ws > len(x):
                 continue
-            span = int(span_cycles * P)            # 默认 ±半周期，避免跳到相邻 k
+            span = int(P / 2)                      # ★ 约束在 ±半周期
             for dL in range(-span, span + 1):
                 L = int(round(Li)) + dL
                 if L < 10 or a + 2 * L + Ws > len(x):
@@ -352,21 +312,13 @@ def build_loop_diag(x, a, L, k, f0, fwin=0.030, xfade=0.005):
     if Xs > 0:
         r = np.linspace(0, 1, Xs)
         lo[:Xs] = src[:Xs] * r + src[L:L + Xs] * (1 - r)
-    # 诊断窗口：不短于 4ms，保证互相关有足够样本
-    Wd = max(Xs, int(0.004 * SR))
-    Wd = min(Wd, max(len(src) - L, 0))
-    if Wd >= 64:
-        fncc, fdip = fade_quality(src[:Wd], src[L:L + Wd])
-        sec, _ = seam_err_cycles(src[:Wd], src[L:L + Wd], SR / f0 if f0 > 0 else 0)
+        fncc, fdip = fade_quality(src[:Xs], src[L:L + Xs])
     else:
-        fncc, fdip, sec = float('nan'), float('nan'), float('nan')
+        fncc, fdip = float('nan'), float('nan')
     return lo, dict(
         xfadeSamples=Xs,
-        diagWindowSamples=Wd,
         fadeNcc=round(fncc, 4) if fncc == fncc else None,
         fadeDipDb=round(fdip, 2) if fdip == fdip else None,
-        seamErrCycles=round(sec, 5) if sec == sec else None,
-        seamErrDeg=round(sec * 360.0, 2) if sec == sec else None,
         periodErrDeg=round(period_err_deg(f0, L), 2))
 
 
@@ -435,28 +387,21 @@ def verify_pitch(loop, k, f0, rate, p):
 def _verdict(sm, lg, md, L, diag):
     """结果导向验收：与 NCC 搜索阈值解耦
 
-    接缝判据用 seamErrDeg（互相关分数延迟直接量测，对 f0 误差免疫），
-    不再用 periodErrDeg —— 后者的噪声底 = 360·k·ε，长 loop 上测的是
-    f0 估计精度而不是接缝（见 seam_err_cycles 的注入对照）。
-    periodErrDeg 降级为 advisory，仅保留在 JSON 里供诊断。
+    接缝放行交给 periodErrDeg / fadeNcc / fadeDipDb。
+    seam_click_db 与 seamPhaseDeg 在启用循环点淡化后结构性失效，
+    只用于排序，不参与判定。
     """
     def bad(v):
         return v is not None and v == v
-    sed = diag.get('seamErrDeg')
+    perr = diag.get('periodErrDeg')
+    fncc = diag.get('fadeNcc')
     fdip = diag.get('fadeDipDb')
-    if bad(sed) and sed > 25.0:
+    if bad(perr) and perr > 10.0:
+        return 'FAIL'
+    if bad(fncc) and fncc < 0.95:
         return 'FAIL'
     if bad(fdip) and fdip < -1.0:
         return 'FAIL'
-    if L < 0.120 * SR:                    # 循环率 > 8.3 Hz，周期性风险
-        return 'FAIL'
-    if bad(sed) and sed > 10.0:
-        return 'WARN_SEAM'
-    if lg < 2.0 and md < -40:
-        return 'PASS'
-    if lg < 4.0:
-        return 'WARN'
-    return 'FAIL'
     if L < 0.120 * SR:                    # 循环率 > 8.3 Hz，周期性风险
         return 'FAIL'
     if lg < 2.0 and md < -40:
@@ -478,8 +423,7 @@ def analyze(path, args):
     x = preprocess(x)
 
     b, why = find_loop(x, snr_min=args.snr, ncc_min=args.ncc_min, dynrange=args.dynrange,
-                      subharm=not args.no_subharm, fmin=args.fmin,
-                      span_cycles=args.span_cycles)
+                      subharm=not args.no_subharm, fmin=args.fmin)
     if b is None:
         return dict(file=path, ok=False, reason=why)
 
@@ -487,8 +431,6 @@ def analyze(path, args):
     loop, diag = build_loop_diag(x, a, L, k, f0, xfade=args.xfade)
     # keep-best 自适应淡化：仅在真正改善时才替换
     # （旧实现无条件保留最后一个候选，40ms 无改善也会留下额外音色涂抹）
-    fade_trace = [dict(xfadeMs=round(args.xfade * 1000, 2),
-                       seamRatio=round(seam_ratio(loop), 3), used=True)]
     best_sm = seam_ratio(loop)
     for xf in (0.010, 0.020, 0.040):
         if best_sm < 2.0:
@@ -499,15 +441,9 @@ def analyze(path, args):
         sm = seam_ratio(alt)
         if sm < best_sm - 0.05:
             loop, diag, best_sm = alt, adiag, sm
-            fade_trace.append(dict(xfadeMs=round(xf * 1000, 2),
-                                   seamRatio=round(sm, 3), used=True))
-        else:
-            fade_trace.append(dict(xfadeMs=round(xf * 1000, 2),
-                                   seamRatio=round(sm, 3), used=False))
     lp, lg, md, sm, smlf = metrics(x, a, loop, k, f0, b['rate'], args.total)
 
     res = dict(file=path, ok=True,
-               sr=int(sr),
                f0=round(f0, 4),
                attackEnd=a, loopStart=a, loopEnd=a + L,
                loopSamples=L, periods=k,
@@ -521,13 +457,9 @@ def analyze(path, args):
                seamRatio=round(sm, 2),
                seamFundRatio=round(smlf, 2) if smlf == smlf else None,
                periodErrDeg=diag['periodErrDeg'],
-               seamErrCycles=diag['seamErrCycles'],
-               seamErrDeg=diag['seamErrDeg'],
                fadeNcc=diag['fadeNcc'],
                fadeDipDb=diag['fadeDipDb'],
                xfadeSamples=diag['xfadeSamples'],
-               diagWindowSamples=diag['diagWindowSamples'],
-               fadeTrace=fade_trace,
                f0Source=('fundamental' if b.get('subharmMult', 1) == 1 else 'subharmonic%d' % b.get('subharmMult', 1)),
                verdict=_verdict(sm, lg, md, L, diag))
 
@@ -554,7 +486,6 @@ def main():
     ap.add_argument('--json', action='store_true')
     ap.add_argument('--no-subharm', action='store_true', help='禁用子谐波(八度)误锁纠正')
     ap.add_argument('--fmin', type=float, default=30.0, help='基频搜索下限 Hz（须低于最低音 F#1=46.25）')
-    ap.add_argument('--span-cycles', type=float, default=0.5, help='循环长度搜索范围（周期数）。f0 误差大时 k·eps 可能超过 0.5，可放宽到 1.0~1.5 试')
     args = ap.parse_args()
 
     files = []
