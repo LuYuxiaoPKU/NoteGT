@@ -1,0 +1,146 @@
+[
+ {
+  "name": "banjo",
+  "rate": 48000,
+  "len_ms": 62.5,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 3000
+ },
+ {
+  "name": "bassattack",
+  "rate": 44100,
+  "len_ms": 62.5,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 2756
+ },
+ {
+  "name": "bd",
+  "rate": 44100,
+  "len_ms": 48.0,
+  "fade_in_ms": 0.0,
+  "fade_out_ms": 4.0,
+  "flatten": false,
+  "n_out": 2117
+ },
+ {
+  "name": "bell",
+  "rate": 48000,
+  "len_ms": 150.0,
+  "fade_in_ms": 1.4,
+  "fade_out_ms": 1.4,
+  "flatten": true,
+  "n_out": 7200
+ },
+ {
+  "name": "bit",
+  "rate": 48000,
+  "len_ms": 57.5,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 2760
+ },
+ {
+  "name": "cow_bell",
+  "rate": 48000,
+  "len_ms": 55.0,
+  "fade_in_ms": 2.7,
+  "fade_out_ms": 2.7,
+  "flatten": true,
+  "n_out": 2640
+ },
+ {
+  "name": "didgeridoo",
+  "rate": 48000,
+  "len_ms": 62.5,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 3000
+ },
+ {
+  "name": "flute",
+  "rate": 48000,
+  "len_ms": 112.5,
+  "fade_in_ms": 2.7,
+  "fade_out_ms": 2.7,
+  "flatten": true,
+  "n_out": 5400
+ },
+ {
+  "name": "guitar",
+  "rate": 48000,
+  "len_ms": 155.0,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 7440
+ },
+ {
+  "name": "harp2",
+  "rate": 48000,
+  "len_ms": 62.5,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 3000
+ },
+ {
+  "name": "hat",
+  "rate": 44100,
+  "len_ms": 48.0,
+  "fade_in_ms": 0.0,
+  "fade_out_ms": 4.0,
+  "flatten": false,
+  "n_out": 2117
+ },
+ {
+  "name": "icechime",
+  "rate": 48000,
+  "len_ms": 52.5,
+  "fade_in_ms": 1.4,
+  "fade_out_ms": 1.4,
+  "flatten": true,
+  "n_out": 2520
+ },
+ {
+  "name": "iron_xylophone",
+  "rate": 48000,
+  "len_ms": 65.0,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 3120
+ },
+ {
+  "name": "pling",
+  "rate": 44100,
+  "len_ms": 60.0,
+  "fade_in_ms": 8.0,
+  "fade_out_ms": 8.0,
+  "flatten": true,
+  "n_out": 2646
+ },
+ {
+  "name": "snare",
+  "rate": 44100,
+  "len_ms": 48.0,
+  "fade_in_ms": 0.0,
+  "fade_out_ms": 4.0,
+  "flatten": false,
+  "n_out": 2117
+ },
+ {
+  "name": "xylobone",
+  "rate": 48000,
+  "len_ms": 52.5,
+  "fade_in_ms": 1.4,
+  "fade_out_ms": 1.4,
+  "flatten": true,
+  "n_out": 2520
+ }
+]
