@@ -1,5 +1,7 @@
 # NoteGT — Minecraft 音符盒发声优化
 
+![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-lightgrey.svg)
+
 > Fabric 模组（1.21.11 → 26.x，纯客户端）：修复音符盒乐谱快速重触发时的 voice 叠加浑浊。
 > 逐乐器样本整形（L0）+ voice 合并状态机（L1）+ 循环延音（L2），数据驱动路由 + 降级阶梯。
 
