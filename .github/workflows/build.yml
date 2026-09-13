@@ -27,6 +27,31 @@ jobs:
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
 
+      - name: diagnose gradle plugin resolution
+        working-directory: notesoundopt
+        run: |
+          mkdir -p /tmp/loomtest
+          cat > /tmp/loomtest/settings.gradle <<'EOF'
+          pluginManagement {
+            repositories {
+              maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+              mavenCentral()
+              gradlePluginPortal()
+            }
+          }
+          rootProject.name = 'loomtest'
+          EOF
+          cat > /tmp/loomtest/build.gradle <<'EOF'
+          plugins { id 'net.fabricmc.fabric-loom-remap' version '1.17.20' }
+          EOF
+          ./gradlew -p /tmp/loomtest help --info > /tmp/loomtest.log 2>&1 || true
+          echo '=== resource fetches (fabric) ==='
+          grep -E 'maven\.fabricmc' /tmp/loomtest.log | head -30
+          echo '=== errors ==='
+          grep -Ei 'error|fail|not found|missing' /tmp/loomtest.log | head -15
+          echo '=== tail ==='
+          tail -15 /tmp/loomtest.log
+
       - name: diagnose fabric maven connectivity
         run: |
           echo '--- DNS ---'
