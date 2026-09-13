@@ -27,6 +27,18 @@ jobs:
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
 
+      - name: diagnose fabric maven connectivity
+        run: |
+          echo '--- DNS ---'
+          getent hosts maven.fabricmc.net || true
+          echo '--- curl marker pom (1.17.20) ---'
+          curl -sS -o /dev/null -w 'http=%{http_code} time=%{time_total}s\n' \
+            'https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/1.17.20/net.fabricmc.fabric-loom-remap.gradle.plugin-1.17.20.pom' || true
+          echo '--- curl maven-metadata (first 8 lines) ---'
+          curl -sS 'https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/maven-metadata.xml' | head -8 || true
+          echo '--- curl maven central (control) ---'
+          curl -sS -o /dev/null -w 'http=%{http_code}\n' 'https://repo1.maven.org/maven2/org/slf4j/slf4j-api/maven-metadata.xml' || true
+
       - name: build
         run: ./gradlew build
 
