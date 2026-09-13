@@ -94,6 +94,7 @@ NoteGT/                              # = GitHub 仓库 LuYuxiaoPKU/NoteGT（main
 - 反编译产物缓存: `C:\Users\Yuxiao Lu\AppData\Local\Temp\cbv\`（x12111full / jar262full 已解压）。
 - **真原版声音基准（SHA1 已验证，2026-08）**: `_sources\vanilla-cdn-1.21.11\`（18 文件含遗留 bass/harp）、`_sources\vanilla-cdn-26.2\`（22 文件含 4 铜管）；验证记录 `_sources\vanilla-baseline-verify.md`；下载脚本 `_sources\dl-vanilla-note.ps1`（piston-meta → assetIndex → CDN，官方 ogg 在 `minecraft/sounds/note/` 下，**非 block/note**）。
 - 网络：Mojang CDN / meta.fabricmc.net / api.modrinth.com 可用（pwsh `Invoke-WebRequest`，需要时带 User-Agent）。
+- **Gradle 代理纪律（2026-09-13 CI 根因，重要）**：`notesoundopt/gradle.properties` 的 `org.gradle.jvmargs` **不得**写本地代理 `-Dhttp(s).proxyHost=127.0.0.1:7897`——GitHub runner 无此本地代理，daemon 全部 HTTP（插件解析/Mojang jar）走死代理，症状 = 插件"not found"（实为连接失败）+ "Failed download after 3 attempts"，极易误判为 CDN 问题。本地构建代理一律走环境变量 `$env:JAVA_TOOL_OPTIONS='-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897'`（Java 不读 WinINET 系统代理，必须显式给）。
 
 ## 六、工具链（1.21.11 目标，已查证 2026-07/08）
 
