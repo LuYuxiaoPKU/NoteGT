@@ -27,36 +27,9 @@ jobs:
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
 
-      - name: diagnose CDN connectivity (fabric maven + Mojang)
-        run: |
-          echo '--- control: fabric maven plugin pom ---'
-          curl -sS -o /dev/null -w 'http=%{http_code} time=%{time_total}s\n' \
-            'https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/1.17.20/net.fabricmc.fabric-loom-remap.gradle.plugin-1.17.20.pom' || true
-          echo '--- Mojang: version manifest ---'
-          curl -sS -o /dev/null -w 'http=%{http_code} time=%{time_total}s\n' \
-            'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json' || true
-          echo '--- Mojang: 1.21.11 version json ---'
-          VER_URL=$(curl -sS 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json' \
-            | python3 -c 'import sys,json;print(json.load(sys.stdin)["versions"][0]["url"])' 2>/dev/null)
-          # find 1.21.11 specifically
-          VER_URL=$(curl -sS 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json' \
-            | python3 -c 'import sys,json;vs=json.load(sys.stdin)["versions"];print(next(v["url"] for v in vs if v["id"]=="1.21.11"))')
-          echo "ver_url=$VER_URL"
-          curl -sS -o /dev/null -w 'verjson http=%{http_code}\n' "$VER_URL" || true
-          echo '--- Mojang: client.jar (HEAD) + mappings (HEAD) ---'
-          curl -sS "$VER_URL" | python3 -c 'import sys,json;j=json.load(sys.stdin);print("jar:",j["downloads"]["client"]["url"]);print("map:",j["downloads"]["client_mappings"]["url"])' \
-            | while read -r k u; do
-                name=${k%%:*}; u=${u#* };
-                curl -sS -o /dev/null -w "${name} http=%{http_code} size=%{size_download} time=%{time_total}s\n" "$u" || true;
-              done
-          echo '--- Mojang: piston-data control (HEAD jar) ---'
-          curl -sS -I 'https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar' | head -5 || true
-
       - name: build
-        run: |
-          # Mojang/fabric CDN 偶发瞬态 404（2026-09-13 观测：冷缓存下 fabric maven 与 piston-data 均出现过）
-          # → 失败后整建重试一次（第二次带热缓存 + 瞬态已恢复）。
-          ./gradlew build --stacktrace || { echo '=== first build failed; retrying in 30s ==='; sleep 30; ./gradlew build; }
+        # 代理纪律（2026-09-13 根因）：gradle.properties 的 jvmargs 不得写 127.0.0.1 本地代理（runner 无此代理）。
+        run: ./gradlew build
 
       - name: capture build artifacts
         uses: actions/upload-artifact@v7
