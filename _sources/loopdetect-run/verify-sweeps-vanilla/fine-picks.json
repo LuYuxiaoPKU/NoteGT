@@ -1,0 +1,93 @@
+{
+ "banjo": {
+  "verdict": "PASS-LINE",
+  "t": 62.5,
+  "pp": 2.47,
+  "mod": -45.79,
+  "reg": "F#3"
+ },
+ "bassattack": {
+  "verdict": "WEAK",
+  "t": 62.5,
+  "pp": 9.82,
+  "mod": -24.43,
+  "reg": "F#1"
+ },
+ "bell": {
+  "verdict": "NEAR",
+  "t": 127.5,
+  "pp": 3.47,
+  "mod": -18.77,
+  "reg": "F#5"
+ },
+ "bit": {
+  "verdict": "WEAK",
+  "t": 57.5,
+  "pp": 9.49,
+  "mod": -25.27,
+  "reg": "F#3"
+ },
+ "cow_bell": {
+  "verdict": "NEAR",
+  "t": 55.0,
+  "pp": 3.6,
+  "mod": -27.53,
+  "reg": "F#4"
+ },
+ "didgeridoo": {
+  "verdict": "NEAR",
+  "t": 62.5,
+  "pp": 4.8,
+  "mod": -37.86,
+  "reg": "F#1"
+ },
+ "flute": {
+  "verdict": "PASS-LINE",
+  "t": 112.5,
+  "pp": 2.76,
+  "mod": -37.25,
+  "reg": "F#4"
+ },
+ "guitar": {
+  "verdict": "NEAR",
+  "t": 110.0,
+  "pp": 5.09,
+  "mod": -23.61,
+  "reg": "F#2"
+ },
+ "harp2": {
+  "verdict": "PASS-LINE",
+  "t": 62.5,
+  "pp": 1.21,
+  "mod": -36.82,
+  "reg": "F#3"
+ },
+ "icechime": {
+  "verdict": "PASS-LINE",
+  "t": 52.5,
+  "pp": 1.07,
+  "mod": -41.03,
+  "reg": "F#5"
+ },
+ "iron_xylophone": {
+  "verdict": "NEAR",
+  "t": 65.0,
+  "pp": 3.13,
+  "mod": -28.23,
+  "reg": "F#3"
+ },
+ "pling": {
+  "verdict": "NEAR",
+  "t": 60.0,
+  "pp": 4.31,
+  "mod": -32.46,
+  "reg": "F#3"
+ },
+ "xylobone": {
+  "verdict": "WEAK",
+  "t": 52.5,
+  "pp": 7.93,
+  "mod": -18.34,
+  "reg": "F#5"
+ }
+}

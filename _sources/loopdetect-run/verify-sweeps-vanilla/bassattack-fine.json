@@ -1,0 +1,691 @@
+[
+ {
+  "name": "bassattack",
+  "sweep": [
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 50.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 23.2,
+       "mod_dbc": -19.03,
+       "perperiod_db": 4.05
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 23.21,
+       "mod_dbc": -19.05,
+       "perperiod_db": 6.87
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 23.18,
+       "mod_dbc": -19.06,
+       "perperiod_db": 12.26
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 23.17,
+       "mod_dbc": -19.07,
+       "perperiod_db": 15.36
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 23.15,
+       "mod_dbc": -19.08,
+       "perperiod_db": 21.33
+      }
+     }
+    },
+    "worst_mod": -19.03,
+    "worst_pp": 23.21
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 52.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 14.27,
+       "mod_dbc": -25.74,
+       "perperiod_db": 2.89
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 14.29,
+       "mod_dbc": -25.79,
+       "perperiod_db": 4.74
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 14.24,
+       "mod_dbc": -25.79,
+       "perperiod_db": 6.32
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 14.21,
+       "mod_dbc": -25.79,
+       "perperiod_db": 7.87
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 14.19,
+       "mod_dbc": -25.79,
+       "perperiod_db": 12.27
+      }
+     }
+    },
+    "worst_mod": -25.74,
+    "worst_pp": 14.29
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 55.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 11.57,
+       "mod_dbc": -25.09,
+       "perperiod_db": 2.19
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 11.59,
+       "mod_dbc": -25.14,
+       "perperiod_db": 3.38
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 11.51,
+       "mod_dbc": -25.13,
+       "perperiod_db": 3.91
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 11.48,
+       "mod_dbc": -25.12,
+       "perperiod_db": 5.62
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 11.45,
+       "mod_dbc": -25.12,
+       "perperiod_db": 7.61
+      }
+     }
+    },
+    "worst_mod": -25.09,
+    "worst_pp": 11.59
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 57.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 10.19,
+       "mod_dbc": -21.63,
+       "perperiod_db": 2.52
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 10.18,
+       "mod_dbc": -21.66,
+       "perperiod_db": 3.45
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 10.13,
+       "mod_dbc": -21.65,
+       "perperiod_db": 4.13
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 10.12,
+       "mod_dbc": -21.66,
+       "perperiod_db": 5.9
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 10.09,
+       "mod_dbc": -21.65,
+       "perperiod_db": 6.85
+      }
+     }
+    },
+    "worst_mod": -21.63,
+    "worst_pp": 10.19
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 60.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 9.94,
+       "mod_dbc": -22.07,
+       "perperiod_db": 2.34
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 9.94,
+       "mod_dbc": -22.09,
+       "perperiod_db": 3.22
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 9.89,
+       "mod_dbc": -22.1,
+       "perperiod_db": 3.88
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 9.87,
+       "mod_dbc": -22.12,
+       "perperiod_db": 5.71
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 9.84,
+       "mod_dbc": -22.12,
+       "perperiod_db": 6.98
+      }
+     }
+    },
+    "worst_mod": -22.07,
+    "worst_pp": 9.94
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 62.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 9.82,
+       "mod_dbc": -24.43,
+       "perperiod_db": 2.08
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 9.82,
+       "mod_dbc": -24.46,
+       "perperiod_db": 2.81
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 9.76,
+       "mod_dbc": -24.45,
+       "perperiod_db": 3.51
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 9.78,
+       "mod_dbc": -24.51,
+       "perperiod_db": 5.83
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 9.74,
+       "mod_dbc": -24.49,
+       "perperiod_db": 7.22
+      }
+     }
+    },
+    "worst_mod": -24.43,
+    "worst_pp": 9.82
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 65.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 12.97,
+       "mod_dbc": -24.76,
+       "perperiod_db": 2.63
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 13.01,
+       "mod_dbc": -24.79,
+       "perperiod_db": 3.73
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 12.88,
+       "mod_dbc": -24.76,
+       "perperiod_db": 4.7
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 12.96,
+       "mod_dbc": -24.81,
+       "perperiod_db": 8.34
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 12.94,
+       "mod_dbc": -24.81,
+       "perperiod_db": 10.67
+      }
+     }
+    },
+    "worst_mod": -24.76,
+    "worst_pp": 13.01
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 67.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 12.98,
+       "mod_dbc": -25.44,
+       "perperiod_db": 2.58
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 13.03,
+       "mod_dbc": -25.46,
+       "perperiod_db": 4.24
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 13.0,
+       "mod_dbc": -25.47,
+       "perperiod_db": 5.07
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 13.04,
+       "mod_dbc": -25.5,
+       "perperiod_db": 9.55
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 13.01,
+       "mod_dbc": -25.49,
+       "perperiod_db": 13.76
+      }
+     }
+    },
+    "worst_mod": -25.44,
+    "worst_pp": 13.04
+   },
+   {
+    "name": "bassattack",
+    "reg": "F#1",
+    "len_ms": 70.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 92.2158,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 48.97,
+       "mod_dbc": -15.14,
+       "perperiod_db": 7.04
+      },
+      "shaped": {
+       "pp_db": 12.69,
+       "mod_dbc": -26.69,
+       "perperiod_db": 2.49
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 48.98,
+       "mod_dbc": -15.09,
+       "perperiod_db": 9.21
+      },
+      "shaped": {
+       "pp_db": 12.73,
+       "mod_dbc": -26.65,
+       "perperiod_db": 3.74
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 48.91,
+       "mod_dbc": -15.08,
+       "perperiod_db": 8.56
+      },
+      "shaped": {
+       "pp_db": 12.67,
+       "mod_dbc": -26.65,
+       "perperiod_db": 4.63
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 48.9,
+       "mod_dbc": -15.1,
+       "perperiod_db": 12.89
+      },
+      "shaped": {
+       "pp_db": 12.69,
+       "mod_dbc": -26.7,
+       "perperiod_db": 8.81
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 48.85,
+       "mod_dbc": -15.08,
+       "perperiod_db": 16.86
+      },
+      "shaped": {
+       "pp_db": 12.66,
+       "mod_dbc": -26.68,
+       "perperiod_db": 13.03
+      }
+     }
+    },
+    "worst_mod": -26.65,
+    "worst_pp": 12.73
+   }
+  ]
+ }
+]

@@ -1,0 +1,601 @@
+[
+ {
+  "name": "xylobone",
+  "sweep": [
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 40.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 111.32,
+       "mod_dbc": -21.95
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 115.55,
+       "mod_dbc": -21.84
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 120.4,
+       "mod_dbc": -21.76
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 124.61,
+       "mod_dbc": -21.77
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 129.22,
+       "mod_dbc": -21.78
+      }
+     }
+    },
+    "worst_mod": -21.76,
+    "worst_pp": 129.22
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 42.5,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 105.73,
+       "mod_dbc": -22.21
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 109.96,
+       "mod_dbc": -22.26
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 114.8,
+       "mod_dbc": -22.07
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 119.02,
+       "mod_dbc": -22.21
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 123.62,
+       "mod_dbc": -22.19
+      }
+     }
+    },
+    "worst_mod": -22.07,
+    "worst_pp": 123.62
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 45.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 111.73,
+       "mod_dbc": -22.62
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 115.96,
+       "mod_dbc": -22.7
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 120.8,
+       "mod_dbc": -22.49
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 125.02,
+       "mod_dbc": -22.65
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 129.63,
+       "mod_dbc": -22.62
+      }
+     }
+    },
+    "worst_mod": -22.49,
+    "worst_pp": 129.63
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 47.5,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 24.9,
+       "mod_dbc": -23.11
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 24.73,
+       "mod_dbc": -23.59
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 24.42,
+       "mod_dbc": -23.13
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 24.25,
+       "mod_dbc": -23.61
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 24.08,
+       "mod_dbc": -23.48
+      }
+     }
+    },
+    "worst_mod": -23.11,
+    "worst_pp": 24.9
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 50.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 8.9,
+       "mod_dbc": -20.68
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 8.68,
+       "mod_dbc": -21.12
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 8.78,
+       "mod_dbc": -20.75
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 8.56,
+       "mod_dbc": -21.15
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 8.58,
+       "mod_dbc": -21.03
+      }
+     }
+    },
+    "worst_mod": -20.68,
+    "worst_pp": 8.9
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 52.5,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 7.86,
+       "mod_dbc": -18.41
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 7.78,
+       "mod_dbc": -18.59
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 7.93,
+       "mod_dbc": -18.34
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 7.81,
+       "mod_dbc": -18.52
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 7.86,
+       "mod_dbc": -18.45
+      }
+     }
+    },
+    "worst_mod": -18.34,
+    "worst_pp": 7.93
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 55.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 9.62,
+       "mod_dbc": -15.99
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 9.57,
+       "mod_dbc": -16.06
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 9.65,
+       "mod_dbc": -15.92
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 9.57,
+       "mod_dbc": -16.04
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 9.6,
+       "mod_dbc": -15.99
+      }
+     }
+    },
+    "worst_mod": -15.92,
+    "worst_pp": 9.65
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 57.5,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 9.74,
+       "mod_dbc": -14.43
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 9.68,
+       "mod_dbc": -14.45
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 9.75,
+       "mod_dbc": -14.37
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 9.65,
+       "mod_dbc": -14.47
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 9.7,
+       "mod_dbc": -14.41
+      }
+     }
+    },
+    "worst_mod": -14.37,
+    "worst_pp": 9.75
+   },
+   {
+    "name": "xylobone",
+    "reg": "F#5",
+    "len_ms": 60.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.8,
+       "mod_dbc": -9.74
+      },
+      "shaped": {
+       "pp_db": 10.12,
+       "mod_dbc": -12.98
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 9.96,
+       "mod_dbc": -13.1
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 17.78,
+       "mod_dbc": -9.75
+      },
+      "shaped": {
+       "pp_db": 10.13,
+       "mod_dbc": -12.91
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 17.67,
+       "mod_dbc": -9.8
+      },
+      "shaped": {
+       "pp_db": 10.04,
+       "mod_dbc": -12.97
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 17.71,
+       "mod_dbc": -9.78
+      },
+      "shaped": {
+       "pp_db": 10.08,
+       "mod_dbc": -12.93
+      }
+     }
+    },
+    "worst_mod": -12.91,
+    "worst_pp": 10.13
+   }
+  ]
+ }
+]

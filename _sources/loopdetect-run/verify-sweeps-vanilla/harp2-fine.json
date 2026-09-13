@@ -1,0 +1,619 @@
+[
+ {
+  "name": "harp2",
+  "sweep": [
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 50.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 38.57,
+       "mod_dbc": -12.46,
+       "perperiod_db": 28.12
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 38.54,
+       "mod_dbc": -12.47
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 38.37,
+       "mod_dbc": -12.48
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 38.34,
+       "mod_dbc": -12.48
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 38.27,
+       "mod_dbc": -12.49
+      }
+     }
+    },
+    "worst_mod": -12.46,
+    "worst_pp": 38.57
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 52.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 24.34,
+       "mod_dbc": -15.06,
+       "perperiod_db": 17.86
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 24.3,
+       "mod_dbc": -15.08
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 24.21,
+       "mod_dbc": -15.09
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 24.17,
+       "mod_dbc": -15.09
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 24.15,
+       "mod_dbc": -15.1
+      }
+     }
+    },
+    "worst_mod": -15.06,
+    "worst_pp": 24.34
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 55.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 15.85,
+       "mod_dbc": -18.28,
+       "perperiod_db": 14.5
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 15.76,
+       "mod_dbc": -18.31
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 15.73,
+       "mod_dbc": -18.32
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 15.65,
+       "mod_dbc": -18.34
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 15.66,
+       "mod_dbc": -18.33
+      }
+     }
+    },
+    "worst_mod": -18.28,
+    "worst_pp": 15.85
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 57.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 9.35,
+       "mod_dbc": -22.44,
+       "perperiod_db": 8.92
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 9.16,
+       "mod_dbc": -22.53
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 9.18,
+       "mod_dbc": -22.51
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 9.15,
+       "mod_dbc": -22.53
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 9.1,
+       "mod_dbc": -22.55
+      }
+     }
+    },
+    "worst_mod": -22.44,
+    "worst_pp": 9.35
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 4.54,
+       "mod_dbc": -28.96,
+       "perperiod_db": 3.77
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 4.54,
+       "mod_dbc": -28.96
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 4.36,
+       "mod_dbc": -29.23
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 4.29,
+       "mod_dbc": -29.36
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 4.27,
+       "mod_dbc": -29.38
+      }
+     }
+    },
+    "worst_mod": -28.96,
+    "worst_pp": 4.54
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 62.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 1.21,
+       "mod_dbc": -36.82,
+       "perperiod_db": 12.73
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 1.19,
+       "mod_dbc": -37.07
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 1.11,
+       "mod_dbc": -37.98
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 1.05,
+       "mod_dbc": -38.84
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 1.06,
+       "mod_dbc": -38.65
+      }
+     }
+    },
+    "worst_mod": -36.82,
+    "worst_pp": 1.21
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 65.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 3.46,
+       "mod_dbc": -36.45,
+       "perperiod_db": 6.44
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 3.46,
+       "mod_dbc": -37.1
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 3.45,
+       "mod_dbc": -37.97
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 3.44,
+       "mod_dbc": -38.21
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 3.44,
+       "mod_dbc": -38.8
+      }
+     }
+    },
+    "worst_mod": -36.45,
+    "worst_pp": 3.46
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 67.5,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 5.64,
+       "mod_dbc": -29.48,
+       "perperiod_db": 4.96
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 5.58,
+       "mod_dbc": -30.06
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 5.53,
+       "mod_dbc": -30.38
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 5.5,
+       "mod_dbc": -30.71
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 5.48,
+       "mod_dbc": -30.85
+      }
+     }
+    },
+    "worst_mod": -29.48,
+    "worst_pp": 5.64
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 70.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 7.51,
+       "mod_dbc": -24.4,
+       "perperiod_db": 10.66
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 7.37,
+       "mod_dbc": -24.91
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 7.33,
+       "mod_dbc": -25.0
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 7.24,
+       "mod_dbc": -25.36
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 7.25,
+       "mod_dbc": -25.31
+      }
+     }
+    },
+    "worst_mod": -24.4,
+    "worst_pp": 7.51
+   }
+  ]
+ }
+]

@@ -1,0 +1,535 @@
+[
+ {
+  "name": "bell",
+  "sweep": [
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 125.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.47,
+       "mod_dbc": -18.63
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.41,
+       "mod_dbc": -18.91
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.43,
+       "mod_dbc": -18.79
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 3.41,
+       "mod_dbc": -18.91
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.4,
+       "mod_dbc": -18.94
+      }
+     }
+    },
+    "worst_mod": -18.63,
+    "worst_pp": 3.47
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 130.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.49,
+       "mod_dbc": -19.15
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.46,
+       "mod_dbc": -19.24
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.41,
+       "mod_dbc": -19.31
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 3.36,
+       "mod_dbc": -19.52
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.38,
+       "mod_dbc": -19.45
+      }
+     }
+    },
+    "worst_mod": -19.15,
+    "worst_pp": 3.49
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 135.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.49,
+       "mod_dbc": -20.59
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.43,
+       "mod_dbc": -20.74
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.41,
+       "mod_dbc": -20.75
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 3.38,
+       "mod_dbc": -20.89
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.38,
+       "mod_dbc": -20.9
+      }
+     }
+    },
+    "worst_mod": -20.59,
+    "worst_pp": 3.49
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 140.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.42,
+       "mod_dbc": -23.23
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.34,
+       "mod_dbc": -23.44
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.36,
+       "mod_dbc": -23.38
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 3.29,
+       "mod_dbc": -23.6
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.32,
+       "mod_dbc": -23.51
+      }
+     }
+    },
+    "worst_mod": -23.23,
+    "worst_pp": 3.42
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 145.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.48,
+       "mod_dbc": -27.95
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.46,
+       "mod_dbc": -27.93
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 3.42,
+       "mod_dbc": -28.16
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 3.39,
+       "mod_dbc": -28.29
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 3.4,
+       "mod_dbc": -28.29
+      }
+     }
+    },
+    "worst_mod": -27.93,
+    "worst_pp": 3.48
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 150.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 2.13,
+       "mod_dbc": -38.05
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 2.12,
+       "mod_dbc": -37.98
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 2.08,
+       "mod_dbc": -38.67
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 2.08,
+       "mod_dbc": -38.34
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 2.07,
+       "mod_dbc": -38.54
+      }
+     }
+    },
+    "worst_mod": -37.98,
+    "worst_pp": 2.13
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 155.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 2.45,
+       "mod_dbc": -35.59
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 2.45,
+       "mod_dbc": -35.77
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 2.43,
+       "mod_dbc": -35.82
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 2.45,
+       "mod_dbc": -35.81
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 2.45,
+       "mod_dbc": -35.76
+      }
+     }
+    },
+    "worst_mod": -35.59,
+    "worst_pp": 2.45
+   },
+   {
+    "name": "bell",
+    "reg": "F#5",
+    "len_ms": 160.0,
+    "fade_ms": "1.4/1.4",
+    "f0_file": 1479.0116,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 27.5,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 2.57,
+       "mod_dbc": -28.61
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 27.45,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 2.51,
+       "mod_dbc": -29.14
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 27.51,
+       "mod_dbc": -28.85
+      },
+      "shaped": {
+       "pp_db": 2.5,
+       "mod_dbc": -28.94
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 27.33,
+       "mod_dbc": -29.15
+      },
+      "shaped": {
+       "pp_db": 2.5,
+       "mod_dbc": -29.14
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 27.39,
+       "mod_dbc": -29.05
+      },
+      "shaped": {
+       "pp_db": 2.5,
+       "mod_dbc": -29.13
+      }
+     }
+    },
+    "worst_mod": -28.61,
+    "worst_pp": 2.57
+   }
+  ]
+ }
+]

@@ -1,0 +1,415 @@
+[
+ {
+  "name": "harp2",
+  "sweep": [
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 40.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 91.79,
+       "mod_dbc": -7.89,
+       "perperiod_db": 225.55
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 96.28,
+       "mod_dbc": -7.89
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 100.87,
+       "mod_dbc": -7.87
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 105.39,
+       "mod_dbc": -7.87
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 109.93,
+       "mod_dbc": -7.87
+      }
+     }
+    },
+    "worst_mod": -7.87,
+    "worst_pp": 109.93
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 50.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 38.57,
+       "mod_dbc": -12.46,
+       "perperiod_db": 28.12
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 38.54,
+       "mod_dbc": -12.47
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 38.37,
+       "mod_dbc": -12.48
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 38.34,
+       "mod_dbc": -12.48
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 38.27,
+       "mod_dbc": -12.49
+      }
+     }
+    },
+    "worst_mod": -12.46,
+    "worst_pp": 38.57
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 4.54,
+       "mod_dbc": -28.96,
+       "perperiod_db": 3.77
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 4.54,
+       "mod_dbc": -28.96
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 4.36,
+       "mod_dbc": -29.23
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 4.29,
+       "mod_dbc": -29.36
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 4.27,
+       "mod_dbc": -29.38
+      }
+     }
+    },
+    "worst_mod": -28.96,
+    "worst_pp": 4.54
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 75.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 12.39,
+       "mod_dbc": -17.88,
+       "perperiod_db": 16.01
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 12.01,
+       "mod_dbc": -18.35
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 12.08,
+       "mod_dbc": -18.25
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 11.99,
+       "mod_dbc": -18.36
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 11.91,
+       "mod_dbc": -18.44
+      }
+     }
+    },
+    "worst_mod": -17.88,
+    "worst_pp": 12.39
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 90.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 13.89,
+       "mod_dbc": -10.26,
+       "perperiod_db": 12.99
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 13.66,
+       "mod_dbc": -10.55
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 13.68,
+       "mod_dbc": -10.52
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 13.65,
+       "mod_dbc": -10.55
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 13.56,
+       "mod_dbc": -10.65
+      }
+     }
+    },
+    "worst_mod": -10.26,
+    "worst_pp": 13.89
+   },
+   {
+    "name": "harp2",
+    "reg": "F#3",
+    "len_ms": 120.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 370.2322,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 30.95,
+       "mod_dbc": -21.48,
+       "perperiod_db": 11.14
+      },
+      "shaped": {
+       "pp_db": 13.49,
+       "mod_dbc": -10.8,
+       "perperiod_db": 12.38
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.46
+      },
+      "shaped": {
+       "pp_db": 13.19,
+       "mod_dbc": -11.01
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 30.96,
+       "mod_dbc": -21.49
+      },
+      "shaped": {
+       "pp_db": 13.12,
+       "mod_dbc": -11.05
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 12.92,
+       "mod_dbc": -11.2
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 30.97,
+       "mod_dbc": -21.47
+      },
+      "shaped": {
+       "pp_db": 12.95,
+       "mod_dbc": -11.18
+      }
+     }
+    },
+    "worst_mod": -10.8,
+    "worst_pp": 13.49
+   }
+  ]
+ }
+]

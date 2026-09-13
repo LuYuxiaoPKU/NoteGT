@@ -1,0 +1,415 @@
+[
+ {
+  "name": "bit",
+  "sweep": [
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 40.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 369.9011,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 39.16,
+       "mod_dbc": -45.96,
+       "perperiod_db": 13.62
+      },
+      "shaped": {
+       "pp_db": 106.3,
+       "mod_dbc": -9.68,
+       "perperiod_db": 220.24
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 110.82,
+       "mod_dbc": -9.66
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 39.17,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 115.42,
+       "mod_dbc": -9.65
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.29
+      },
+      "shaped": {
+       "pp_db": 119.92,
+       "mod_dbc": -9.64
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.41
+      },
+      "shaped": {
+       "pp_db": 124.45,
+       "mod_dbc": -9.64
+      }
+     }
+    },
+    "worst_mod": -9.64,
+    "worst_pp": 124.45
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 50.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 369.9011,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 39.16,
+       "mod_dbc": -45.96,
+       "perperiod_db": 13.62
+      },
+      "shaped": {
+       "pp_db": 26.73,
+       "mod_dbc": -15.39,
+       "perperiod_db": 18.42
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 26.73,
+       "mod_dbc": -15.37
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 39.17,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 26.55,
+       "mod_dbc": -15.38
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.29
+      },
+      "shaped": {
+       "pp_db": 26.51,
+       "mod_dbc": -15.39
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.41
+      },
+      "shaped": {
+       "pp_db": 26.43,
+       "mod_dbc": -15.41
+      }
+     }
+    },
+    "worst_mod": -15.37,
+    "worst_pp": 26.73
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 369.9011,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 39.16,
+       "mod_dbc": -45.96,
+       "perperiod_db": 13.62
+      },
+      "shaped": {
+       "pp_db": 9.37,
+       "mod_dbc": -24.6,
+       "perperiod_db": 5.79
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 9.5,
+       "mod_dbc": -24.5
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 39.17,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 9.64,
+       "mod_dbc": -24.4
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.29
+      },
+      "shaped": {
+       "pp_db": 9.6,
+       "mod_dbc": -24.4
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.41
+      },
+      "shaped": {
+       "pp_db": 9.55,
+       "mod_dbc": -24.43
+      }
+     }
+    },
+    "worst_mod": -24.4,
+    "worst_pp": 9.64
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 75.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 369.9011,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 39.16,
+       "mod_dbc": -45.96,
+       "perperiod_db": 13.62
+      },
+      "shaped": {
+       "pp_db": 17.55,
+       "mod_dbc": -10.51,
+       "perperiod_db": 17.5
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 24.66,
+       "mod_dbc": -9.69
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 39.17,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 25.1,
+       "mod_dbc": -9.67
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.29
+      },
+      "shaped": {
+       "pp_db": 25.05,
+       "mod_dbc": -9.68
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.41
+      },
+      "shaped": {
+       "pp_db": 23.05,
+       "mod_dbc": -9.8
+      }
+     }
+    },
+    "worst_mod": -9.67,
+    "worst_pp": 25.1
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 90.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 369.9011,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 39.16,
+       "mod_dbc": -45.96,
+       "perperiod_db": 13.62
+      },
+      "shaped": {
+       "pp_db": 18.81,
+       "mod_dbc": -6.31,
+       "perperiod_db": 18.86
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 27.71,
+       "mod_dbc": -4.74
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 39.17,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 26.99,
+       "mod_dbc": -4.84
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.29
+      },
+      "shaped": {
+       "pp_db": 27.73,
+       "mod_dbc": -4.74
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.41
+      },
+      "shaped": {
+       "pp_db": 25.5,
+       "mod_dbc": -4.96
+      }
+     }
+    },
+    "worst_mod": -4.74,
+    "worst_pp": 27.73
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 120.0,
+    "fade_ms": "8.0/8.0",
+    "f0_file": 369.9011,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 39.16,
+       "mod_dbc": -45.96,
+       "perperiod_db": 13.62
+      },
+      "shaped": {
+       "pp_db": 22.19,
+       "mod_dbc": -5.39,
+       "perperiod_db": 21.57
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 27.99,
+       "mod_dbc": -3.98
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 39.17,
+       "mod_dbc": -45.47
+      },
+      "shaped": {
+       "pp_db": 28.12,
+       "mod_dbc": -3.89
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.29
+      },
+      "shaped": {
+       "pp_db": 27.28,
+       "mod_dbc": -3.79
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 39.19,
+       "mod_dbc": -45.41
+      },
+      "shaped": {
+       "pp_db": 27.68,
+       "mod_dbc": -3.76
+      }
+     }
+    },
+    "worst_mod": -3.76,
+    "worst_pp": 28.12
+   }
+  ]
+ }
+]

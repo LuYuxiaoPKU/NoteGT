@@ -1,0 +1,601 @@
+[
+ {
+  "name": "cow_bell",
+  "sweep": [
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 50.0,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 22.28,
+       "mod_dbc": -18.35
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 22.27,
+       "mod_dbc": -18.35
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 22.1,
+       "mod_dbc": -18.38
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 22.08,
+       "mod_dbc": -18.38
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 22.02,
+       "mod_dbc": -18.4
+      }
+     }
+    },
+    "worst_mod": -18.35,
+    "worst_pp": 22.28
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 52.5,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 8.59,
+       "mod_dbc": -22.97
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 8.53,
+       "mod_dbc": -22.97
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 8.46,
+       "mod_dbc": -23.0
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 8.42,
+       "mod_dbc": -23.01
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 8.41,
+       "mod_dbc": -23.02
+      }
+     }
+    },
+    "worst_mod": -22.97,
+    "worst_pp": 8.59
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 55.0,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 3.6,
+       "mod_dbc": -27.54
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 3.55,
+       "mod_dbc": -27.53
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 3.56,
+       "mod_dbc": -27.55
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 3.52,
+       "mod_dbc": -27.54
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 3.53,
+       "mod_dbc": -27.55
+      }
+     }
+    },
+    "worst_mod": -27.53,
+    "worst_pp": 3.6
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 57.5,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 5.0,
+       "mod_dbc": -29.52
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.79,
+       "mod_dbc": -29.34
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.83,
+       "mod_dbc": -29.39
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.78,
+       "mod_dbc": -29.34
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.73,
+       "mod_dbc": -29.31
+      }
+     }
+    },
+    "worst_mod": -29.31,
+    "worst_pp": 5.0
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 60.0,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 5.05,
+       "mod_dbc": -29.53
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 5.05,
+       "mod_dbc": -29.53
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.87,
+       "mod_dbc": -29.52
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.78,
+       "mod_dbc": -29.48
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.77,
+       "mod_dbc": -29.48
+      }
+     }
+    },
+    "worst_mod": -29.48,
+    "worst_pp": 5.05
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 62.5,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 5.0,
+       "mod_dbc": -28.71
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.96,
+       "mod_dbc": -28.75
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.83,
+       "mod_dbc": -28.82
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.71,
+       "mod_dbc": -28.84
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.73,
+       "mod_dbc": -28.84
+      }
+     }
+    },
+    "worst_mod": -28.71,
+    "worst_pp": 5.0
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 65.0,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.59,
+       "mod_dbc": -25.24
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.52,
+       "mod_dbc": -25.34
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.43,
+       "mod_dbc": -25.44
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.4,
+       "mod_dbc": -25.47
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.33,
+       "mod_dbc": -25.53
+      }
+     }
+    },
+    "worst_mod": -25.24,
+    "worst_pp": 4.59
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 67.5,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.68,
+       "mod_dbc": -20.56
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.64,
+       "mod_dbc": -20.68
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.62,
+       "mod_dbc": -20.73
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.6,
+       "mod_dbc": -20.79
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.59,
+       "mod_dbc": -20.8
+      }
+     }
+    },
+    "worst_mod": -20.56,
+    "worst_pp": 4.68
+   },
+   {
+    "name": "cow_bell",
+    "reg": "F#4",
+    "len_ms": 70.0,
+    "fade_ms": "2.7/2.7",
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.97,
+       "mod_dbc": -17.29
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.93,
+       "mod_dbc": -17.4
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 31.59,
+       "mod_dbc": -9.11
+      },
+      "shaped": {
+       "pp_db": 4.92,
+       "mod_dbc": -17.42
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.89,
+       "mod_dbc": -17.49
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 31.6,
+       "mod_dbc": -9.1
+      },
+      "shaped": {
+       "pp_db": 4.89,
+       "mod_dbc": -17.48
+      }
+     }
+    },
+    "worst_mod": -17.29,
+    "worst_pp": 4.97
+   }
+  ]
+ }
+]
