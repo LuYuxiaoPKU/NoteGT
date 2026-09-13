@@ -19,6 +19,7 @@ import soundfile as sf
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
+sys.path.insert(0, os.path.join(ROOT, '_sources/loopdetect-run'))
 import l0shape
 
 SWEEP = os.path.join(ROOT, '_sources/loopdetect-run/verify-sweeps-vanilla')
@@ -56,8 +57,10 @@ def load_sweep_point(name, sweep_file, len_ms):
 def main():
     os.makedirs(OUT, exist_ok=True)
     rows = []
+    ogg_paths = {}
     for name in sorted(list(TUNED) + list(PERC)):
         ogg = os.path.join(VAN, f'{name}.ogg')
+        ogg_paths[name] = ogg
         x, rate = sf.read(ogg, dtype='float64', always_2d=True)
         x = x.mean(axis=1) if x.shape[1] > 1 else x[:, 0]
         x32 = x.astype(np.float32)          # = Java 读 32F WAV 的输入（float32 → double 计算）
@@ -82,6 +85,42 @@ def main():
     with open(os.path.join(OUT, 'fixtures.json'), 'w', encoding='utf-8') as f:
         json.dump(rows, f, ensure_ascii=False, indent=1)
     print(f'fixtures -> {OUT}（{len(rows)} 件）')
+
+    # ── L2 循环点参考（loopdetect v5 主流程）──
+    # 参数 = 规范 v5 全库（CLI 默认 ncc 0.95、span 0.5，与 result-v5-vanilla12111 一致）；
+    # didgeridoo 用其 2026-09-13 定参配置（ncc 0.90 + span 1.0，AGENTS #27 PASS 130.5ms/8.42°）。
+    import argparse
+    import loopdetect
+    ref = {}
+    for name in sorted(list(TUNED) + list(PERC)):
+        if name == 'didgeridoo':
+            ncc_min, span = 0.90, 1.0
+        else:
+            ncc_min, span = 0.95, 0.5
+        args = argparse.Namespace(snr=20.0, ncc_min=ncc_min, xfade=0.005, dynrange=40.0,
+                                  total=1.0, render=None, pitch=[0.5, 1.0, 2.0], json=True,
+                                  no_subharm=False, fmin=30.0, span_cycles=span)
+        r = loopdetect.analyze(ogg_paths[name], args)
+        if r.get('ok'):
+            sm = 1 if r['f0Source'] == 'fundamental' else int(r['f0Source'].replace('subharmonic', ''))
+            ref[name] = dict(span=span, nccMin=ncc_min, a=r['attackEnd'], L=r['loopSamples'], k=r['periods'],
+                             f0=r['f0'], subharmMult=sm, ncc=r['ncc'],
+                             loopMs=r['loopMs'], rateHz=r['loopRateHz'],
+                             loopRippleDb=r['loopRippleDb'], longRippleDb=r['longRippleDb'],
+                             modDbc=r['modDbc'], seamRatio=r['seamRatio'],
+                             seamErrDeg=r['seamErrDeg'], fadeNcc=r['fadeNcc'],
+                             fadeDipDb=r['fadeDipDb'], periodErrDeg=r['periodErrDeg'],
+                             xfadeMs=r['fadeTrace'][-1]['xfadeMs'] if r.get('fadeTrace') else None,
+                             verdict=r['verdict'])
+            print(f'  loop {name:<16} span={span}  a={r["attackEnd"]} L={r["loopSamples"]} '
+                  f'k={r["periods"]} f0={r["f0"]}  seam={r["seamErrDeg"]}  '
+                  f'lp={r["loopRippleDb"]} lg={r["longRippleDb"]} mod={r["modDbc"]}  {r["verdict"]}')
+        else:
+            ref[name] = dict(span=span, nccMin=ncc_min, ok=False, reason=r.get('reason'))
+            print(f'  loop {name:<16} span={span}  REJECT: {r.get("reason")}')
+    with open(os.path.join(OUT, 'loop-ref.json'), 'w', encoding='utf-8') as f:
+        json.dump(ref, f, ensure_ascii=False, indent=1)
+    print('loop-ref.json -> %d 件' % len(ref))
 
 
 if __name__ == '__main__':
