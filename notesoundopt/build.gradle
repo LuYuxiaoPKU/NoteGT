@@ -9,10 +9,14 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven { url = uri("https://api.modrinth.com/maven/") }
 }
 
 loom {
 	splitEnvironmentSourceSets()
+
+	// cloth-config 所需 AW 规则（named 书写；loom 负责 dev 直用 / prod remap 为 intermediary）
+	accessWidenerPath = file("src/main/resources/notegt.accessWidener")
 
 	mods {
 		"notegt" {
@@ -30,6 +34,16 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// M1 配置 UI：
+	// cloth-config = bundled mod（jar 在 src/main/resources/ + fabric.mod.json "jars" 字段声明；
+	//   [loader 0.19.5 反编译 2026-09-14] prod：computeJarFile 按 "jars" 扫描 nested mod 注册；
+	//   dev：本 mod 以**目录**扫描（computeDir）→ nested 永不发现 → 因此必须同时 modImplementation
+	//   （loom 把 remap 后 Mojang 命名的 cloth 放入 dev classpath 注册，prod 下 depends 由嵌套件满足）。
+	// [Modrinth 2026-09-13 查] 21.11.153+fabric，SHA512 已验证
+	modImplementation "maven.modrinth:cloth-config:21.11.153+fabric"
+	// ModMenu = 可选集成（用户包内有 modmenu；无则配置入口仅走键绑）
+	modCompileOnly "maven.modrinth:modmenu:17.0.0"
 
 	// 单元测试（M2a Java DSP 交叉核对：16 件原版样本 vs Python l0shape 参考输出）
 	testImplementation "org.junit.jupiter:junit-jupiter:5.10.2"

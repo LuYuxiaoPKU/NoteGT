@@ -23,6 +23,9 @@ public final class DspDevTrigger {
 
 	private static boolean done = false;
 	private static int ticks = 0;
+	// M1 临时：16 件播完后 100 tick 自动打开配置界面（冒烟测试；发布前移除）
+	private static boolean configOpened = false;
+	private static int configTicks = 0;
 
 	/** 原版 16 件 note 事件（SoundEvents Holder.Reference 常量，Mojang mappings）。 */
 	private static final List<Holder<net.minecraft.sounds.SoundEvent>> NOTE_16 = List.of(
@@ -49,6 +52,11 @@ public final class DspDevTrigger {
 	/** ClientTickEvents.END_CLIENT_TICK 注册入口（客户端主线程）。 */
 	public static void onClientTick(Minecraft mc) {
 		if (done) {
+			if (!configOpened && ++configTicks >= 100) {
+				configOpened = true;
+				NoteGTMod.LOGGER.info("NoteGT dev: 自动打开配置界面（冒烟测试）");
+				mc.setScreen(NoteGTConfigScreen.create(null));
+			}
 			return;
 		}
 		// 启动后 400 tick（20s）触发：主菜单时声音引擎已初始化（菜单音乐走同一管线），

@@ -30,6 +30,7 @@
 - 1.21.8 与 1.21.11 引擎同构（已验证）；乐器映射一致（木=BASS、石=BASEDRUM、铜=HARP 默认）。
 - 26.1 起：新增 TRUMPET ×4 乐器，铜块家族 → TRUMPET（常量 23→27）。
 - **命名改名分界在 1.21.11**（`_sources/mc{1218,12111}-client-mappings.txt` Mojang 官方 mappings 实查 2026-08）：`ResourceLocation`→`Identifier`、`getLocation()`→`getIdentifier()` 在 **1.21.11** 完成（1.21.8/1.21.9/1.21.10 仍旧名）；主客户端类官方名 1.21.8 起即 `Minecraft`（`MinecraftClient` 是 YARN 名）。→ 1.21.11 与 26.x 命名完全一致，**目标区间无跨版本改名负担**（26.2 反编译核对一致）。
+- **1.21.11 改名第二波（M1 开发实查，2026-09-14，javap 直查 1.21.11 Mojang-mapped jar）**：`net.minecraft.text.Text` → `net.minecraft.network.chat.FormattedText`（接口；组件基接口 `net.minecraft.network.chat.Component`，工厂 `Component.literal/translatable/empty`，旧 `Text.literal()` 静态工厂已废）；`MutableText` → `net.minecraft.network.chat.MutableComponent`；`client.gui.screen.*` 包 → `client.gui.screens.*`（复数，`Screen` = `gui.screens.Screen`）；`KeyBinding` → `KeyMapping`（`KeyBinding.Category(String)` → `KeyMapping.Category.register(Identifier)` 注册式 record；边沿触发 `wasPressed()` → `consumeClick()`）；`com.mojang.blaze3d.input.InputUtil` → `com.mojang.blaze3d.platform.InputConstants`；`new Identifier(ns, path)` 构造器私有化 → `Identifier.fromNamespaceAndPath(ns, path)`。另：MC jar 自 1.21.9+ 拆为 `minecraft-common` + `minecraft-clientonly` 两件（loom 自动处理）；**1.21.11 的 `Screen` 已无 `options` 字段**（旧 `Screen$Options` 内类消失；`Minecraft.options` 是 public final）。**教训：Mojang 改名波不止 Identifier 一处——新增代码一律 javap 实查当前映射，不凭记忆。**
 
 ## 三、Hy4 桥梁协议
 
@@ -76,6 +77,12 @@
     - **0.95 峰值归一契约**：Java `L0Shaper.shape()` 内部即归一（与 Python 管线**写文件**行为一致：l0shape.py 的 `shape()` 不归一、`main()` 落盘时 `out/max(peak)*0.95`）→ 交叉核对参考侧需补同一归一（已固化进 verify_dsp_dump_ingame.py）。
     - **临时开发件（发布前移除，已标注）**：`DspDevTrigger`（启动 20s 后主菜单播 16 件 note 事件驱动接管；用户实机游玩时开机 20s 会响一串测试音）+ `DEV_DUMP`（float32 WAV 转储，绝对路径常量）。
     - **下一步 = M1 配置**：三 Tab（乐器种类级矩阵 16×{l0,l1,l2,variant} / L1 参数 / 高级）+ 热生效绑定 `NoteDSPRuntime.CONFIG`（bump → onConfigChanged）+ **每件整体振幅滑条（用户 2026-09-13 新增要求：界面中给每种音符盒声音一个总体振幅调节）**——实现 = 回写前对整形 PCM 乘增益（0–200%，默认 100%），热生效。
+32. **M1 配置 dev 冒烟绿 + cloth-config bundle 四大坑（2026-09-14，loader 0.19.5 / loom 1.17.20 反编译实查）**：
+    - **dev 冒烟绿（runClient）**：20s 自动播 16 件（16/16 接管）+ 30s 自动打开配置界面（`DspDevTrigger` 新增临时钩子，发布前移除）→ cloth-config 屏幕构建渲染 25s+ 无异常；JUnit 回归 9/9、`validateAccessWidener` 绿。
+    - **bundle mod 坑（全部实测，防复现）**：① loader 只注册 fabric.mod.json **`"jars"` 字段显式声明**的 nested mod（`ModDiscoverer.computeJarFile` 反编译：`getJars().isEmpty()` → 不扫描）；0.19.5 V1 parser **只收对象形式** `{"file":"…"}`，字符串形式报 "Invalid type for JAR entry"。② **dev 环境项目 mod 按目录扫描**（`computeDir`，build/resources/main）→ nested mod **永不发现**（`createPlain(…, emptyList())`）→ cloth 必须同时是 `modImplementation` 依赖（loom 把 remap 成 Mojang 命名的副本放进 dev classpath 并注册，`build/loom-cache/remapped_working/`）；prod 由 nested jar 接管。③ **loom 对依赖 jar 的 remap 会剥掉其 `jars` 字段** → cloth 自带的 nested `META-INF/jars/basic-math-0.6.1.jar`（mod id `cloth-basic-math`，纯数学库，**无独立 Modrinth 项目**）在 dev 不注册 → `me.shedaniel.math.Rectangle` CNFE → 解法 = 7 个 math 类直接抽进 `src/main/resources/me/shedaniel/math/` 打进我们 jar（dev/prod 均经父 classloader 可见；prod 里 cloth 自带的 nested 副本优先，无冲突）。④ **AW 命名空间新约定**（[Fabric wiki 2026-03] + 实测）：我们自己的 AW 用 **named 命名空间**书写（`accessWidener v1 named`）+ loom 块声明 `accessWidenerPath`；loom 在 prod 构建自动 remap 为 intermediary（prod jar 实查 = `class_4185.field_22767` 等，✓），dev 直接用；旧式 intermediary 书写 → dev loader 报 "Namespace (intermediary) does not match current runtime namespace (named)"。
+    - **cloth 三条 AW 规则真身（字节码指纹逐字段实查 1.21.11）**：`class_4185.field_22767` = **`net.minecraft.client.gui.components.Button.onPress`**（accessible+mutable；class_4185 经「5×public static final int + 3×内类字段」指纹扫出 = Button，field_22767 为声明序第 7 字段，类型 Button$OnPress）+ `class_304.field_1655` = `net.minecraft.client.KeyMapping.key`（accessible；该类唯一 InputConstants$Key 字段）。**旧假设「Screen.options」是错的**——1.21.11 Screen 已无 options 字段。
+    - **prod jar 验证**：nested cloth 与原件 SHA256 一致（`8A40C84E…`）；FMJ 含 `jars`/`accessWidener`/`depends.cloth-config:"*"`；math 7 类在 jar 根。**`jar` 任务有 up-to-date 假阴性（改资源后仍判 UP-TO-DATE）→ 发版一律走 `remapJar`（必要时先 `clean`），产物 = `build/libs/notegt-0.1.0.jar`。**
+    - **下一步**：用户 HMCL 80 模组实机冒烟（配置界面 + 键绑 + 热改生效）→ 绿则 M3 L1。
 
 ## 四、目录约定
 

@@ -41,6 +41,11 @@ public final class NoteInstruments {
     private NoteInstruments() {
     }
 
+    /** 定参表（不可变视图）：M1 配置默认值、交叉核对夹具同源。 */
+    public static Map<String, Params> table() {
+        return VANILLA_16;
+    }
+
     /**
      * 按 note 文件路径匹配。
      * [1.21.11 已验证] {@code Sound.getPath()} = FileToIdConverter("sounds",".ogg") 输出

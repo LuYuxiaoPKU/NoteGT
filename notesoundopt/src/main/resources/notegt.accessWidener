@@ -1,0 +1,10 @@
+accessWidener	v1	named
+# cloth-config 21.11.153 所需规则（2026-09-14 经字节码指纹逐字段实查 1.21.11 Mojang 映射）：
+#   cloth 原版 AW 的 class_4185.field_22767 = net.minecraft.client.gui.components.Button.onPress
+#   （声明序第 7 字段，类型 Button$OnPress）；class_304.field_1655 = net.minecraft.client.KeyMapping.key
+#   （该类中唯一 InputConstants$Key 类型字段）。
+# 按 loom 现行约定用 named 命名空间书写（[Fabric wiki 2026-03]）：
+#   dev 运行时 = named（loader 直接生效）；prod jar 由 loom 随构建 remap 为 intermediary。
+accessible	field	net/minecraft/client/gui/components/Button	onPress	Lnet/minecraft/client/gui/components/Button$OnPress;
+mutable	field	net/minecraft/client/gui/components/Button	onPress	Lnet/minecraft/client/gui/components/Button$OnPress;
+accessible	field	net/minecraft/client/KeyMapping	key	Lcom/mojang/blaze3d/platform/InputConstants$Key;

@@ -3,6 +3,8 @@ package com.notegt.client;
 import com.mojang.blaze3d.audio.SoundBuffer;
 import com.notegt.NoteGTMod;
 import com.notegt.client.mixin.SoundBufferAccess;
+import com.notegt.config.DspSettings;
+import com.notegt.dsp.DspGain;
 import com.notegt.dsp.L0Shaper;
 import com.notegt.dsp.NoteInstruments;
 import net.minecraft.resources.Identifier;
@@ -46,27 +48,10 @@ public final class NoteDSPRuntime {
 	/** SoundBuffer 对象 → 状态（原始 PCM 常驻）。Weak：资源重载后 GC 自动回收。 */
 	private static final Map<SoundBuffer, State> STATES = Collections.synchronizedMap(new WeakHashMap<>());
 
-	/** M2a 最小配置（M1 Cloth Config 绑定此对象，乐器种类级矩阵随后）。 */
-	public static final class Config {
-		/** 全局 L0 开关（默认开）。 */
-		public volatile boolean l0Enabled = true;
-
-		/** 按乐器名覆盖（null = 跟随全局）。M1 起由配置 UI 写入。 */
-		public volatile java.util.function.Predicate<String> instrumentOverride = null;
-
-		private final java.util.concurrent.atomic.AtomicInteger generation = new java.util.concurrent.atomic.AtomicInteger();
-
-		int gen() {
-			return generation.get();
-		}
-
-		/** 配置变更调用 → 已接管缓冲在下一次上传/显式重整形时换新代际结果。 */
-		public void bump() {
-			generation.incrementAndGet();
-		}
+	/** 当前配置（M1：NoteGTConfig.SETTINGS；改值 → bump → 过期缓冲重整形）。 */
+	private static DspSettings cfg() {
+		return NoteGTConfig.SETTINGS;
 	}
-
-	public static final Config CONFIG = new Config();
 
 	/** 开发验证：首整形时把 原始/整形 缓冲转储为 float32 WAV（离线核对用，正式发布前移除）。 */
 	static final boolean DEV_DUMP = true;
@@ -132,7 +117,7 @@ public final class NoteDSPRuntime {
 		synchronized (STATES) {
 			st = STATES.get(buf);
 		}
-		if (st == null || st.lastAppliedGen == CONFIG.gen()) {
+		if (st == null || st.lastAppliedGen == cfg().gen()) {
 			return;
 		}
 		try {
@@ -156,11 +141,22 @@ public final class NoteDSPRuntime {
 		}
 	}
 
-	/** 配置变更 → 全部已接管缓冲从原始 PCM 重整形换入（热生效，下一音符起新音色）。 */
+	/** 配置变更（全局：总开关/延音上限/L1 参数）→ 全部已接管缓冲重整形（= onInstrumentChanged(null)）。 */
 	public static void onConfigChanged() {
-		CONFIG.bump();
+		onInstrumentChanged(null);
+	}
+
+	/**
+	 * 单件（或全局）配置变更 → 从原始 PCM 重整形换入（热生效，下一音符起新音色）。
+	 * @param instrument 乐器名；null = 全部已接管缓冲。
+	 */
+	public static void onInstrumentChanged(String instrument) {
+		cfg().bump();
 		synchronized (STATES) {
 			for (Map.Entry<SoundBuffer, State> e : STATES.entrySet()) {
+				if (instrument != null && !e.getValue().instrument.equals(instrument)) {
+					continue;
+				}
 				try {
 					applyConfig(e.getValue(), (SoundBufferAccess) e.getKey());
 				} catch (Throwable t) {
@@ -168,12 +164,13 @@ public final class NoteDSPRuntime {
 				}
 			}
 		}
-		NoteGTMod.LOGGER.info("NoteGT DSP: 参数热重整形完成（{} 件）", STATES.size());
+		NoteGTMod.LOGGER.info("NoteGT DSP: 参数热重整形完成（{}，影响 {} 件）",
+				instrument == null ? "全局" : instrument, STATES.size());
 	}
 
 	private static boolean l0On(String instrument) {
-		return CONFIG.l0Enabled
-				&& (CONFIG.instrumentOverride == null || CONFIG.instrumentOverride.test(instrument));
+		DspSettings.Instrument in = cfg().instrument(instrument);
+		return cfg().l0Master && in != null && in.l0;
 	}
 
 	/**
@@ -181,20 +178,22 @@ public final class NoteDSPRuntime {
 	 * 换入 = discardAlBuffer（丢已上传 AL 缓冲）+ 换 data + hasAlBuffer=false → 下次 getAlBuffer 重上传。
 	 */
 	private static void applyConfig(State st, SoundBufferAccess acc) {
-		int g = CONFIG.gen();
+		int g = cfg().gen();
 		if (st.lastAppliedGen == g) {
 			return;
 		}
-		NoteInstruments.Params p = NoteInstruments.byNotePath(NoteInstruments.notePath(st.instrument));
+		DspSettings.Instrument is = cfg().instrument(st.instrument);
 		float[] out;
-		if (l0On(st.instrument) && p != null) {
+		if (l0On(st.instrument) && is != null) {
 			out = L0Shaper.shape(st.original, (int) st.format.getSampleRate(),
-					new L0Shaper.ShapeParams(p.lenMs(), p.fadeInMs(), p.fadeOutMs(), p.flatten())).samples;
+					new L0Shaper.ShapeParams(is.lenMs, is.fadeInMs, is.fadeOutMs, is.flatten)).samples;
 			st.l0Applied = true;
 		} else {
 			out = st.original.clone();
 			st.l0Applied = false;
 		}
+		// 整体振幅（M1：0–200%，100 = 恒等零拷贝；对整形与原版原样输出都生效）
+		out = DspGain.scale(out, is == null ? 100.0 : is.gainPct);
 		acc.notegt$discardAlBuffer();
 		acc.notegt$setHasAlBuffer(false);
 		acc.notegt$setData(toPcm(out, st.format.getChannels()));
