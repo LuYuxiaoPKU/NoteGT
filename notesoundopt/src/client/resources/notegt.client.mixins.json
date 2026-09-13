@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.notegt.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"NoteGTClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,133 @@
+﻿
+WeighedSoundEvents (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.sounds
+Class WeighedSoundEvents
+java.lang.Object
+net.minecraft.client.sounds.WeighedSoundEvents
+All Implemented Interfaces:
+Weighted < Sound >
+public class WeighedSoundEvents
+extends Object
+implements Weighted < Sound >
+The WeighedSoundEvents class represents a collection of weighted sound events.
+It implements the Weighted interface to provide weighted selection of sounds.
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final List < Weighted < Sound >>
+list
+&nbsp;
+private final Component
+subtitle
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+WeighedSoundEvents ( ResourceLocation &nbsp;location,
+String &nbsp;subtitleKey)
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+void
+addSound ( Weighted < Sound >&nbsp;accessor)
+Adds a sound event to the collection.
+Sound
+getSound ( RandomSource &nbsp;randomSource)
+Retrieves a randomly selected sound from the sound events based on their weights.
+Component
+getSubtitle ()
+&nbsp;
+int
+getWeight ()
+&nbsp;
+void
+preloadIfRequired ( SoundEngine &nbsp;engine)
+Preloads the sound events into the sound engine if required.
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Field Details
+list
+private final &nbsp; List < Weighted < Sound >> &nbsp; list
+subtitle
+@Nullable
+private final &nbsp; Component &nbsp; subtitle
+Constructor Details
+WeighedSoundEvents
+public &nbsp; WeighedSoundEvents ( ResourceLocation &nbsp;location,
+@Nullable
+String &nbsp;subtitleKey)
+Parameters:
+location - The resource location of the sound events
+subtitleKey - The key for the subtitle translation component, or null if
+no subtitle is provided
+Method Details
+getWeight
+public &nbsp; int &nbsp; getWeight ()
+Specified by:
+getWeight &nbsp;in interface&nbsp; Weighted < Sound >
+getSound
+public &nbsp; Sound &nbsp; getSound ( RandomSource &nbsp;randomSource)
+Retrieves a randomly selected sound from the sound events based on their weights.
+The selection is performed using the provided random source.
+Specified by:
+getSound &nbsp;in interface&nbsp; Weighted < Sound >
+Parameters:
+randomSource - the random source used for sound selection
+Returns:
+A randomly selected sound from the sound events
+The random source used for sound selection
+addSound
+public &nbsp; void &nbsp; addSound ( Weighted < Sound >&nbsp;accessor)
+Adds a sound event to the collection.
+Parameters:
+accessor - The weighted accessor for the sound event to be added
+getSubtitle
+@Nullable
+public &nbsp; Component &nbsp; getSubtitle ()
+preloadIfRequired
+public &nbsp; void &nbsp; preloadIfRequired ( SoundEngine &nbsp;engine)
+Preloads the sound events into the sound engine if required.
+This method is called to preload the sounds associated with the sound events into the sound engine, ensuring they are ready for playback.
+Specified by:
+preloadIfRequired &nbsp;in interface&nbsp; Weighted < Sound >
+Parameters:
+engine - The sound engine used for sound preloading
+

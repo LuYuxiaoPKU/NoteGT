@@ -1,0 +1,25 @@
+﻿=== 1.21.11 : 22 note_block entries ===
+block.note_block.banjo                                  {"sounds":["note/banjo"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.basedrum                               {"sounds":["note/bd"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.bass                                   {"sounds":["note/bassattack"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.bell                                   {"sounds":["note/bell"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.bit                                    {"sounds":["note/bit"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.chime                                  {"sounds":["note/icechime"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.cow_bell                               {"sounds":["note/cow_bell"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.didgeridoo                             {"sounds":["note/didgeridoo"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.flute                                  {"sounds":["note/flute"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.guitar                                 {"sounds":["note/guitar"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.harp                                   {"sounds":["note/harp2"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.hat                                    {"sounds":["note/hat"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.imitate.creeper                        {"sounds":[{"name":"entity.creeper.primed","pitch":0.5,"type":"event"}],"subtitle":"subtitles.entity.creeper.primed"}
+block.note_block.imitate.ender_dragon                   {"sounds":[{"name":"entity.ender_dragon.ambient","type":"event"}],"subtitle":"subtitles.entity.ender_dragon.ambient"}
+block.note_block.imitate.piglin                         {"sounds":[{"name":"entity.piglin.ambient","type":"event"}],"subtitle":"subtitles.entity.piglin.ambient"}
+block.note_block.imitate.skeleton                       {"sounds":[{"name":"entity.skeleton.ambient","type":"event"}],"subtitle":"subtitles.entity.skeleton.ambient"}
+block.note_block.imitate.wither_skeleton                {"sounds":[{"name":"entity.wither_skeleton.ambient","type":"event"}],"subtitle":"subtitles.entity.wither_skeleton.ambient"}
+block.note_block.imitate.zombie                         {"sounds":[{"name":"entity.zombie.ambient","type":"event"}],"subtitle":"subtitles.entity.zombie.ambient"}
+block.note_block.iron_xylophone                         {"sounds":["note/iron_xylophone"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.pling                                  {"sounds":["note/pling"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.snare                                  {"sounds":["note/snare"],"subtitle":"subtitles.block.note_block.note"}
+block.note_block.xylophone                              {"sounds":["note/xylobone"],"subtitle":"subtitles.block.note_block.note"}
+
+total entries: 1837

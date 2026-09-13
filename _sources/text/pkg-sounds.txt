@@ -1,0 +1,80 @@
+﻿
+net.minecraft.client.sounds (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Package:
+Description
+Related Packages
+Classes and Interfaces
+Package:&nbsp;
+Description&nbsp;|&nbsp;
+Related Packages &nbsp;|&nbsp;
+Classes and Interfaces
+SEARCH
+Package net.minecraft.client.sounds
+@ParametersAreNonnullByDefault
+package net.minecraft.client.sounds
+Related Packages
+Package
+Description
+net.minecraft.client
+&nbsp;
+All Classes and Interfaces Interfaces Classes Enum Classes Record Classes
+Class
+Description
+AudioStream
+&nbsp;
+ChannelAccess
+The ChannelAccess class provides access to channels for playing audio data using a given library and executor.
+ChunkedSampleByteBuf
+&nbsp;
+FiniteAudioStream
+&nbsp;
+FloatSampleSource
+&nbsp;
+JOrbisAudioStream
+&nbsp;
+LoopingAudioStream
+The LoopingAudioStream class provides an AudioStream that loops indefinitely over the provided InputStream.
+LoopingAudioStream.AudioStreamProvider
+A functional interface for providing an AudioStream from an InputStream .
+LoopingAudioStream.NoCloseBuffer
+A FilterInputStream that does not close the underlying InputStream .
+MusicInfo
+&nbsp;
+MusicManager
+The MusicManager class manages the playing of music in Minecraft.
+MusicManager.MusicFrequency
+&nbsp;
+SoundBufferLibrary
+The SoundBufferLibrary class provides a cache containing instances of SoundBuffer and AudioStream for use in Minecraft sound handling.
+SoundEngine
+The SoundEngine class handles the management and playback of sounds in the game.
+SoundEngine.DeviceCheckState
+&nbsp;
+SoundEngine.PlayResult
+&nbsp;
+SoundEngineExecutor
+The SoundEngineExecutor class is responsible for executing sound-related tasks in a separate thread.
+SoundEventListener
+The SoundEventListener interface defines a listener for sound events.
+SoundManager
+The SoundManager class is responsible for managing sound events and playing sounds.
+SoundManager.Preparations
+The Preparations class represents the prepared sound event registrations and caches for applying to the sound manager.
+WeighedSoundEvents
+The WeighedSoundEvents class represents a collection of weighted sound events.
+Weighted <T>
+The Weighted interface represents an element with a weight in a weighted collection.
+

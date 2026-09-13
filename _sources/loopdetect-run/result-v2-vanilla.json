@@ -1,0 +1,271 @@
+﻿[
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\banjo.ogg",
+    "ok": false,
+    "reason": "循环长度过短（<80ms），周期性可闻"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\bassattack.ogg",
+    "ok": true,
+    "f0": 92.2158,
+    "attackEnd": 4571,
+    "loopStart": 4571,
+    "loopEnd": 10802,
+    "loopSamples": 6231,
+    "periods": 13,
+    "loopMs": 141.29,
+    "attackMs": 103.65,
+    "loopRateHz": 7.08,
+    "ncc": 0.9532,
+    "loopRippleDb": 0.55,
+    "longRippleDb": 0.13,
+    "modDbc": -57.01,
+    "seamRatio": 1.48,
+    "seamFundRatio": 175.34,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.05,
+      "1.0x": 0.04,
+      "2.0x": 0.09
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\bd.ogg",
+    "ok": false,
+    "reason": "起音后的可用区过短"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\bell.ogg",
+    "ok": true,
+    "f0": 1479.0116,
+    "attackEnd": 668,
+    "loopStart": 668,
+    "loopEnd": 9333,
+    "loopSamples": 8665,
+    "periods": 267,
+    "loopMs": 180.52,
+    "attackMs": 13.92,
+    "loopRateHz": 5.54,
+    "ncc": 0.9599,
+    "loopRippleDb": 1.44,
+    "longRippleDb": 1.08,
+    "modDbc": -61.56,
+    "seamRatio": 0.83,
+    "seamFundRatio": 2.04,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 1.05,
+      "1.0x": 1.08,
+      "2.0x": 1.13
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\bit.ogg",
+    "ok": true,
+    "f0": 369.9011,
+    "attackEnd": 928,
+    "loopStart": 928,
+    "loopEnd": 7674,
+    "loopSamples": 6746,
+    "periods": 52,
+    "loopMs": 140.54,
+    "attackMs": 19.33,
+    "loopRateHz": 7.12,
+    "ncc": 0.9575,
+    "loopRippleDb": 0.63,
+    "longRippleDb": 0.15,
+    "modDbc": -54.58,
+    "seamRatio": 1.2,
+    "seamFundRatio": 30.1,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.19,
+      "1.0x": 0.12,
+      "2.0x": 0.17
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\cow_bell.ogg",
+    "ok": false,
+    "reason": "未找到满足相关度阈值的循环长度（可能非谐性过强）"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\didgeridoo.ogg",
+    "ok": true,
+    "f0": 92.5158,
+    "attackEnd": 7066,
+    "loopStart": 7066,
+    "loopEnd": 12294,
+    "loopSamples": 5228,
+    "periods": 10,
+    "loopMs": 108.92,
+    "attackMs": 147.21,
+    "loopRateHz": 9.18,
+    "ncc": 0.9526,
+    "loopRippleDb": 1.02,
+    "longRippleDb": 0.69,
+    "modDbc": -68.59,
+    "seamRatio": 0.92,
+    "seamFundRatio": 56.74,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.04,
+      "1.0x": 0.08,
+      "2.0x": 0.08
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\flute.ogg",
+    "ok": true,
+    "f0": 740.06,
+    "attackEnd": 3129,
+    "loopStart": 3129,
+    "loopEnd": 14821,
+    "loopSamples": 11692,
+    "periods": 180,
+    "loopMs": 243.58,
+    "attackMs": 65.19,
+    "loopRateHz": 4.11,
+    "ncc": 0.9534,
+    "loopRippleDb": 4.52,
+    "longRippleDb": 2.96,
+    "modDbc": -35.05,
+    "seamRatio": 0.38,
+    "seamFundRatio": 5.02,
+    "f0Source": "fundamental",
+    "verdict": "WARN",
+    "pitchCheck": {
+      "0.5x": 2.03,
+      "1.0x": 2.28,
+      "2.0x": 2.6
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\guitar.ogg",
+    "ok": false,
+    "reason": "循环长度过短（<80ms），周期性可闻"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\harp2.ogg",
+    "ok": true,
+    "f0": 370.2322,
+    "attackEnd": 1291,
+    "loopStart": 1291,
+    "loopEnd": 12967,
+    "loopSamples": 11676,
+    "periods": 90,
+    "loopMs": 243.25,
+    "attackMs": 26.9,
+    "loopRateHz": 4.11,
+    "ncc": 0.9796,
+    "loopRippleDb": 1.08,
+    "longRippleDb": 0.22,
+    "modDbc": -55.96,
+    "seamRatio": 0.75,
+    "seamFundRatio": 0.95,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.09,
+      "1.0x": 0.11,
+      "2.0x": 0.11
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\hat.ogg",
+    "ok": false,
+    "reason": "起音后的可用区过短"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\icechime.ogg",
+    "ok": true,
+    "f0": 1472.6181,
+    "attackEnd": 16739,
+    "loopStart": 16739,
+    "loopEnd": 29787,
+    "loopSamples": 13048,
+    "periods": 400,
+    "loopMs": 271.83,
+    "attackMs": 348.73,
+    "loopRateHz": 3.68,
+    "ncc": 0.9507,
+    "loopRippleDb": 4.71,
+    "longRippleDb": 11.66,
+    "modDbc": -34.3,
+    "seamRatio": 0.1,
+    "seamFundRatio": 0.42,
+    "f0Source": "fundamental",
+    "verdict": "FAIL",
+    "pitchCheck": {
+      "0.5x": 2.12,
+      "1.0x": 2.65,
+      "2.0x": 3.08
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\iron_xylophone.ogg",
+    "ok": true,
+    "f0": 369.8823,
+    "attackEnd": 2780,
+    "loopStart": 2780,
+    "loopEnd": 13931,
+    "loopSamples": 11151,
+    "periods": 86,
+    "loopMs": 232.31,
+    "attackMs": 57.92,
+    "loopRateHz": 4.3,
+    "ncc": 0.9789,
+    "loopRippleDb": 0.61,
+    "longRippleDb": 0.17,
+    "modDbc": -55.18,
+    "seamRatio": 0.8,
+    "seamFundRatio": 7.32,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.14,
+      "1.0x": 0.15,
+      "2.0x": 0.18
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\pling.ogg",
+    "ok": true,
+    "f0": 370.0998,
+    "attackEnd": 705,
+    "loopStart": 705,
+    "loopEnd": 13217,
+    "loopSamples": 12512,
+    "periods": 105,
+    "loopMs": 283.72,
+    "attackMs": 15.99,
+    "loopRateHz": 3.52,
+    "ncc": 0.9648,
+    "loopRippleDb": 0.81,
+    "longRippleDb": 0.1,
+    "modDbc": -60.82,
+    "seamRatio": 0.96,
+    "seamFundRatio": 23.57,
+    "f0Source": "fundamental",
+    "verdict": "PASS",
+    "pitchCheck": {
+      "0.5x": 0.07,
+      "1.0x": 0.11,
+      "2.0x": 0.12
+    }
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\snare.ogg",
+    "ok": false,
+    "reason": "起音后的可用区过短"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-12111\\xylobone.ogg",
+    "ok": false,
+    "reason": "循环长度过短（<80ms），周期性可闻"
+  }
+]

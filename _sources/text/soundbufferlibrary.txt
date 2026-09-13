@@ -1,0 +1,115 @@
+﻿
+SoundBufferLibrary (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.sounds
+Class SoundBufferLibrary
+java.lang.Object
+net.minecraft.client.sounds.SoundBufferLibrary
+public class SoundBufferLibrary
+extends Object
+The SoundBufferLibrary class provides a cache containing instances of SoundBuffer and AudioStream for use in Minecraft sound handling.
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final Map < ResourceLocation , CompletableFuture < SoundBuffer >>
+cache
+&nbsp;
+private final ResourceProvider
+resourceManager
+The ResourceProvider used for loading sound resources.
+Constructor Summary
+Constructors
+Constructor
+Description
+SoundBufferLibrary ( ResourceProvider &nbsp;resourceManager)
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+void
+clear ()
+&nbsp;
+CompletableFuture < SoundBuffer >
+getCompleteBuffer ( ResourceLocation &nbsp;soundID)
+Returns Returns a CompletableFuture containing the complete SoundBuffer . The SoundBuffer is loaded asynchronously and cached..
+CompletableFuture < AudioStream >
+getStream ( ResourceLocation &nbsp;resourceLocation,
+boolean&nbsp;isWrapper)
+Returns Returns a CompletableFuture containing the AudioStream . The AudioStream is loaded asynchronously..
+CompletableFuture <?>
+preload ( Collection < Sound >&nbsp;sounds)
+Preloads the SoundBuffer objects for the specified collection of sounds.
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Field Details
+resourceManager
+private final &nbsp; ResourceProvider &nbsp; resourceManager
+The ResourceProvider used for loading sound resources.
+cache
+private final &nbsp; Map < ResourceLocation , CompletableFuture < SoundBuffer >> &nbsp; cache
+Constructor Details
+SoundBufferLibrary
+public &nbsp; SoundBufferLibrary ( ResourceProvider &nbsp;resourceManager)
+Method Details
+getCompleteBuffer
+public &nbsp; CompletableFuture < SoundBuffer > &nbsp; getCompleteBuffer ( ResourceLocation &nbsp;soundID)
+Returns Returns a CompletableFuture containing the complete SoundBuffer . The SoundBuffer is loaded asynchronously and cached..
+Parameters:
+soundID - the ResourceLocation of the sound
+Returns:
+Returns a CompletableFuture containing the complete SoundBuffer . The SoundBuffer is loaded asynchronously and cached.
+getStream
+public &nbsp; CompletableFuture < AudioStream > &nbsp; getStream ( ResourceLocation &nbsp;resourceLocation,
+boolean&nbsp;isWrapper)
+Returns Returns a CompletableFuture containing the AudioStream . The AudioStream is loaded asynchronously..
+Parameters:
+resourceLocation - the ResourceLocation of the sound
+isWrapper - whether the AudioStream should be a invalid input: '{@'
+linkplain LoopingAudioStream}
+Returns:
+Returns a CompletableFuture containing the AudioStream . The AudioStream is loaded asynchronously.
+clear
+public &nbsp; void &nbsp; clear ()
+preload
+public &nbsp; CompletableFuture <?> &nbsp; preload ( Collection < Sound >&nbsp;sounds)
+Preloads the SoundBuffer objects for the specified collection of sounds.
+Parameters:
+sounds - the collection of sounds to preload
+Returns:
+a CompletableFuture representing the completion of the preload operation
+

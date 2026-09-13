@@ -1,0 +1,347 @@
+[
+ {
+  "name": "harp",
+  "sweep": [
+   {
+    "name": "harp",
+    "reg": "F#3",
+    "len_ms": 30.0,
+    "fade_ms": 7.48,
+    "f0_file": 370.1911,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 50.96,
+       "mod_dbc": -18.31,
+       "perperiod_db": 39.13
+      },
+      "shaped": {
+       "pp_db": 91.32,
+       "mod_dbc": -6.23,
+       "perperiod_db": 227.75
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 51.09,
+       "mod_dbc": -18.0
+      },
+      "shaped": {
+       "pp_db": 95.82,
+       "mod_dbc": -6.22
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 51.17,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 100.41,
+       "mod_dbc": -6.21
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 51.07,
+       "mod_dbc": -18.01
+      },
+      "shaped": {
+       "pp_db": 104.94,
+       "mod_dbc": -6.21
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 51.16,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 109.5,
+       "mod_dbc": -6.2
+      }
+     }
+    },
+    "worst_mod": -6.2,
+    "worst_pp": 109.5
+   },
+   {
+    "name": "harp",
+    "reg": "F#3",
+    "len_ms": 45.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.1911,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 50.96,
+       "mod_dbc": -18.31,
+       "perperiod_db": 39.13
+      },
+      "shaped": {
+       "pp_db": 123.27,
+       "mod_dbc": -9.51,
+       "perperiod_db": 85.21
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 51.09,
+       "mod_dbc": -18.0
+      },
+      "shaped": {
+       "pp_db": 127.77,
+       "mod_dbc": -9.5
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 51.17,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 132.36,
+       "mod_dbc": -9.49
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 51.07,
+       "mod_dbc": -18.01
+      },
+      "shaped": {
+       "pp_db": 136.88,
+       "mod_dbc": -9.48
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 51.16,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 141.45,
+       "mod_dbc": -9.48
+      }
+     }
+    },
+    "worst_mod": -9.48,
+    "worst_pp": 141.45
+   },
+   {
+    "name": "harp",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.1911,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 50.96,
+       "mod_dbc": -18.31,
+       "perperiod_db": 39.13
+      },
+      "shaped": {
+       "pp_db": 1.92,
+       "mod_dbc": -37.17,
+       "perperiod_db": 1.91
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 51.09,
+       "mod_dbc": -18.0
+      },
+      "shaped": {
+       "pp_db": 1.97,
+       "mod_dbc": -36.73
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 51.17,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 1.95,
+       "mod_dbc": -36.83
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 51.07,
+       "mod_dbc": -18.01
+      },
+      "shaped": {
+       "pp_db": 1.86,
+       "mod_dbc": -37.37
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 51.16,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 1.87,
+       "mod_dbc": -37.3
+      }
+     }
+    },
+    "worst_mod": -36.73,
+    "worst_pp": 1.97
+   },
+   {
+    "name": "harp",
+    "reg": "F#3",
+    "len_ms": 80.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.1911,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 50.96,
+       "mod_dbc": -18.31,
+       "perperiod_db": 39.13
+      },
+      "shaped": {
+       "pp_db": 13.02,
+       "mod_dbc": -14.05,
+       "perperiod_db": 11.89
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 51.09,
+       "mod_dbc": -18.0
+      },
+      "shaped": {
+       "pp_db": 13.11,
+       "mod_dbc": -13.99
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 51.17,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 13.31,
+       "mod_dbc": -13.84
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 51.07,
+       "mod_dbc": -18.01
+      },
+      "shaped": {
+       "pp_db": 13.09,
+       "mod_dbc": -14.0
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 51.16,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 13.05,
+       "mod_dbc": -14.02
+      }
+     }
+    },
+    "worst_mod": -13.84,
+    "worst_pp": 13.31
+   },
+   {
+    "name": "harp",
+    "reg": "F#3",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.1911,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 50.96,
+       "mod_dbc": -18.31,
+       "perperiod_db": 39.13
+      },
+      "shaped": {
+       "pp_db": 14.41,
+       "mod_dbc": -9.9,
+       "perperiod_db": 14.52
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 51.09,
+       "mod_dbc": -18.0
+      },
+      "shaped": {
+       "pp_db": 15.06,
+       "mod_dbc": -9.57
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 51.17,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 15.11,
+       "mod_dbc": -9.55
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 51.07,
+       "mod_dbc": -18.01
+      },
+      "shaped": {
+       "pp_db": 14.68,
+       "mod_dbc": -9.76
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 51.16,
+       "mod_dbc": -17.95
+      },
+      "shaped": {
+       "pp_db": 14.86,
+       "mod_dbc": -9.66
+      }
+     }
+    },
+    "worst_mod": -9.55,
+    "worst_pp": 15.11
+   }
+  ]
+ }
+]

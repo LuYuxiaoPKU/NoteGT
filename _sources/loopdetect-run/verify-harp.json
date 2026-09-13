@@ -1,0 +1,68 @@
+[
+ {
+  "name": "harp",
+  "reg": "F#3",
+  "len_ms": 60.0,
+  "fade_ms": 8.0,
+  "f0_file": 370.1911,
+  "notes": {
+   "0": {
+    "p": 0.5,
+    "naive": {
+     "pp_db": 50.96,
+     "mod_dbc": -18.31,
+     "perperiod_db": 39.13
+    },
+    "shaped": {
+     "pp_db": 1.92,
+     "mod_dbc": -37.17,
+     "perperiod_db": 1.91
+    }
+   },
+   "6": {
+    "p": 0.7071,
+    "naive": {
+     "pp_db": 51.09,
+     "mod_dbc": -18.0
+    },
+    "shaped": {
+     "pp_db": 1.97,
+     "mod_dbc": -36.73
+    }
+   },
+   "12": {
+    "p": 1.0,
+    "naive": {
+     "pp_db": 51.17,
+     "mod_dbc": -17.95
+    },
+    "shaped": {
+     "pp_db": 1.95,
+     "mod_dbc": -36.83
+    }
+   },
+   "18": {
+    "p": 1.4142,
+    "naive": {
+     "pp_db": 51.07,
+     "mod_dbc": -18.01
+    },
+    "shaped": {
+     "pp_db": 1.86,
+     "mod_dbc": -37.37
+    }
+   },
+   "24": {
+    "p": 2.0,
+    "naive": {
+     "pp_db": 51.16,
+     "mod_dbc": -17.95
+    },
+    "shaped": {
+     "pp_db": 1.87,
+     "mod_dbc": -37.3
+    }
+   }
+  }
+ }
+]

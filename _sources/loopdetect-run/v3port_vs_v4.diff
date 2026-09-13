@@ -1,0 +1,190 @@
+--- v3port
++++ v4
+@@ -155,13 +155,7 @@
+ 
+ 
+ def seam_ratio_lf(loop, f0, cutoff_mul=1.5):
+-    """低频(基频)接缝连续性：LP 到 1.5*f0 后再量跳变  [DEPRECATED 第四轮]
+-
+-    两个独立缺陷（Hy4 2026-08 第四轮诊断）：
+-    1) filtfilt 默认 padlen=9 样本，而该滤波器冲激响应长达数百样本 → 边缘瞬态未被吸收，
+-       完美周期循环也给出 61~224 的比值（∝ 1/f0，量的是滤波器病态，不是接缝）；
+-    2) 低通把咔哒抹成斜坡 → 测不到跳变；半周期错位反而"更好"。
+-    保留仅为向后兼容，判读请改用 seam_click_db + seam_phase_deg。
++    """低频(基频)接缝连续性：LP 到 1.5*f0 后再量跳变
+ 
+     seam_ratio 用 5ms 局部差分作参照，会被高频内容掩盖；
+     对低频乐器必须单独看基频是否连续。
+@@ -182,30 +176,34 @@
+     return float(abs(y[0] - y[-1]) / max(np.mean(loc), 1e-12))
+ 
+ 
+-def seam_click_db(loop):
+-    """未滤波：接缝跳变 / 信号 RMS。答'有没有咔哒'。（Hy4 第四轮新增）
+-    判读：<= -40 dB 安全；-30 边界；>= -25 可闻（masking 启发值，非实测听阈）。
+-    """
+-    rms = float(np.sqrt(np.mean(loop**2)))
+-    return 20*np.log10(max(abs(loop[0]-loop[-1]),1e-12)/max(rms,1e-12))
+-
+-
+-def seam_phase_deg(loop, f0, reps=7):
+-    """循环平铺后低通+Hilbert 相位：答'基频在接缝处连不连续'。（Hy4 第四轮新增）
+-    平铺消除 filtfilt 边缘瞬态（修复 seam_ratio_lf 的 padlen 病态）。
+-    判读：< 10° 好；> 45° 需修（接缝处基频凹陷）。
+-    """
+-    from scipy.signal import butter, sosfiltfilt, hilbert
+-    wc = min(1.5*f0/(SR/2), 0.9)
+-    if wc <= 0:
++def period_err_deg(f0, L):
++    """循环长度偏离整数周期的角度误差 —— 直接量周期性精度
++
++    比从接缝反推可靠：启用循环点交叉淡化后 lo[0]=src[L]、lo[-1]=src[L-1]
++    恒为源信号相邻样本，接缝跳变与相位差都会结构性失效
++    （永远读 ~理论上限 / ~0 deg），测不出周期性误差。
++    """
++    if f0 <= 0 or L <= 0:
+         return float('nan')
+-    sos = butter(4, wc, 'low', output='sos')
+-    n = len(loop)
+-    Y = sosfiltfilt(sos, np.tile(loop, reps))     # 平铺消除边缘瞬态
+-    y = Y[(reps//2)*n:(reps//2+1)*n]
+-    ph = np.unwrap(np.angle(hilbert(y)))
+-    d = ph[0] - ph[-1] - 2*np.pi*f0/SR
+-    return np.degrees((d+np.pi) % (2*np.pi) - np.pi)
++    frac = (f0 * L / SR) % 1.0
++    frac = min(frac, 1.0 - frac)
++    return float(frac * 360.0)
++
++
++def fade_quality(src_head, src_tail):
++    """被交叉淡化混合的两段：同相程度 + 混合后电平塌陷
++
++    ncc 低 / dip 大 => 淡化区出现随循环率重复的凹陷（真实可闻），
++    这是启用淡化后唯一还能反映周期性误差的指标。
++    """
++    ncc_v = ncc(src_head, src_tail)
++    r_head = float(np.sqrt(np.mean(src_head ** 2)))
++    r_tail = float(np.sqrt(np.mean(src_tail ** 2)))
++    m = 0.5 * (src_head + src_tail)          # 淡化中点 r = 0.5
++    r_mid = float(np.sqrt(np.mean(m ** 2)))
++    r_steady = max(0.5 * (r_head + r_tail), 1e-12)
++    dip = 20.0 * np.log10(max(r_mid, 1e-12) / r_steady)
++    return float(ncc_v), float(dip)
+ 
+ 
+ # ─────────────────────── 阶段③④⑤ 循环点搜索 ───────────────────────
+@@ -298,6 +296,32 @@
+     return lo
+ 
+ 
++def build_loop_diag(x, a, L, k, f0, fwin=0.030, xfade=0.005):
++    """与 build_loop 同参、同输出，额外返回淡化区诊断（不改变音频）"""
++    a = int(a); L = int(L)
++    Xs = int(round(xfade * SR))
++    E = renv(x, fwin)
++    need = a + L + Xs
++    if need > len(x):                              # 尾部不够，退化为不淡化
++        Xs = max(0, len(x) - a - L)
++        need = a + L + Xs
++    seg = x[a:need]
++    ef = np.maximum(E[a:need], 1e-12)
++    src = seg / ef * np.median(ef)
++    lo = src[:L].copy()
++    if Xs > 0:
++        r = np.linspace(0, 1, Xs)
++        lo[:Xs] = src[:Xs] * r + src[L:L + Xs] * (1 - r)
++        fncc, fdip = fade_quality(src[:Xs], src[L:L + Xs])
++    else:
++        fncc, fdip = float('nan'), float('nan')
++    return lo, dict(
++        xfadeSamples=Xs,
++        fadeNcc=round(fncc, 4) if fncc == fncc else None,
++        fadeDipDb=round(fdip, 2) if fdip == fdip else None,
++        periodErrDeg=round(period_err_deg(f0, L), 2))
++
++
+ # ──────────────────────────── 渲染与度量 ────────────────────────────
+ def render(x, a, loop, total=1.0, rel=0.10, cf=0.035):
+     """attack(原样) → crossfade → loop → release"""
+@@ -360,6 +384,33 @@
+     return 20 * np.log10(r.max() / max(r.min(), 1e-12))
+ 
+ 
++def _verdict(sm, lg, md, L, diag):
++    """结果导向验收：与 NCC 搜索阈值解耦
++
++    接缝放行交给 periodErrDeg / fadeNcc / fadeDipDb。
++    seam_click_db 与 seamPhaseDeg 在启用循环点淡化后结构性失效，
++    只用于排序，不参与判定。
++    """
++    def bad(v):
++        return v is not None and v == v
++    perr = diag.get('periodErrDeg')
++    fncc = diag.get('fadeNcc')
++    fdip = diag.get('fadeDipDb')
++    if bad(perr) and perr > 10.0:
++        return 'FAIL'
++    if bad(fncc) and fncc < 0.95:
++        return 'FAIL'
++    if bad(fdip) and fdip < -1.0:
++        return 'FAIL'
++    if L < 0.120 * SR:                    # 循环率 > 8.3 Hz，周期性风险
++        return 'FAIL'
++    if lg < 2.0 and md < -40:
++        return 'PASS'
++    if lg < 4.0:
++        return 'WARN'
++    return 'FAIL'
++
++
+ # ──────────────────────────── 主流程 ────────────────────────────
+ def analyze(path, args):
+     try:
+@@ -377,19 +428,19 @@
+         return dict(file=path, ok=False, reason=why)
+ 
+     a, L, k, f0 = b['a'], b['L'], b['k'], b['f0']
+-    loop = build_loop(x, a, L, k, f0, xfade=args.xfade)
+-    # 自适应兜底：接缝不达标就加大循环点淡化（第四轮修复：保留最优而非最后一个，
+-    # 仅在真正改善 sm < best_sm - 0.05 时替换，避免无改善时留下额外音色涂抹）
++    loop, diag = build_loop_diag(x, a, L, k, f0, xfade=args.xfade)
++    # keep-best 自适应淡化：仅在真正改善时才替换
++    # （旧实现无条件保留最后一个候选，40ms 无改善也会留下额外音色涂抹）
+     best_sm = seam_ratio(loop)
+     for xf in (0.010, 0.020, 0.040):
+         if best_sm < 2.0:
+             break
+-        alt = build_loop(x, a, L, k, f0, xfade=xf)
+-        if len(alt) == len(loop):
+-            alt_sm = seam_ratio(alt)
+-            if alt_sm < best_sm - 0.05:
+-                loop = alt
+-                best_sm = alt_sm
++        alt, adiag = build_loop_diag(x, a, L, k, f0, xfade=xf)
++        if len(alt) != len(loop):
++            continue
++        sm = seam_ratio(alt)
++        if sm < best_sm - 0.05:
++            loop, diag, best_sm = alt, adiag, sm
+     lp, lg, md, sm, smlf = metrics(x, a, loop, k, f0, b['rate'], args.total)
+ 
+     res = dict(file=path, ok=True,
+@@ -404,12 +455,13 @@
+                longRippleDb=round(lg, 2),
+                modDbc=round(md, 2),
+                seamRatio=round(sm, 2),
+-               seamFundRatio=round(smlf, 2) if smlf == smlf else None,  # deprecated（第四轮，仅向后兼容）
+-                seamClickDb=round(seam_click_db(loop), 2),
+-                seamPhaseDeg=round(seam_phase_deg(loop, f0), 2) if f0 > 0 else None,
++               seamFundRatio=round(smlf, 2) if smlf == smlf else None,
++               periodErrDeg=diag['periodErrDeg'],
++               fadeNcc=diag['fadeNcc'],
++               fadeDipDb=diag['fadeDipDb'],
++               xfadeSamples=diag['xfadeSamples'],
+                f0Source=('fundamental' if b.get('subharmMult', 1) == 1 else 'subharmonic%d' % b.get('subharmMult', 1)),
+-               verdict='PASS' if (sm < 3 and lg < 2.0 and md < -40) else
+-                       ('WARN' if (sm < 3 and lg < 4.0) else 'FAIL'))
++               verdict=_verdict(sm, lg, md, L, diag))
+ 
+     res['pitchCheck'] = {f'{p}x': round(verify_pitch(loop, k, f0, b['rate'], p), 2)
+                          for p in args.pitch}

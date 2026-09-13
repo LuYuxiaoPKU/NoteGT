@@ -1,0 +1,175 @@
+﻿
+SoundEvent (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.sounds
+Record Class SoundEvent
+java.lang.Object
+java.lang.Record
+net.minecraft.sounds.SoundEvent
+public record SoundEvent ( ResourceLocation &nbsp;location, Optional < Float >&nbsp;fixedRange)
+extends Record
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+static final com.mojang.serialization.Codec < Holder < SoundEvent >>
+CODEC
+&nbsp;
+static final com.mojang.serialization.Codec < SoundEvent >
+DIRECT_CODEC
+&nbsp;
+static final StreamCodec <io.netty.buffer.ByteBuf, SoundEvent >
+DIRECT_STREAM_CODEC
+&nbsp;
+private final Optional < Float >
+fixedRange
+The field for the fixedRange record component.
+private final ResourceLocation
+location
+The field for the location record component.
+static final StreamCodec < RegistryFriendlyByteBuf , Holder < SoundEvent >>
+STREAM_CODEC
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+SoundEvent ( ResourceLocation &nbsp;location,
+Optional < Float >&nbsp;fixedRange)
+Creates an instance of a SoundEvent record class.
+Method Summary
+All Methods Static Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+private static SoundEvent
+create ( ResourceLocation &nbsp;location,
+Optional < Float >&nbsp;range)
+&nbsp;
+static SoundEvent
+createFixedRangeEvent ( ResourceLocation &nbsp;location,
+float&nbsp;range)
+&nbsp;
+static SoundEvent
+createVariableRangeEvent ( ResourceLocation &nbsp;location)
+&nbsp;
+final boolean
+equals ( Object &nbsp;o)
+Indicates whether some other object is "equal to" this one.
+Optional < Float >
+fixedRange ()
+Returns the value of the fixedRange record component.
+float
+getRange (float&nbsp;volume)
+&nbsp;
+final int
+hashCode ()
+Returns a hash code value for this object.
+ResourceLocation
+location ()
+Returns the value of the location record component.
+final String
+toString ()
+Returns a string representation of this record class.
+Methods inherited from class&nbsp;java.lang. Object
+clone , finalize , getClass , notify , notifyAll , wait , wait , wait
+Field Details
+location
+private final &nbsp; ResourceLocation &nbsp; location
+The field for the location record component.
+fixedRange
+private final &nbsp; Optional < Float > &nbsp; fixedRange
+The field for the fixedRange record component.
+DIRECT_CODEC
+public static final &nbsp; com.mojang.serialization.Codec< SoundEvent > &nbsp; DIRECT_CODEC
+CODEC
+public static final &nbsp; com.mojang.serialization.Codec< Holder < SoundEvent >> &nbsp; CODEC
+DIRECT_STREAM_CODEC
+public static final &nbsp; StreamCodec <io.netty.buffer.ByteBuf, SoundEvent > &nbsp; DIRECT_STREAM_CODEC
+STREAM_CODEC
+public static final &nbsp; StreamCodec < RegistryFriendlyByteBuf , Holder < SoundEvent >> &nbsp; STREAM_CODEC
+Constructor Details
+SoundEvent
+public &nbsp; SoundEvent ( ResourceLocation &nbsp;location,
+Optional < Float >&nbsp;fixedRange)
+Creates an instance of a SoundEvent record class.
+Parameters:
+location - the value for the location record component
+fixedRange - the value for the fixedRange record component
+Method Details
+create
+private static &nbsp; SoundEvent &nbsp; create ( ResourceLocation &nbsp;location,
+Optional < Float >&nbsp;range)
+createVariableRangeEvent
+public static &nbsp; SoundEvent &nbsp; createVariableRangeEvent ( ResourceLocation &nbsp;location)
+createFixedRangeEvent
+public static &nbsp; SoundEvent &nbsp; createFixedRangeEvent ( ResourceLocation &nbsp;location,
+float&nbsp;range)
+getRange
+public &nbsp; float &nbsp; getRange (float&nbsp;volume)
+toString
+public final &nbsp; String &nbsp; toString ()
+Returns a string representation of this record class. The representation contains the name of the class, followed by the name and value of each of the record components.
+Specified by:
+toString &nbsp;in class&nbsp; Record
+Returns:
+a string representation of this object
+hashCode
+public final &nbsp; int &nbsp; hashCode ()
+Returns a hash code value for this object. The value is derived from the hash code of each of the record components.
+Specified by:
+hashCode &nbsp;in class&nbsp; Record
+Returns:
+a hash code value for this object
+equals
+public final &nbsp; boolean &nbsp; equals ( Object &nbsp;o)
+Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with Objects::equals(Object,Object) .
+Specified by:
+equals &nbsp;in class&nbsp; Record
+Parameters:
+o - the object with which to compare
+Returns:
+true if this object is the same as the o argument; false otherwise.
+location
+public &nbsp; ResourceLocation &nbsp; location ()
+Returns the value of the location record component.
+Returns:
+the value of the location record component
+fixedRange
+public &nbsp; Optional < Float > &nbsp; fixedRange ()
+Returns the value of the fixedRange record component.
+Returns:
+the value of the fixedRange record component
+

@@ -1,0 +1,463 @@
+[
+ {
+  "name": "didgeridoo",
+  "sweep": [
+   {
+    "name": "didgeridoo",
+    "reg": "F#1",
+    "len_ms": 40.0,
+    "fade_ms": 8.0,
+    "f0_file": 91.6619,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 63.25,
+       "mod_dbc": -30.71,
+       "perperiod_db": 39.01
+      },
+      "shaped": {
+       "pp_db": 70.61,
+       "mod_dbc": -9.86,
+       "perperiod_db": 14.21
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 63.1,
+       "mod_dbc": -29.54,
+       "perperiod_db": 37.87
+      },
+      "shaped": {
+       "pp_db": 75.11,
+       "mod_dbc": -9.86,
+       "perperiod_db": 23.64
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 63.0,
+       "mod_dbc": -29.22,
+       "perperiod_db": 39.39
+      },
+      "shaped": {
+       "pp_db": 79.69,
+       "mod_dbc": -9.84,
+       "perperiod_db": 29.63
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 63.03,
+       "mod_dbc": -29.55,
+       "perperiod_db": 41.76
+      },
+      "shaped": {
+       "pp_db": 84.21,
+       "mod_dbc": -9.83,
+       "perperiod_db": 224.25
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 62.95,
+       "mod_dbc": -29.23,
+       "perperiod_db": 41.32
+      },
+      "shaped": {
+       "pp_db": 88.77,
+       "mod_dbc": -9.82,
+       "perperiod_db": 224.66
+      }
+     }
+    },
+    "worst_mod": -9.82,
+    "worst_pp": 88.77
+   },
+   {
+    "name": "didgeridoo",
+    "reg": "F#1",
+    "len_ms": 50.0,
+    "fade_ms": 8.0,
+    "f0_file": 91.6619,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 63.25,
+       "mod_dbc": -30.71,
+       "perperiod_db": 39.01
+      },
+      "shaped": {
+       "pp_db": 30.09,
+       "mod_dbc": -14.83,
+       "perperiod_db": 4.42
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 63.1,
+       "mod_dbc": -29.54,
+       "perperiod_db": 37.87
+      },
+      "shaped": {
+       "pp_db": 30.11,
+       "mod_dbc": -14.85,
+       "perperiod_db": 8.46
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 63.0,
+       "mod_dbc": -29.22,
+       "perperiod_db": 39.39
+      },
+      "shaped": {
+       "pp_db": 30.06,
+       "mod_dbc": -14.86,
+       "perperiod_db": 14.64
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 63.03,
+       "mod_dbc": -29.55,
+       "perperiod_db": 41.76
+      },
+      "shaped": {
+       "pp_db": 30.05,
+       "mod_dbc": -14.87,
+       "perperiod_db": 27.3
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 62.95,
+       "mod_dbc": -29.23,
+       "perperiod_db": 41.32
+      },
+      "shaped": {
+       "pp_db": 30.02,
+       "mod_dbc": -14.87,
+       "perperiod_db": 27.63
+      }
+     }
+    },
+    "worst_mod": -14.83,
+    "worst_pp": 30.11
+   },
+   {
+    "name": "didgeridoo",
+    "reg": "F#1",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": 91.6619,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 63.25,
+       "mod_dbc": -30.71,
+       "perperiod_db": 39.01
+      },
+      "shaped": {
+       "pp_db": 12.79,
+       "mod_dbc": -28.62,
+       "perperiod_db": 1.86
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 63.1,
+       "mod_dbc": -29.54,
+       "perperiod_db": 37.87
+      },
+      "shaped": {
+       "pp_db": 12.76,
+       "mod_dbc": -28.61,
+       "perperiod_db": 2.97
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 63.0,
+       "mod_dbc": -29.22,
+       "perperiod_db": 39.39
+      },
+      "shaped": {
+       "pp_db": 12.75,
+       "mod_dbc": -28.62,
+       "perperiod_db": 4.37
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 63.03,
+       "mod_dbc": -29.55,
+       "perperiod_db": 41.76
+      },
+      "shaped": {
+       "pp_db": 12.79,
+       "mod_dbc": -28.62,
+       "perperiod_db": 10.81
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 62.95,
+       "mod_dbc": -29.23,
+       "perperiod_db": 41.32
+      },
+      "shaped": {
+       "pp_db": 12.77,
+       "mod_dbc": -28.62,
+       "perperiod_db": 11.49
+      }
+     }
+    },
+    "worst_mod": -28.61,
+    "worst_pp": 12.79
+   },
+   {
+    "name": "didgeridoo",
+    "reg": "F#1",
+    "len_ms": 75.0,
+    "fade_ms": 8.0,
+    "f0_file": 91.6619,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 63.25,
+       "mod_dbc": -30.71,
+       "perperiod_db": 39.01
+      },
+      "shaped": {
+       "pp_db": 12.47,
+       "mod_dbc": -17.23,
+       "perperiod_db": 4.22
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 63.1,
+       "mod_dbc": -29.54,
+       "perperiod_db": 37.87
+      },
+      "shaped": {
+       "pp_db": 12.45,
+       "mod_dbc": -17.17,
+       "perperiod_db": 6.13
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 63.0,
+       "mod_dbc": -29.22,
+       "perperiod_db": 39.39
+      },
+      "shaped": {
+       "pp_db": 12.41,
+       "mod_dbc": -17.19,
+       "perperiod_db": 7.33
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 63.03,
+       "mod_dbc": -29.55,
+       "perperiod_db": 41.76
+      },
+      "shaped": {
+       "pp_db": 12.42,
+       "mod_dbc": -17.23,
+       "perperiod_db": 17.66
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 62.95,
+       "mod_dbc": -29.23,
+       "perperiod_db": 41.32
+      },
+      "shaped": {
+       "pp_db": 12.39,
+       "mod_dbc": -17.23,
+       "perperiod_db": 27.89
+      }
+     }
+    },
+    "worst_mod": -17.17,
+    "worst_pp": 12.47
+   },
+   {
+    "name": "didgeridoo",
+    "reg": "F#1",
+    "len_ms": 90.0,
+    "fade_ms": 8.0,
+    "f0_file": 91.6619,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 63.25,
+       "mod_dbc": -30.71,
+       "perperiod_db": 39.01
+      },
+      "shaped": {
+       "pp_db": 18.93,
+       "mod_dbc": -12.49,
+       "perperiod_db": 6.8
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 63.1,
+       "mod_dbc": -29.54,
+       "perperiod_db": 37.87
+      },
+      "shaped": {
+       "pp_db": 18.78,
+       "mod_dbc": -12.61,
+       "perperiod_db": 9.1
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 63.0,
+       "mod_dbc": -29.22,
+       "perperiod_db": 39.39
+      },
+      "shaped": {
+       "pp_db": 18.82,
+       "mod_dbc": -12.52,
+       "perperiod_db": 9.63
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 63.03,
+       "mod_dbc": -29.55,
+       "perperiod_db": 41.76
+      },
+      "shaped": {
+       "pp_db": 18.67,
+       "mod_dbc": -12.62,
+       "perperiod_db": 12.96
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 62.95,
+       "mod_dbc": -29.23,
+       "perperiod_db": 41.32
+      },
+      "shaped": {
+       "pp_db": 18.64,
+       "mod_dbc": -12.6,
+       "perperiod_db": 28.15
+      }
+     }
+    },
+    "worst_mod": -12.49,
+    "worst_pp": 18.93
+   },
+   {
+    "name": "didgeridoo",
+    "reg": "F#1",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": 91.6619,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 63.25,
+       "mod_dbc": -30.71,
+       "perperiod_db": 39.01
+      },
+      "shaped": {
+       "pp_db": 22.24,
+       "mod_dbc": -10.94,
+       "perperiod_db": 9.98
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 63.1,
+       "mod_dbc": -29.54,
+       "perperiod_db": 37.87
+      },
+      "shaped": {
+       "pp_db": 22.16,
+       "mod_dbc": -11.08,
+       "perperiod_db": 13.22
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 63.0,
+       "mod_dbc": -29.22,
+       "perperiod_db": 39.39
+      },
+      "shaped": {
+       "pp_db": 21.98,
+       "mod_dbc": -11.11,
+       "perperiod_db": 13.92
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 63.03,
+       "mod_dbc": -29.55,
+       "perperiod_db": 41.76
+      },
+      "shaped": {
+       "pp_db": 22.02,
+       "mod_dbc": -11.02,
+       "perperiod_db": 15.1
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 62.95,
+       "mod_dbc": -29.23,
+       "perperiod_db": 41.32
+      },
+      "shaped": {
+       "pp_db": 21.89,
+       "mod_dbc": -11.06,
+       "perperiod_db": 16.4
+      }
+     }
+    },
+    "worst_mod": -10.94,
+    "worst_pp": 22.24
+   }
+  ]
+ }
+]

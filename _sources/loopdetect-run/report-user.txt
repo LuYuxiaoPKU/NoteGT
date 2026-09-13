@@ -1,0 +1,23 @@
+﻿python.exe : Traceback (most recent call last):
+所在位置 行:1 字符: 443
++ ... r=$pair[1]; & $py "$base\loopdetect.py" "$base\$dir" --batch 2>&1 | O ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\00_Data\RGM\NoteGT\_sources\loopdetect-run\loopdetect.py", line 355, in <module>
+    main()
+    ~~~~^^
+  File "C:\00_Data\RGM\NoteGT\_sources\loopdetect-run\loopdetect.py", line 328, in main
+    out = [analyze(f, args) for f in sorted(files)]
+           ~~~~~~~^^^^^^^^^
+  File "C:\00_Data\RGM\NoteGT\_sources\loopdetect-run\loopdetect.py", line 281, in analyze
+    lp, lg, md, sm = metrics(x, a, loop, k, f0, b['rate'], args.total)
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\00_Data\RGM\NoteGT\_sources\loopdetect-run\loopdetect.py", line 229, in metrics
+    y = render(x, a, loop, total)
+  File "C:\00_Data\RGM\NoteGT\_sources\loopdetect-run\loopdetect.py", line 201, in render
+    out[:a] = x[:a]
+    ~~~^^^^
+ValueError: could not broadcast input array from shape (167803,) into shape (44100,)
+

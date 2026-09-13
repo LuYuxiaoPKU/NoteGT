@@ -1,0 +1,137 @@
+﻿
+SoundEngineExecutor (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.sounds
+Class SoundEngineExecutor
+java.lang.Object
+net.minecraft.util.thread.BlockableEventLoop < Runnable >
+net.minecraft.client.sounds.SoundEngineExecutor
+All Implemented Interfaces:
+AutoCloseable , Executor , ProfilerMeasured , TaskScheduler < Runnable >
+public class SoundEngineExecutor
+extends BlockableEventLoop < Runnable >
+The SoundEngineExecutor class is responsible for executing sound-related tasks in a separate thread.
+It extends the BlockableEventLoop class, providing an event loop for managing and executing tasks.
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private boolean
+shutdown
+&nbsp;
+private Thread
+thread
+&nbsp;
+Fields inherited from class&nbsp;net.minecraft.util.thread. BlockableEventLoop
+BLOCK_TIME_NANOS
+Constructor Summary
+Constructors
+Constructor
+Description
+SoundEngineExecutor ()
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+private Thread
+createThread ()
+&nbsp;
+void
+flush ()
+&nbsp;
+protected Thread
+getRunningThread ()
+&nbsp;
+private void
+run ()
+&nbsp;
+protected boolean
+shouldRun ( Runnable &nbsp;runnable)
+Determines whether the given runnable task should be run or not.
+void
+waitForTasks ()
+&nbsp;
+Runnable
+wrapRunnable ( Runnable &nbsp;runnable)
+Wraps the given runnable task.
+Methods inherited from class&nbsp;net.minecraft.util.thread. BlockableEventLoop
+doRunTask , dropAllTasks , execute , executeBlocking , executeIfPossible , getPendingTasksCount , isNonRecoverable , isSameThread , managedBlock , name , pollTask , profiledMetrics , runAllTasks , schedule , scheduleExecutables , submit , submit , submitAsync
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Methods inherited from interface&nbsp;net.minecraft.util.thread. TaskScheduler
+close , scheduleWithResult
+Field Details
+thread
+private &nbsp; Thread &nbsp; thread
+shutdown
+private volatile &nbsp; boolean &nbsp; shutdown
+Constructor Details
+SoundEngineExecutor
+public &nbsp; SoundEngineExecutor ()
+Method Details
+createThread
+private &nbsp; Thread &nbsp; createThread ()
+wrapRunnable
+public &nbsp; Runnable &nbsp; wrapRunnable ( Runnable &nbsp;runnable)
+Wraps the given runnable task. In this case, the original runnable is returned as-is.
+Parameters:
+runnable - The original runnable task
+Returns:
+The wrapped runnable task
+shouldRun
+protected &nbsp; boolean &nbsp; shouldRun ( Runnable &nbsp;runnable)
+Determines whether the given runnable task should be run or not.
+It depends on the shutdown state of the SoundEngineExecutor.
+Specified by:
+shouldRun &nbsp;in class&nbsp; BlockableEventLoop < Runnable >
+Parameters:
+runnable - The runnable task
+Returns:
+true if the task should run, false otherwise
+getRunningThread
+protected &nbsp; Thread &nbsp; getRunningThread ()
+Specified by:
+getRunningThread &nbsp;in class&nbsp; BlockableEventLoop < Runnable >
+run
+private &nbsp; void &nbsp; run ()
+waitForTasks
+public &nbsp; void &nbsp; waitForTasks ()
+Overrides:
+waitForTasks &nbsp;in class&nbsp; BlockableEventLoop < Runnable >
+flush
+public &nbsp; void &nbsp; flush ()
+

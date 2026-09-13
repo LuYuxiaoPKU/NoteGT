@@ -1,0 +1,463 @@
+[
+ {
+  "name": "banjo",
+  "sweep": [
+   {
+    "name": "banjo",
+    "reg": "F#3",
+    "len_ms": 40.0,
+    "fade_ms": 8.0,
+    "f0_file": 92.3547,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 67.31,
+       "mod_dbc": -28.69,
+       "perperiod_db": 27.73
+      },
+      "shaped": {
+       "pp_db": 94.72,
+       "mod_dbc": -6.25,
+       "perperiod_db": 32.28
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 67.93,
+       "mod_dbc": -28.64,
+       "perperiod_db": 29.29
+      },
+      "shaped": {
+       "pp_db": 99.23,
+       "mod_dbc": -6.24,
+       "perperiod_db": 50.39
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 68.06,
+       "mod_dbc": -28.61,
+       "perperiod_db": 29.48
+      },
+      "shaped": {
+       "pp_db": 103.8,
+       "mod_dbc": -6.24,
+       "perperiod_db": 59.78
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 67.85,
+       "mod_dbc": -28.64,
+       "perperiod_db": 31.36
+      },
+      "shaped": {
+       "pp_db": 108.33,
+       "mod_dbc": -6.23,
+       "perperiod_db": 223.02
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 68.01,
+       "mod_dbc": -28.61,
+       "perperiod_db": 47.69
+      },
+      "shaped": {
+       "pp_db": 112.88,
+       "mod_dbc": -6.23,
+       "perperiod_db": 223.06
+      }
+     }
+    },
+    "worst_mod": -6.23,
+    "worst_pp": 112.88
+   },
+   {
+    "name": "banjo",
+    "reg": "F#3",
+    "len_ms": 50.0,
+    "fade_ms": 8.0,
+    "f0_file": 92.3547,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 67.31,
+       "mod_dbc": -28.69,
+       "perperiod_db": 27.73
+      },
+      "shaped": {
+       "pp_db": 31.52,
+       "mod_dbc": -8.6,
+       "perperiod_db": 8.89
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 67.93,
+       "mod_dbc": -28.64,
+       "perperiod_db": 29.29
+      },
+      "shaped": {
+       "pp_db": 31.53,
+       "mod_dbc": -8.6,
+       "perperiod_db": 17.64
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 68.06,
+       "mod_dbc": -28.61,
+       "perperiod_db": 29.48
+      },
+      "shaped": {
+       "pp_db": 31.51,
+       "mod_dbc": -8.61,
+       "perperiod_db": 29.08
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 67.85,
+       "mod_dbc": -28.64,
+       "perperiod_db": 31.36
+      },
+      "shaped": {
+       "pp_db": 31.51,
+       "mod_dbc": -8.61,
+       "perperiod_db": 29.71
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 68.01,
+       "mod_dbc": -28.61,
+       "perperiod_db": 47.69
+      },
+      "shaped": {
+       "pp_db": 31.5,
+       "mod_dbc": -8.62,
+       "perperiod_db": 30.05
+      }
+     }
+    },
+    "worst_mod": -8.6,
+    "worst_pp": 31.53
+   },
+   {
+    "name": "banjo",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": 92.3547,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 67.31,
+       "mod_dbc": -28.69,
+       "perperiod_db": 27.73
+      },
+      "shaped": {
+       "pp_db": 15.26,
+       "mod_dbc": -21.4,
+       "perperiod_db": 2.94
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 67.93,
+       "mod_dbc": -28.64,
+       "perperiod_db": 29.29
+      },
+      "shaped": {
+       "pp_db": 15.32,
+       "mod_dbc": -21.39,
+       "perperiod_db": 3.15
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 68.06,
+       "mod_dbc": -28.61,
+       "perperiod_db": 29.48
+      },
+      "shaped": {
+       "pp_db": 15.21,
+       "mod_dbc": -21.4,
+       "perperiod_db": 7.85
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 67.85,
+       "mod_dbc": -28.64,
+       "perperiod_db": 31.36
+      },
+      "shaped": {
+       "pp_db": 15.14,
+       "mod_dbc": -21.42,
+       "perperiod_db": 7.22
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 68.01,
+       "mod_dbc": -28.61,
+       "perperiod_db": 47.69
+      },
+      "shaped": {
+       "pp_db": 15.09,
+       "mod_dbc": -21.42,
+       "perperiod_db": 27.44
+      }
+     }
+    },
+    "worst_mod": -21.39,
+    "worst_pp": 15.32
+   },
+   {
+    "name": "banjo",
+    "reg": "F#3",
+    "len_ms": 75.0,
+    "fade_ms": 8.0,
+    "f0_file": 92.3547,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 67.31,
+       "mod_dbc": -28.69,
+       "perperiod_db": 27.73
+      },
+      "shaped": {
+       "pp_db": 22.08,
+       "mod_dbc": -23.59,
+       "perperiod_db": 1.46
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 67.93,
+       "mod_dbc": -28.64,
+       "perperiod_db": 29.29
+      },
+      "shaped": {
+       "pp_db": 22.0,
+       "mod_dbc": -23.54,
+       "perperiod_db": 2.24
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 68.06,
+       "mod_dbc": -28.61,
+       "perperiod_db": 29.48
+      },
+      "shaped": {
+       "pp_db": 21.87,
+       "mod_dbc": -23.58,
+       "perperiod_db": 6.8
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 67.85,
+       "mod_dbc": -28.64,
+       "perperiod_db": 31.36
+      },
+      "shaped": {
+       "pp_db": 21.92,
+       "mod_dbc": -23.61,
+       "perperiod_db": 24.31
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 68.01,
+       "mod_dbc": -28.61,
+       "perperiod_db": 47.69
+      },
+      "shaped": {
+       "pp_db": 21.88,
+       "mod_dbc": -23.62,
+       "perperiod_db": 24.37
+      }
+     }
+    },
+    "worst_mod": -23.54,
+    "worst_pp": 22.08
+   },
+   {
+    "name": "banjo",
+    "reg": "F#3",
+    "len_ms": 90.0,
+    "fade_ms": 8.0,
+    "f0_file": 92.3547,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 67.31,
+       "mod_dbc": -28.69,
+       "perperiod_db": 27.73
+      },
+      "shaped": {
+       "pp_db": 15.64,
+       "mod_dbc": -22.09,
+       "perperiod_db": 3.34
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 67.93,
+       "mod_dbc": -28.64,
+       "perperiod_db": 29.29
+      },
+      "shaped": {
+       "pp_db": 15.56,
+       "mod_dbc": -22.14,
+       "perperiod_db": 4.76
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 68.06,
+       "mod_dbc": -28.61,
+       "perperiod_db": 29.48
+      },
+      "shaped": {
+       "pp_db": 15.56,
+       "mod_dbc": -22.11,
+       "perperiod_db": 6.06
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 67.85,
+       "mod_dbc": -28.64,
+       "perperiod_db": 31.36
+      },
+      "shaped": {
+       "pp_db": 15.48,
+       "mod_dbc": -22.14,
+       "perperiod_db": 10.71
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 68.01,
+       "mod_dbc": -28.61,
+       "perperiod_db": 47.69
+      },
+      "shaped": {
+       "pp_db": 15.46,
+       "mod_dbc": -22.14,
+       "perperiod_db": 23.45
+      }
+     }
+    },
+    "worst_mod": -22.09,
+    "worst_pp": 15.64
+   },
+   {
+    "name": "banjo",
+    "reg": "F#3",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": 92.3547,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 67.31,
+       "mod_dbc": -28.69,
+       "perperiod_db": 27.73
+      },
+      "shaped": {
+       "pp_db": 21.32,
+       "mod_dbc": -22.79,
+       "perperiod_db": 3.24
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 67.93,
+       "mod_dbc": -28.64,
+       "perperiod_db": 29.29
+      },
+      "shaped": {
+       "pp_db": 21.54,
+       "mod_dbc": -22.88,
+       "perperiod_db": 9.36
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 68.06,
+       "mod_dbc": -28.61,
+       "perperiod_db": 29.48
+      },
+      "shaped": {
+       "pp_db": 21.53,
+       "mod_dbc": -22.9,
+       "perperiod_db": 6.56
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 67.85,
+       "mod_dbc": -28.64,
+       "perperiod_db": 31.36
+      },
+      "shaped": {
+       "pp_db": 21.39,
+       "mod_dbc": -22.84,
+       "perperiod_db": 27.19
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 68.01,
+       "mod_dbc": -28.61,
+       "perperiod_db": 47.69
+      },
+      "shaped": {
+       "pp_db": 21.43,
+       "mod_dbc": -22.87,
+       "perperiod_db": 27.5
+      }
+     }
+    },
+    "worst_mod": -22.79,
+    "worst_pp": 21.54
+   }
+  ]
+ }
+]

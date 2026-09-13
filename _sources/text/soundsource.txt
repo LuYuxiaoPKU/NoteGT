@@ -1,0 +1,159 @@
+﻿
+SoundSource (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Enum Constants
+Field
+Method
+Detail:
+Enum Constants
+Field
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Enum Constants &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Enum Constants &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.sounds
+Enum Class SoundSource
+java.lang.Object
+java.lang.Enum < SoundSource >
+net.minecraft.sounds.SoundSource
+All Implemented Interfaces:
+Serializable , Comparable < SoundSource > , Constable
+public enum SoundSource
+extends Enum < SoundSource >
+Nested Class Summary
+Nested classes/interfaces inherited from class&nbsp;java.lang. Enum
+Enum.EnumDesc < E extends Enum < E >>
+Enum Constant Summary
+Enum Constants
+Enum Constant
+Description
+AMBIENT
+&nbsp;
+BLOCKS
+&nbsp;
+HOSTILE
+&nbsp;
+MASTER
+&nbsp;
+MUSIC
+&nbsp;
+NEUTRAL
+&nbsp;
+PLAYERS
+&nbsp;
+RECORDS
+&nbsp;
+UI
+&nbsp;
+VOICE
+&nbsp;
+WEATHER
+&nbsp;
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final String
+name
+&nbsp;
+Constructor Summary
+Constructors
+Modifier
+Constructor
+Description
+private
+SoundSource ( String &nbsp;name)
+&nbsp;
+Method Summary
+All Methods Static Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+String
+getName ()
+&nbsp;
+static SoundSource
+valueOf ( String &nbsp;name)
+Returns the enum constant of this class with the specified name.
+static SoundSource []
+values ()
+Returns an array containing the constants of this enum class, in
+the order they are declared.
+Methods inherited from class&nbsp;java.lang. Enum
+clone , compareTo , describeConstable , equals , finalize , getDeclaringClass , hashCode , name , ordinal , toString , valueOf
+Methods inherited from class&nbsp;java.lang. Object
+getClass , notify , notifyAll , wait , wait , wait
+Enum Constant Details
+MASTER
+public static final &nbsp; SoundSource &nbsp; MASTER
+MUSIC
+public static final &nbsp; SoundSource &nbsp; MUSIC
+RECORDS
+public static final &nbsp; SoundSource &nbsp; RECORDS
+WEATHER
+public static final &nbsp; SoundSource &nbsp; WEATHER
+BLOCKS
+public static final &nbsp; SoundSource &nbsp; BLOCKS
+HOSTILE
+public static final &nbsp; SoundSource &nbsp; HOSTILE
+NEUTRAL
+public static final &nbsp; SoundSource &nbsp; NEUTRAL
+PLAYERS
+public static final &nbsp; SoundSource &nbsp; PLAYERS
+AMBIENT
+public static final &nbsp; SoundSource &nbsp; AMBIENT
+VOICE
+public static final &nbsp; SoundSource &nbsp; VOICE
+UI
+public static final &nbsp; SoundSource &nbsp; UI
+Field Details
+name
+private final &nbsp; String &nbsp; name
+Constructor Details
+SoundSource
+private &nbsp; SoundSource ( String &nbsp;name)
+Method Details
+values
+public static &nbsp; SoundSource [] &nbsp; values ()
+Returns an array containing the constants of this enum class, in
+the order they are declared.
+Returns:
+an array containing the constants of this enum class, in the order they are declared
+valueOf
+public static &nbsp; SoundSource &nbsp; valueOf ( String &nbsp;name)
+Returns the enum constant of this class with the specified name.
+The string must match exactly an identifier used to declare an
+enum constant in this class. (Extraneous whitespace characters are
+not permitted.)
+Parameters:
+name - the name of the enum constant to be returned.
+Returns:
+the enum constant with the specified name
+Throws:
+IllegalArgumentException - if this enum class has no constant with the specified name
+NullPointerException - if the argument is null
+getName
+public &nbsp; String &nbsp; getName ()
+

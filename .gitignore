@@ -1,0 +1,21 @@
+# === NoteGT 根仓库 ===
+# 规则依据：AGENTS.md 第四/五节（_sources 为可删证据区；大二进制不进 git）
+
+# 可重新下载的 jar（mc1218_client.jar 等，Mojang CDN 可再拉）
+_sources/*.jar
+# Mojang mappings 许可头："may not be redistributed complete and unmodified"
+_sources/*-client-mappings.txt
+# 模板/工具下载物
+_sources/example-mod-1.21.11.zip
+
+# 日志与临时文件
+*.log
+_tmp/
+
+# Python 工具链
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+desktop.ini

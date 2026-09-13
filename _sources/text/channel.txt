@@ -1,0 +1,255 @@
+﻿
+Channel (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; com.mojang.blaze3d.audio
+Class Channel
+java.lang.Object
+com.mojang.blaze3d.audio.Channel
+public class Channel
+extends Object
+Represents an OpenAL audio channel.
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+static final int
+BUFFER_DURATION_SECONDS
+&nbsp;
+private final AtomicBoolean
+initialized
+&nbsp;
+private static final org.slf4j.Logger
+LOGGER
+&nbsp;
+private static final int
+QUEUED_BUFFER_COUNT
+&nbsp;
+private final int
+source
+&nbsp;
+private AudioStream
+stream
+&nbsp;
+private int
+streamingBufferSize
+&nbsp;
+Constructor Summary
+Constructors
+Modifier
+Constructor
+Description
+private
+Channel (int&nbsp;source)
+&nbsp;
+Method Summary
+All Methods Static Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+void
+attachBufferStream ( AudioStream &nbsp;stream)
+Attaches a buffer stream to the audio channel.
+void
+attachStaticBuffer ( SoundBuffer &nbsp;buffer)
+Attaches a static buffer to the audio channel.
+private static int
+calculateBufferSize ( AudioFormat &nbsp;format,
+int&nbsp;sampleAmount)
+Calculates the buffer size for an audio stream.
+(package private) static Channel
+create ()
+&nbsp;
+void
+destroy ()
+&nbsp;
+void
+disableAttenuation ()
+&nbsp;
+private int
+getState ()
+&nbsp;
+void
+linearAttenuation (float&nbsp;linearAttenuation)
+Sets linear attenuation for the audio channel.
+void
+pause ()
+&nbsp;
+void
+play ()
+&nbsp;
+boolean
+playing ()
+&nbsp;
+private void
+pumpBuffers (int&nbsp;readCount)
+Reads and queues audio buffers from the stream.
+private int
+removeProcessedBuffers ()
+&nbsp;
+void
+setLooping (boolean&nbsp;looping)
+Sets whether the audio channel should loop.
+void
+setPitch (float&nbsp;pitch)
+Sets the pitch of the audio channel.
+void
+setRelative (boolean&nbsp;relative)
+Sets whether the audio channel should be relative to the listener's position.
+void
+setSelfPosition ( Vec3 &nbsp;source)
+Sets the position of the audio channel.
+void
+setVolume (float&nbsp;volume)
+Sets the volume of the audio channel.
+void
+stop ()
+&nbsp;
+boolean
+stopped ()
+&nbsp;
+void
+unpause ()
+&nbsp;
+void
+updateStream ()
+&nbsp;
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Field Details
+LOGGER
+private static final &nbsp; org.slf4j.Logger &nbsp; LOGGER
+QUEUED_BUFFER_COUNT
+private static final &nbsp; int &nbsp; QUEUED_BUFFER_COUNT
+See Also:
+Constant Field Values
+BUFFER_DURATION_SECONDS
+public static final &nbsp; int &nbsp; BUFFER_DURATION_SECONDS
+See Also:
+Constant Field Values
+source
+private final &nbsp; int &nbsp; source
+initialized
+private final &nbsp; AtomicBoolean &nbsp; initialized
+streamingBufferSize
+private &nbsp; int &nbsp; streamingBufferSize
+stream
+@Nullable
+private &nbsp; AudioStream &nbsp; stream
+Constructor Details
+Channel
+private &nbsp; Channel (int&nbsp;source)
+Method Details
+create
+@Nullable
+static &nbsp; Channel &nbsp; create ()
+destroy
+public &nbsp; void &nbsp; destroy ()
+play
+public &nbsp; void &nbsp; play ()
+getState
+private &nbsp; int &nbsp; getState ()
+pause
+public &nbsp; void &nbsp; pause ()
+unpause
+public &nbsp; void &nbsp; unpause ()
+stop
+public &nbsp; void &nbsp; stop ()
+playing
+public &nbsp; boolean &nbsp; playing ()
+stopped
+public &nbsp; boolean &nbsp; stopped ()
+setSelfPosition
+public &nbsp; void &nbsp; setSelfPosition ( Vec3 &nbsp;source)
+Sets the position of the audio channel.
+Parameters:
+source - the position of the audio channel
+setPitch
+public &nbsp; void &nbsp; setPitch (float&nbsp;pitch)
+Sets the pitch of the audio channel.
+Parameters:
+pitch - the pitch of the audio channel
+setLooping
+public &nbsp; void &nbsp; setLooping (boolean&nbsp;looping)
+Sets whether the audio channel should loop.
+Parameters:
+looping - true if the audio channel should loop, false
+otherwise
+setVolume
+public &nbsp; void &nbsp; setVolume (float&nbsp;volume)
+Sets the volume of the audio channel.
+Parameters:
+volume - the volume of the audio channel
+disableAttenuation
+public &nbsp; void &nbsp; disableAttenuation ()
+linearAttenuation
+public &nbsp; void &nbsp; linearAttenuation (float&nbsp;linearAttenuation)
+Sets linear attenuation for the audio channel.
+Parameters:
+linearAttenuation - the linear attenuation of the audio channel
+setRelative
+public &nbsp; void &nbsp; setRelative (boolean&nbsp;relative)
+Sets whether the audio channel should be relative to the listener's position.
+Parameters:
+relative - true if the audio channel should be relative,
+false otherwise
+attachStaticBuffer
+public &nbsp; void &nbsp; attachStaticBuffer ( SoundBuffer &nbsp;buffer)
+Attaches a static buffer to the audio channel.
+Parameters:
+buffer - the buffer to attach
+attachBufferStream
+public &nbsp; void &nbsp; attachBufferStream ( AudioStream &nbsp;stream)
+Attaches a buffer stream to the audio channel.
+Parameters:
+stream - the stream to attach
+calculateBufferSize
+private static &nbsp; int &nbsp; calculateBufferSize ( AudioFormat &nbsp;format,
+int&nbsp;sampleAmount)
+Calculates the buffer size for an audio stream.
+Parameters:
+format - the audio format of the stream
+sampleAmount - the number of samples to buffer
+Returns:
+the buffer size
+pumpBuffers
+private &nbsp; void &nbsp; pumpBuffers (int&nbsp;readCount)
+Reads and queues audio buffers from the stream.
+Parameters:
+readCount - the number of buffers to read and queue
+updateStream
+public &nbsp; void &nbsp; updateStream ()
+removeProcessedBuffers
+private &nbsp; int &nbsp; removeProcessedBuffers ()
+

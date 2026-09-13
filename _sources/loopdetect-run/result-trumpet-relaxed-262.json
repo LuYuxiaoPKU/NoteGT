@@ -1,0 +1,22 @@
+﻿[
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-262-trumpets\\trumpet.ogg",
+    "ok": false,
+    "reason": "循环长度过短（<80ms），周期性可闻"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-262-trumpets\\trumpet_exposed.ogg",
+    "ok": false,
+    "reason": "未找到满足相关度阈值的循环长度（可能非谐性过强）"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-262-trumpets\\trumpet_oxidized.ogg",
+    "ok": false,
+    "reason": "未找到满足相关度阈值的循环长度（可能非谐性过强）"
+  },
+  {
+    "file": "C:\\00_Data\\RGM\\NoteGT\\_sources\\loopdetect-run\\vanilla-262-trumpets\\trumpet_weathered.ogg",
+    "ok": false,
+    "reason": "循环长度过短（<80ms），周期性可闻"
+  }
+]

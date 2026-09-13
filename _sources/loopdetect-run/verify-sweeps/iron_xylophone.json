@@ -1,0 +1,439 @@
+[
+ {
+  "name": "iron_xylophone",
+  "sweep": [
+   {
+    "name": "iron_xylophone",
+    "reg": "F#3",
+    "len_ms": 40.0,
+    "fade_ms": 8.0,
+    "f0_file": 185.4736,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.46,
+       "mod_dbc": -28.57,
+       "perperiod_db": 12.93
+      },
+      "shaped": {
+       "pp_db": 72.83,
+       "mod_dbc": -10.24,
+       "perperiod_db": 34.35
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 18.1,
+       "mod_dbc": -29.75,
+       "perperiod_db": 14.22
+      },
+      "shaped": {
+       "pp_db": 77.33,
+       "mod_dbc": -10.23,
+       "perperiod_db": 210.47
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 18.37,
+       "mod_dbc": -30.06,
+       "perperiod_db": 13.51
+      },
+      "shaped": {
+       "pp_db": 81.91,
+       "mod_dbc": -10.21,
+       "perperiod_db": 210.28
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 18.01,
+       "mod_dbc": -29.67
+      },
+      "shaped": {
+       "pp_db": 86.43,
+       "mod_dbc": -10.21
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 18.32,
+       "mod_dbc": -30.0
+      },
+      "shaped": {
+       "pp_db": 90.99,
+       "mod_dbc": -10.2
+      }
+     }
+    },
+    "worst_mod": -10.2,
+    "worst_pp": 90.99
+   },
+   {
+    "name": "iron_xylophone",
+    "reg": "F#3",
+    "len_ms": 50.0,
+    "fade_ms": 8.0,
+    "f0_file": 185.4736,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.46,
+       "mod_dbc": -28.57,
+       "perperiod_db": 12.93
+      },
+      "shaped": {
+       "pp_db": 21.13,
+       "mod_dbc": -15.94,
+       "perperiod_db": 10.88
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 18.1,
+       "mod_dbc": -29.75,
+       "perperiod_db": 14.22
+      },
+      "shaped": {
+       "pp_db": 21.12,
+       "mod_dbc": -15.96,
+       "perperiod_db": 18.05
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 18.37,
+       "mod_dbc": -30.06,
+       "perperiod_db": 13.51
+      },
+      "shaped": {
+       "pp_db": 21.07,
+       "mod_dbc": -15.97,
+       "perperiod_db": 18.7
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 18.01,
+       "mod_dbc": -29.67
+      },
+      "shaped": {
+       "pp_db": 21.06,
+       "mod_dbc": -15.98
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 18.32,
+       "mod_dbc": -30.0
+      },
+      "shaped": {
+       "pp_db": 21.03,
+       "mod_dbc": -15.99
+      }
+     }
+    },
+    "worst_mod": -15.94,
+    "worst_pp": 21.13
+   },
+   {
+    "name": "iron_xylophone",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": 185.4736,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.46,
+       "mod_dbc": -28.57,
+       "perperiod_db": 12.93
+      },
+      "shaped": {
+       "pp_db": 3.57,
+       "mod_dbc": -37.29,
+       "perperiod_db": 1.28
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 18.1,
+       "mod_dbc": -29.75,
+       "perperiod_db": 14.22
+      },
+      "shaped": {
+       "pp_db": 3.59,
+       "mod_dbc": -37.1,
+       "perperiod_db": 1.71
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 18.37,
+       "mod_dbc": -30.06,
+       "perperiod_db": 13.51
+      },
+      "shaped": {
+       "pp_db": 3.55,
+       "mod_dbc": -37.16,
+       "perperiod_db": 2.69
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 18.01,
+       "mod_dbc": -29.67
+      },
+      "shaped": {
+       "pp_db": 3.53,
+       "mod_dbc": -37.42
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 18.32,
+       "mod_dbc": -30.0
+      },
+      "shaped": {
+       "pp_db": 3.51,
+       "mod_dbc": -37.4
+      }
+     }
+    },
+    "worst_mod": -37.1,
+    "worst_pp": 3.59
+   },
+   {
+    "name": "iron_xylophone",
+    "reg": "F#3",
+    "len_ms": 75.0,
+    "fade_ms": 8.0,
+    "f0_file": 185.4736,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.46,
+       "mod_dbc": -28.57,
+       "perperiod_db": 12.93
+      },
+      "shaped": {
+       "pp_db": 4.88,
+       "mod_dbc": -26.68,
+       "perperiod_db": 4.62
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 18.1,
+       "mod_dbc": -29.75,
+       "perperiod_db": 14.22
+      },
+      "shaped": {
+       "pp_db": 4.87,
+       "mod_dbc": -26.99,
+       "perperiod_db": 4.98
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 18.37,
+       "mod_dbc": -30.06,
+       "perperiod_db": 13.51
+      },
+      "shaped": {
+       "pp_db": 4.85,
+       "mod_dbc": -26.91,
+       "perperiod_db": 8.23
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 18.01,
+       "mod_dbc": -29.67
+      },
+      "shaped": {
+       "pp_db": 4.85,
+       "mod_dbc": -26.71
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 18.32,
+       "mod_dbc": -30.0
+      },
+      "shaped": {
+       "pp_db": 4.83,
+       "mod_dbc": -26.7
+      }
+     }
+    },
+    "worst_mod": -26.68,
+    "worst_pp": 4.88
+   },
+   {
+    "name": "iron_xylophone",
+    "reg": "F#3",
+    "len_ms": 90.0,
+    "fade_ms": 8.0,
+    "f0_file": 185.4736,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.46,
+       "mod_dbc": -28.57,
+       "perperiod_db": 12.93
+      },
+      "shaped": {
+       "pp_db": 4.52,
+       "mod_dbc": -24.02,
+       "perperiod_db": 4.04
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 18.1,
+       "mod_dbc": -29.75,
+       "perperiod_db": 14.22
+      },
+      "shaped": {
+       "pp_db": 4.54,
+       "mod_dbc": -23.84,
+       "perperiod_db": 3.65
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 18.37,
+       "mod_dbc": -30.06,
+       "perperiod_db": 13.51
+      },
+      "shaped": {
+       "pp_db": 4.5,
+       "mod_dbc": -23.97,
+       "perperiod_db": 5.03
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 18.01,
+       "mod_dbc": -29.67
+      },
+      "shaped": {
+       "pp_db": 4.5,
+       "mod_dbc": -23.84
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 18.32,
+       "mod_dbc": -30.0
+      },
+      "shaped": {
+       "pp_db": 4.48,
+       "mod_dbc": -23.88
+      }
+     }
+    },
+    "worst_mod": -23.84,
+    "worst_pp": 4.54
+   },
+   {
+    "name": "iron_xylophone",
+    "reg": "F#3",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": 185.4736,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 17.46,
+       "mod_dbc": -28.57,
+       "perperiod_db": 12.93
+      },
+      "shaped": {
+       "pp_db": 5.02,
+       "mod_dbc": -24.55,
+       "perperiod_db": 3.5
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 18.1,
+       "mod_dbc": -29.75,
+       "perperiod_db": 14.22
+      },
+      "shaped": {
+       "pp_db": 5.04,
+       "mod_dbc": -24.33,
+       "perperiod_db": 3.82
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 18.37,
+       "mod_dbc": -30.06,
+       "perperiod_db": 13.51
+      },
+      "shaped": {
+       "pp_db": 5.01,
+       "mod_dbc": -24.31,
+       "perperiod_db": 3.93
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 18.01,
+       "mod_dbc": -29.67
+      },
+      "shaped": {
+       "pp_db": 5.0,
+       "mod_dbc": -24.45
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 18.32,
+       "mod_dbc": -30.0
+      },
+      "shaped": {
+       "pp_db": 4.98,
+       "mod_dbc": -24.39
+      }
+     }
+    },
+    "worst_mod": -24.31,
+    "worst_pp": 5.04
+   }
+  ]
+ }
+]

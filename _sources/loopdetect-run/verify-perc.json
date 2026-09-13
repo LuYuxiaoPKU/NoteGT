@@ -1,0 +1,66 @@
+[
+ {
+  "name": "click",
+  "reg": "percussion",
+  "len_ms": 48.0,
+  "fade_ms": "0.0/4.0",
+  "f0_file": null,
+  "notes": {
+   "0": {
+    "p": 0.5,
+    "naive": {
+     "pp_db": 29.79,
+     "mod_dbc": -6.38
+    },
+    "shaped": {
+     "pp_db": 43.55,
+     "mod_dbc": -6.91
+    }
+   },
+   "6": {
+    "p": 0.7071,
+    "naive": {
+     "pp_db": 28.62,
+     "mod_dbc": -6.55
+    },
+    "shaped": {
+     "pp_db": 45.03,
+     "mod_dbc": -6.27
+    }
+   },
+   "12": {
+    "p": 1.0,
+    "naive": {
+     "pp_db": 28.39,
+     "mod_dbc": -6.47
+    },
+    "shaped": {
+     "pp_db": 43.81,
+     "mod_dbc": -6.35
+    }
+   },
+   "18": {
+    "p": 1.4142,
+    "naive": {
+     "pp_db": 27.85,
+     "mod_dbc": -6.56
+    },
+    "shaped": {
+     "pp_db": 43.48,
+     "mod_dbc": -6.41
+    }
+   },
+   "24": {
+    "p": 2.0,
+    "naive": {
+     "pp_db": 29.03,
+     "mod_dbc": -6.2
+    },
+    "shaped": {
+     "pp_db": 43.28,
+     "mod_dbc": -6.16
+    }
+   }
+  }
+ }
+]

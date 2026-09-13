@@ -1,0 +1,104 @@
+﻿
+Listener (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; com.mojang.blaze3d.audio
+Class Listener
+java.lang.Object
+com.mojang.blaze3d.audio.Listener
+public class Listener
+extends Object
+The Listener class represents the listener in a 3D audio environment.
+The listener's position and orientation determine how sounds are perceived by the listener.
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private float
+gain
+&nbsp;
+private ListenerTransform
+transform
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+Listener ()
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+float
+getGain ()
+&nbsp;
+ListenerTransform
+getTransform ()
+&nbsp;
+void
+reset ()
+&nbsp;
+void
+setGain (float&nbsp;gain)
+Sets the listener's gain.
+void
+setTransform ( ListenerTransform &nbsp;transform)
+&nbsp;
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Field Details
+gain
+private &nbsp; float &nbsp; gain
+transform
+private &nbsp; ListenerTransform &nbsp; transform
+Constructor Details
+Listener
+public &nbsp; Listener ()
+Method Details
+setTransform
+public &nbsp; void &nbsp; setTransform ( ListenerTransform &nbsp;transform)
+setGain
+public &nbsp; void &nbsp; setGain (float&nbsp;gain)
+Sets the listener's gain.
+Parameters:
+gain - The gain to set for the listener.
+getGain
+public &nbsp; float &nbsp; getGain ()
+reset
+public &nbsp; void &nbsp; reset ()
+getTransform
+public &nbsp; ListenerTransform &nbsp; getTransform ()
+

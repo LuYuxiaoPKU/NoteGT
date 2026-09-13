@@ -1,0 +1,403 @@
+[
+ {
+  "name": "guitar",
+  "sweep": [
+   {
+    "name": "guitar",
+    "reg": "F#2",
+    "len_ms": 40.0,
+    "fade_ms": 8.0,
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 33.97,
+       "mod_dbc": -23.06
+      },
+      "shaped": {
+       "pp_db": 95.11,
+       "mod_dbc": -9.51
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 34.42,
+       "mod_dbc": -23.77
+      },
+      "shaped": {
+       "pp_db": 99.6,
+       "mod_dbc": -9.51
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 34.54,
+       "mod_dbc": -23.93
+      },
+      "shaped": {
+       "pp_db": 104.19,
+       "mod_dbc": -9.49
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 34.37,
+       "mod_dbc": -23.71
+      },
+      "shaped": {
+       "pp_db": 108.71,
+       "mod_dbc": -9.49
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 34.5,
+       "mod_dbc": -23.89
+      },
+      "shaped": {
+       "pp_db": 113.27,
+       "mod_dbc": -9.48
+      }
+     }
+    },
+    "worst_mod": -9.48,
+    "worst_pp": 113.27
+   },
+   {
+    "name": "guitar",
+    "reg": "F#2",
+    "len_ms": 50.0,
+    "fade_ms": 8.0,
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 33.97,
+       "mod_dbc": -23.06
+      },
+      "shaped": {
+       "pp_db": 42.22,
+       "mod_dbc": -16.0
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 34.42,
+       "mod_dbc": -23.77
+      },
+      "shaped": {
+       "pp_db": 42.18,
+       "mod_dbc": -16.01
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 34.54,
+       "mod_dbc": -23.93
+      },
+      "shaped": {
+       "pp_db": 41.87,
+       "mod_dbc": -16.03
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 34.37,
+       "mod_dbc": -23.71
+      },
+      "shaped": {
+       "pp_db": 41.79,
+       "mod_dbc": -16.04
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 34.5,
+       "mod_dbc": -23.89
+      },
+      "shaped": {
+       "pp_db": 41.62,
+       "mod_dbc": -16.05
+      }
+     }
+    },
+    "worst_mod": -16.0,
+    "worst_pp": 42.22
+   },
+   {
+    "name": "guitar",
+    "reg": "F#2",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 33.97,
+       "mod_dbc": -23.06
+      },
+      "shaped": {
+       "pp_db": 3.46,
+       "mod_dbc": -38.46
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 34.42,
+       "mod_dbc": -23.77
+      },
+      "shaped": {
+       "pp_db": 3.44,
+       "mod_dbc": -38.75
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 34.54,
+       "mod_dbc": -23.93
+      },
+      "shaped": {
+       "pp_db": 3.43,
+       "mod_dbc": -38.72
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 34.37,
+       "mod_dbc": -23.71
+      },
+      "shaped": {
+       "pp_db": 3.43,
+       "mod_dbc": -38.42
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 34.5,
+       "mod_dbc": -23.89
+      },
+      "shaped": {
+       "pp_db": 3.42,
+       "mod_dbc": -38.46
+      }
+     }
+    },
+    "worst_mod": -38.42,
+    "worst_pp": 3.46
+   },
+   {
+    "name": "guitar",
+    "reg": "F#2",
+    "len_ms": 75.0,
+    "fade_ms": 8.0,
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 33.97,
+       "mod_dbc": -23.06
+      },
+      "shaped": {
+       "pp_db": 8.37,
+       "mod_dbc": -20.06
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 34.42,
+       "mod_dbc": -23.77
+      },
+      "shaped": {
+       "pp_db": 8.3,
+       "mod_dbc": -19.74
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 34.54,
+       "mod_dbc": -23.93
+      },
+      "shaped": {
+       "pp_db": 8.31,
+       "mod_dbc": -19.84
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 34.37,
+       "mod_dbc": -23.71
+      },
+      "shaped": {
+       "pp_db": 8.42,
+       "mod_dbc": -20.06
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 34.5,
+       "mod_dbc": -23.89
+      },
+      "shaped": {
+       "pp_db": 8.41,
+       "mod_dbc": -20.06
+      }
+     }
+    },
+    "worst_mod": -19.74,
+    "worst_pp": 8.42
+   },
+   {
+    "name": "guitar",
+    "reg": "F#2",
+    "len_ms": 90.0,
+    "fade_ms": 8.0,
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 33.97,
+       "mod_dbc": -23.06
+      },
+      "shaped": {
+       "pp_db": 8.18,
+       "mod_dbc": -18.7
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 34.42,
+       "mod_dbc": -23.77
+      },
+      "shaped": {
+       "pp_db": 8.37,
+       "mod_dbc": -19.24
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 34.54,
+       "mod_dbc": -23.93
+      },
+      "shaped": {
+       "pp_db": 8.23,
+       "mod_dbc": -18.84
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 34.37,
+       "mod_dbc": -23.71
+      },
+      "shaped": {
+       "pp_db": 8.36,
+       "mod_dbc": -19.25
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 34.5,
+       "mod_dbc": -23.89
+      },
+      "shaped": {
+       "pp_db": 8.32,
+       "mod_dbc": -19.12
+      }
+     }
+    },
+    "worst_mod": -18.7,
+    "worst_pp": 8.37
+   },
+   {
+    "name": "guitar",
+    "reg": "F#2",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": null,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 33.97,
+       "mod_dbc": -23.06
+      },
+      "shaped": {
+       "pp_db": 9.56,
+       "mod_dbc": -21.42
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 34.42,
+       "mod_dbc": -23.77
+      },
+      "shaped": {
+       "pp_db": 9.96,
+       "mod_dbc": -20.35
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 34.54,
+       "mod_dbc": -23.93
+      },
+      "shaped": {
+       "pp_db": 10.0,
+       "mod_dbc": -20.23
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 34.37,
+       "mod_dbc": -23.71
+      },
+      "shaped": {
+       "pp_db": 9.72,
+       "mod_dbc": -20.97
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 34.5,
+       "mod_dbc": -23.89
+      },
+      "shaped": {
+       "pp_db": 9.85,
+       "mod_dbc": -20.65
+      }
+     }
+    },
+    "worst_mod": -20.23,
+    "worst_pp": 10.0
+   }
+  ]
+ }
+]

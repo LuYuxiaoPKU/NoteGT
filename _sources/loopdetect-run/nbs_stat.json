@@ -1,0 +1,1289 @@
+[
+ {
+  "file": "WFXLC.nbs",
+  "name": null,
+  "origin": "ZÎÃÌ9_1ÙQ_aigei_com.mid",
+  "version": 5,
+  "length_ticks": 720,
+  "layers": 31,
+  "notes": 1090,
+  "instruments_used": 17,
+  "max_notes_per_tick": 13,
+  "ticks_with_notes": 275,
+  "same_block_pairs": 1069,
+  "same_block_1gt": 2,
+  "same_block_1gt_pct": 0.2,
+  "l1_pairs": 0,
+  "l1_pct_of_sameblock1gt": 0.0,
+  "l1_pct_of_all_notes": 0.0,
+  "multi_block_sustain_pairs": 4,
+  "l1_run_hist": {},
+  "l1_max_run": 0,
+  "per_instrument": {
+   "0": {
+    "notes": 509,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 163,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 48,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 29,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 51,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 185,
+    "l1_pairs": 0
+   },
+   "7": {
+    "notes": 35,
+    "l1_pairs": 0
+   },
+   "8": {
+    "notes": 70,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "ShanHuHaiV2.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 49,
+  "notes": 4352,
+  "instruments_used": 16,
+  "max_notes_per_tick": 17,
+  "ticks_with_notes": 753,
+  "same_block_pairs": 4310,
+  "same_block_1gt": 44,
+  "same_block_1gt_pct": 1.0,
+  "l1_pairs": 4,
+  "l1_pct_of_sameblock1gt": 9.1,
+  "l1_pct_of_all_notes": 0.1,
+  "multi_block_sustain_pairs": 42,
+  "l1_run_hist": {
+   "2": 4
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1393,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 190,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 192,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 140,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 376,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 768,
+    "l1_pairs": 4
+   },
+   "7": {
+    "notes": 348,
+    "l1_pairs": 24
+   },
+   "8": {
+    "notes": 322,
+    "l1_pairs": 0
+   },
+   "9": {
+    "notes": 2,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 339,
+    "l1_pairs": 2
+   },
+   "13": {
+    "notes": 282,
+    "l1_pairs": 12
+   }
+  }
+ },
+ {
+  "file": "Unsaved song 129960.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 53,
+  "notes": 4857,
+  "instruments_used": 16,
+  "max_notes_per_tick": 19,
+  "ticks_with_notes": 722,
+  "same_block_pairs": 4804,
+  "same_block_1gt": 34,
+  "same_block_1gt_pct": 0.7,
+  "l1_pairs": 4,
+  "l1_pct_of_sameblock1gt": 11.8,
+  "l1_pct_of_all_notes": 0.1,
+  "multi_block_sustain_pairs": 28,
+  "l1_run_hist": {
+   "2": 4
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1516,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 225,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 388,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 736,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 406,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 593,
+    "l1_pairs": 2
+   },
+   "7": {
+    "notes": 584,
+    "l1_pairs": 28
+   },
+   "8": {
+    "notes": 83,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 266,
+    "l1_pairs": 2
+   },
+   "13": {
+    "notes": 60,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "Unsaved song 162334.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 52,
+  "notes": 844,
+  "instruments_used": 16,
+  "max_notes_per_tick": 4,
+  "ticks_with_notes": 435,
+  "same_block_pairs": 838,
+  "same_block_1gt": 5,
+  "same_block_1gt_pct": 0.6,
+  "l1_pairs": 0,
+  "l1_pct_of_sameblock1gt": 0.0,
+  "l1_pct_of_all_notes": 0.0,
+  "multi_block_sustain_pairs": 0,
+  "l1_run_hist": {},
+  "l1_max_run": 0,
+  "per_instrument": {
+   "0": {
+    "notes": 792,
+    "l1_pairs": 5
+   },
+   "12": {
+    "notes": 52,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "Unsaved song 180626.nbs",
+  "name": null,
+  "origin": "ÊZw\u0014\u0014hp&.mid",
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 29,
+  "notes": 4657,
+  "instruments_used": 16,
+  "max_notes_per_tick": 19,
+  "ticks_with_notes": 762,
+  "same_block_pairs": 4627,
+  "same_block_1gt": 225,
+  "same_block_1gt_pct": 4.9,
+  "l1_pairs": 191,
+  "l1_pct_of_sameblock1gt": 84.9,
+  "l1_pct_of_all_notes": 4.1,
+  "multi_block_sustain_pairs": 249,
+  "l1_run_hist": {
+   "2": 4,
+   "32": 5,
+   "33": 1
+  },
+  "l1_max_run": 33,
+  "per_instrument": {
+   "0": {
+    "notes": 1099,
+    "l1_pairs": 5
+   },
+   "1": {
+    "notes": 190,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 197,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 740,
+    "l1_pairs": 126
+   },
+   "4": {
+    "notes": 26,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 2405,
+    "l1_pairs": 94
+   }
+  }
+ },
+ {
+  "file": "Unsaved song 285274.nbs",
+  "name": null,
+  "origin": "12 Jay.mid",
+  "version": 6,
+  "length_ticks": 1856,
+  "layers": 31,
+  "notes": 492,
+  "instruments_used": 16,
+  "max_notes_per_tick": 2,
+  "ticks_with_notes": 272,
+  "same_block_pairs": 490,
+  "same_block_1gt": 0,
+  "same_block_1gt_pct": 0.0,
+  "l1_pairs": 0,
+  "l1_pct_of_sameblock1gt": 0.0,
+  "l1_pct_of_all_notes": 0.0,
+  "multi_block_sustain_pairs": 0,
+  "l1_run_hist": {},
+  "l1_max_run": 0,
+  "per_instrument": {
+   "0": {
+    "notes": 492,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "Unsaved song 316549.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 53,
+  "notes": 4093,
+  "instruments_used": 16,
+  "max_notes_per_tick": 17,
+  "ticks_with_notes": 742,
+  "same_block_pairs": 4053,
+  "same_block_1gt": 44,
+  "same_block_1gt_pct": 1.1,
+  "l1_pairs": 4,
+  "l1_pct_of_sameblock1gt": 9.1,
+  "l1_pct_of_all_notes": 0.1,
+  "multi_block_sustain_pairs": 36,
+  "l1_run_hist": {
+   "2": 4
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1467,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 190,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 192,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 140,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 376,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 740,
+    "l1_pairs": 4
+   },
+   "7": {
+    "notes": 339,
+    "l1_pairs": 24
+   },
+   "8": {
+    "notes": 88,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 277,
+    "l1_pairs": 2
+   },
+   "13": {
+    "notes": 282,
+    "l1_pairs": 12
+   },
+   "14": {
+    "notes": 2,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "Unsaved song 396660.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 52,
+  "notes": 332,
+  "instruments_used": 16,
+  "max_notes_per_tick": 2,
+  "ticks_with_notes": 241,
+  "same_block_pairs": 328,
+  "same_block_1gt": 5,
+  "same_block_1gt_pct": 1.5,
+  "l1_pairs": 0,
+  "l1_pct_of_sameblock1gt": 0.0,
+  "l1_pct_of_all_notes": 0.0,
+  "multi_block_sustain_pairs": 0,
+  "l1_run_hist": {},
+  "l1_max_run": 0,
+  "per_instrument": {
+   "0": {
+    "notes": 280,
+    "l1_pairs": 5
+   },
+   "12": {
+    "notes": 52,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "ShanHuHaiV2.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2377,
+  "layers": 49,
+  "notes": 4350,
+  "instruments_used": 16,
+  "max_notes_per_tick": 17,
+  "ticks_with_notes": 753,
+  "same_block_pairs": 4310,
+  "same_block_1gt": 44,
+  "same_block_1gt_pct": 1.0,
+  "l1_pairs": 4,
+  "l1_pct_of_sameblock1gt": 9.1,
+  "l1_pct_of_all_notes": 0.1,
+  "multi_block_sustain_pairs": 42,
+  "l1_run_hist": {
+   "2": 4
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1394,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 190,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 192,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 140,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 376,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 765,
+    "l1_pairs": 4
+   },
+   "7": {
+    "notes": 354,
+    "l1_pairs": 24
+   },
+   "8": {
+    "notes": 322,
+    "l1_pairs": 0
+   },
+   "9": {
+    "notes": 2,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 333,
+    "l1_pairs": 2
+   },
+   "13": {
+    "notes": 282,
+    "l1_pairs": 12
+   }
+  }
+ },
+ {
+  "file": "ShanHuHaiV3.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2713,
+  "layers": 49,
+  "notes": 4862,
+  "instruments_used": 16,
+  "max_notes_per_tick": 17,
+  "ticks_with_notes": 855,
+  "same_block_pairs": 4822,
+  "same_block_1gt": 50,
+  "same_block_1gt_pct": 1.0,
+  "l1_pairs": 4,
+  "l1_pct_of_sameblock1gt": 8.0,
+  "l1_pct_of_all_notes": 0.1,
+  "multi_block_sustain_pairs": 43,
+  "l1_run_hist": {
+   "2": 4
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1555,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 206,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 209,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 154,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 406,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 859,
+    "l1_pairs": 4
+   },
+   "7": {
+    "notes": 398,
+    "l1_pairs": 24
+   },
+   "8": {
+    "notes": 364,
+    "l1_pairs": 0
+   },
+   "9": {
+    "notes": 3,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 390,
+    "l1_pairs": 2
+   },
+   "13": {
+    "notes": 318,
+    "l1_pairs": 18
+   }
+  }
+ },
+ {
+  "file": "WFXLC.nbs",
+  "name": null,
+  "origin": "ZÎÃÌ9_1ÙQ_aigei_com.mid",
+  "version": 6,
+  "length_ticks": 720,
+  "layers": 31,
+  "notes": 1127,
+  "instruments_used": 16,
+  "max_notes_per_tick": 13,
+  "ticks_with_notes": 275,
+  "same_block_pairs": 1106,
+  "same_block_1gt": 2,
+  "same_block_1gt_pct": 0.2,
+  "l1_pairs": 0,
+  "l1_pct_of_sameblock1gt": 0.0,
+  "l1_pct_of_all_notes": 0.0,
+  "multi_block_sustain_pairs": 4,
+  "l1_run_hist": {},
+  "l1_max_run": 0,
+  "per_instrument": {
+   "0": {
+    "notes": 545,
+    "l1_pairs": 2
+   },
+   "2": {
+    "notes": 48,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 29,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 51,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 185,
+    "l1_pairs": 0
+   },
+   "7": {
+    "notes": 35,
+    "l1_pairs": 0
+   },
+   "8": {
+    "notes": 71,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 163,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "YuAi.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2656,
+  "layers": 57,
+  "notes": 6367,
+  "instruments_used": 17,
+  "max_notes_per_tick": 21,
+  "ticks_with_notes": 904,
+  "same_block_pairs": 6320,
+  "same_block_1gt": 6,
+  "same_block_1gt_pct": 0.1,
+  "l1_pairs": 0,
+  "l1_pct_of_sameblock1gt": 0.0,
+  "l1_pct_of_all_notes": 0.0,
+  "multi_block_sustain_pairs": 2,
+  "l1_run_hist": {},
+  "l1_max_run": 0,
+  "per_instrument": {
+   "0": {
+    "notes": 1119,
+    "l1_pairs": 0
+   },
+   "1": {
+    "notes": 258,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 184,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 172,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 378,
+    "l1_pairs": 0
+   },
+   "5": {
+    "notes": 1802,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 727,
+    "l1_pairs": 0
+   },
+   "9": {
+    "notes": 76,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 917,
+    "l1_pairs": 3
+   },
+   "13": {
+    "notes": 261,
+    "l1_pairs": 0
+   },
+   "14": {
+    "notes": 450,
+    "l1_pairs": 0
+   },
+   "15": {
+    "notes": 22,
+    "l1_pairs": 3
+   },
+   "20": {
+    "notes": 1,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "Living Millennium.nbs",
+  "name": "Living Millennium",
+  "origin": null,
+  "version": 6,
+  "length_ticks": 4992,
+  "layers": 209,
+  "notes": 33247,
+  "instruments_used": 29,
+  "max_notes_per_tick": 40,
+  "ticks_with_notes": 4449,
+  "same_block_pairs": 33135,
+  "same_block_1gt": 717,
+  "same_block_1gt_pct": 2.2,
+  "l1_pairs": 282,
+  "l1_pct_of_sameblock1gt": 39.3,
+  "l1_pct_of_all_notes": 0.8,
+  "multi_block_sustain_pairs": 20747,
+  "l1_run_hist": {
+   "2": 159,
+   "6": 15,
+   "9": 6
+  },
+  "l1_max_run": 9,
+  "per_instrument": {
+   "0": {
+    "notes": 3755,
+    "l1_pairs": 75
+   },
+   "1": {
+    "notes": 1770,
+    "l1_pairs": 3
+   },
+   "2": {
+    "notes": 801,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 898,
+    "l1_pairs": 8
+   },
+   "4": {
+    "notes": 1,
+    "l1_pairs": 0
+   },
+   "5": {
+    "notes": 4124,
+    "l1_pairs": 78
+   },
+   "6": {
+    "notes": 9060,
+    "l1_pairs": 184
+   },
+   "7": {
+    "notes": 2454,
+    "l1_pairs": 72
+   },
+   "8": {
+    "notes": 321,
+    "l1_pairs": 85
+   },
+   "10": {
+    "notes": 33,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 555,
+    "l1_pairs": 0
+   },
+   "13": {
+    "notes": 1285,
+    "l1_pairs": 26
+   },
+   "15": {
+    "notes": 4037,
+    "l1_pairs": 46
+   },
+   "20": {
+    "notes": 17,
+    "l1_pairs": 0
+   },
+   "21": {
+    "notes": 288,
+    "l1_pairs": 0
+   },
+   "22": {
+    "notes": 861,
+    "l1_pairs": 0
+   },
+   "23": {
+    "notes": 131,
+    "l1_pairs": 0
+   },
+   "24": {
+    "notes": 487,
+    "l1_pairs": 0
+   },
+   "25": {
+    "notes": 580,
+    "l1_pairs": 0
+   },
+   "26": {
+    "notes": 844,
+    "l1_pairs": 137
+   },
+   "27": {
+    "notes": 419,
+    "l1_pairs": 0
+   },
+   "28": {
+    "notes": 5,
+    "l1_pairs": 0
+   },
+   "29": {
+    "notes": 2,
+    "l1_pairs": 0
+   },
+   "30": {
+    "notes": 353,
+    "l1_pairs": 0
+   },
+   "31": {
+    "notes": 160,
+    "l1_pairs": 0
+   },
+   "32": {
+    "notes": 6,
+    "l1_pairs": 3
+   }
+  }
+ },
+ {
+  "file": "Megalovania - Super Smash Bros. Ultimate.nbs",
+  "name": "Megalovania (Smash Ultimate Version)",
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2303,
+  "layers": 84,
+  "notes": 12698,
+  "instruments_used": 19,
+  "max_notes_per_tick": 24,
+  "ticks_with_notes": 1506,
+  "same_block_pairs": 12621,
+  "same_block_1gt": 263,
+  "same_block_1gt_pct": 2.1,
+  "l1_pairs": 82,
+  "l1_pct_of_sameblock1gt": 31.2,
+  "l1_pct_of_all_notes": 0.6,
+  "multi_block_sustain_pairs": 2432,
+  "l1_run_hist": {
+   "2": 46,
+   "3": 13,
+   "6": 2
+  },
+  "l1_max_run": 6,
+  "per_instrument": {
+   "0": {
+    "notes": 4473,
+    "l1_pairs": 112
+   },
+   "1": {
+    "notes": 1072,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 475,
+    "l1_pairs": 6
+   },
+   "3": {
+    "notes": 2218,
+    "l1_pairs": 53
+   },
+   "4": {
+    "notes": 140,
+    "l1_pairs": 0
+   },
+   "5": {
+    "notes": 1534,
+    "l1_pairs": 24
+   },
+   "6": {
+    "notes": 121,
+    "l1_pairs": 4
+   },
+   "13": {
+    "notes": 563,
+    "l1_pairs": 4
+   },
+   "15": {
+    "notes": 1435,
+    "l1_pairs": 36
+   },
+   "20": {
+    "notes": 563,
+    "l1_pairs": 4
+   },
+   "21": {
+    "notes": 4,
+    "l1_pairs": 0
+   },
+   "22": {
+    "notes": 100,
+    "l1_pairs": 20
+   }
+  }
+ },
+ {
+  "file": "Nyan Cat.nbs",
+  "name": "Nyan Cat",
+  "origin": null,
+  "version": 6,
+  "length_ticks": 671,
+  "layers": 36,
+  "notes": 1022,
+  "instruments_used": 19,
+  "max_notes_per_tick": 6,
+  "ticks_with_notes": 521,
+  "same_block_pairs": 1003,
+  "same_block_1gt": 7,
+  "same_block_1gt_pct": 0.7,
+  "l1_pairs": 2,
+  "l1_pct_of_sameblock1gt": 28.6,
+  "l1_pct_of_all_notes": 0.2,
+  "multi_block_sustain_pairs": 364,
+  "l1_run_hist": {
+   "2": 2
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1,
+    "l1_pairs": 0
+   },
+   "1": {
+    "notes": 256,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 38,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 86,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 6,
+    "l1_pairs": 4
+   },
+   "6": {
+    "notes": 468,
+    "l1_pairs": 0
+   },
+   "7": {
+    "notes": 50,
+    "l1_pairs": 0
+   },
+   "15": {
+    "notes": 3,
+    "l1_pairs": 0
+   },
+   "20": {
+    "notes": 3,
+    "l1_pairs": 1
+   },
+   "21": {
+    "notes": 34,
+    "l1_pairs": 0
+   },
+   "22": {
+    "notes": 77,
+    "l1_pairs": 2
+   }
+  }
+ },
+ {
+  "file": "ShanHuHaiV3.nbs",
+  "name": null,
+  "origin": null,
+  "version": 6,
+  "length_ticks": 2713,
+  "layers": 49,
+  "notes": 4862,
+  "instruments_used": 16,
+  "max_notes_per_tick": 17,
+  "ticks_with_notes": 855,
+  "same_block_pairs": 4822,
+  "same_block_1gt": 50,
+  "same_block_1gt_pct": 1.0,
+  "l1_pairs": 4,
+  "l1_pct_of_sameblock1gt": 8.0,
+  "l1_pct_of_all_notes": 0.1,
+  "multi_block_sustain_pairs": 43,
+  "l1_run_hist": {
+   "2": 4
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 1555,
+    "l1_pairs": 2
+   },
+   "1": {
+    "notes": 206,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 209,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 154,
+    "l1_pairs": 0
+   },
+   "4": {
+    "notes": 406,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 859,
+    "l1_pairs": 4
+   },
+   "7": {
+    "notes": 398,
+    "l1_pairs": 24
+   },
+   "8": {
+    "notes": 364,
+    "l1_pairs": 0
+   },
+   "9": {
+    "notes": 3,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 390,
+    "l1_pairs": 2
+   },
+   "13": {
+    "notes": 318,
+    "l1_pairs": 18
+   }
+  }
+ },
+ {
+  "file": "Tetoris.nbs",
+  "name": "Tetoris",
+  "origin": null,
+  "version": 6,
+  "length_ticks": 3191,
+  "layers": 65,
+  "notes": 24451,
+  "instruments_used": 16,
+  "max_notes_per_tick": 41,
+  "ticks_with_notes": 2884,
+  "same_block_pairs": 24337,
+  "same_block_1gt": 12406,
+  "same_block_1gt_pct": 51.0,
+  "l1_pairs": 11512,
+  "l1_pct_of_sameblock1gt": 92.8,
+  "l1_pct_of_all_notes": 47.1,
+  "multi_block_sustain_pairs": 21837,
+  "l1_run_hist": {
+   "2": 24,
+   "3": 687,
+   "4": 1036,
+   "5": 8,
+   "6": 176,
+   "7": 133,
+   "8": 95,
+   "12": 22,
+   "16": 53,
+   "20": 6,
+   "24": 46,
+   "32": 70,
+   "64": 4
+  },
+  "l1_max_run": 64,
+  "per_instrument": {
+   "0": {
+    "notes": 974,
+    "l1_pairs": 252
+   },
+   "1": {
+    "notes": 44,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 1151,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 5839,
+    "l1_pairs": 3147
+   },
+   "4": {
+    "notes": 140,
+    "l1_pairs": 31
+   },
+   "5": {
+    "notes": 1400,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 1302,
+    "l1_pairs": 175
+   },
+   "8": {
+    "notes": 716,
+    "l1_pairs": 168
+   },
+   "11": {
+    "notes": 12,
+    "l1_pairs": 0
+   },
+   "12": {
+    "notes": 700,
+    "l1_pairs": 235
+   },
+   "13": {
+    "notes": 5027,
+    "l1_pairs": 4146
+   },
+   "14": {
+    "notes": 5347,
+    "l1_pairs": 3712
+   },
+   "15": {
+    "notes": 1799,
+    "l1_pairs": 540
+   }
+  }
+ },
+ {
+  "file": "The Ground's Colour Is Yellow.nbs",
+  "name": "The Ground's Color is Yellow",
+  "origin": null,
+  "version": 6,
+  "length_ticks": 1791,
+  "layers": 45,
+  "notes": 12919,
+  "instruments_used": 17,
+  "max_notes_per_tick": 20,
+  "ticks_with_notes": 1787,
+  "same_block_pairs": 12882,
+  "same_block_1gt": 3972,
+  "same_block_1gt_pct": 30.8,
+  "l1_pairs": 2988,
+  "l1_pct_of_sameblock1gt": 75.2,
+  "l1_pct_of_all_notes": 23.1,
+  "multi_block_sustain_pairs": 8164,
+  "l1_run_hist": {
+   "2": 370,
+   "3": 2,
+   "4": 340,
+   "5": 28,
+   "6": 78,
+   "8": 36,
+   "10": 4,
+   "12": 48,
+   "24": 12
+  },
+  "l1_max_run": 24,
+  "per_instrument": {
+   "0": {
+    "notes": 3619,
+    "l1_pairs": 0
+   },
+   "1": {
+    "notes": 4056,
+    "l1_pairs": 3558
+   },
+   "2": {
+    "notes": 446,
+    "l1_pairs": 29
+   },
+   "3": {
+    "notes": 1487,
+    "l1_pairs": 344
+   },
+   "4": {
+    "notes": 692,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 801,
+    "l1_pairs": 8
+   },
+   "8": {
+    "notes": 84,
+    "l1_pairs": 0
+   },
+   "15": {
+    "notes": 1650,
+    "l1_pairs": 33
+   },
+   "20": {
+    "notes": 84,
+    "l1_pairs": 0
+   }
+  }
+ },
+ {
+  "file": "Touhou 9 - Reach for the moon(Remastered).nbs",
+  "name": "Reach for the Moon ~ Immortal Smoke",
+  "origin": "touhou_8_extra_stage_boss_mokou_xg.mid",
+  "version": 6,
+  "length_ticks": 7831,
+  "layers": 132,
+  "notes": 53403,
+  "instruments_used": 17,
+  "max_notes_per_tick": 44,
+  "ticks_with_notes": 7240,
+  "same_block_pairs": 53273,
+  "same_block_1gt": 7655,
+  "same_block_1gt_pct": 14.4,
+  "l1_pairs": 7647,
+  "l1_pct_of_sameblock1gt": 99.9,
+  "l1_pct_of_all_notes": 14.3,
+  "multi_block_sustain_pairs": 17813,
+  "l1_run_hist": {
+   "2": 2947,
+   "6": 120,
+   "10": 306,
+   "32": 16,
+   "34": 20,
+   "96": 2
+  },
+  "l1_max_run": 96,
+  "per_instrument": {
+   "0": {
+    "notes": 5484,
+    "l1_pairs": 380
+   },
+   "1": {
+    "notes": 1976,
+    "l1_pairs": 0
+   },
+   "2": {
+    "notes": 1086,
+    "l1_pairs": 0
+   },
+   "3": {
+    "notes": 3603,
+    "l1_pairs": 190
+   },
+   "4": {
+    "notes": 1046,
+    "l1_pairs": 0
+   },
+   "6": {
+    "notes": 19255,
+    "l1_pairs": 5676
+   },
+   "7": {
+    "notes": 4480,
+    "l1_pairs": 0
+   },
+   "8": {
+    "notes": 5650,
+    "l1_pairs": 0
+   },
+   "11": {
+    "notes": 2020,
+    "l1_pairs": 0
+   },
+   "14": {
+    "notes": 988,
+    "l1_pairs": 0
+   },
+   "15": {
+    "notes": 4679,
+    "l1_pairs": 0
+   },
+   "16": {
+    "notes": 2096,
+    "l1_pairs": 1408
+   },
+   "17": {
+    "notes": 1024,
+    "l1_pairs": 0
+   },
+   "20": {
+    "notes": 16,
+    "l1_pairs": 1
+   }
+  }
+ },
+ {
+  "file": "Turkish March.nbs",
+  "name": "Turkish March",
+  "origin": null,
+  "version": 6,
+  "length_ticks": 3571,
+  "layers": 39,
+  "notes": 5838,
+  "instruments_used": 16,
+  "max_notes_per_tick": 19,
+  "ticks_with_notes": 2706,
+  "same_block_pairs": 5819,
+  "same_block_1gt": 862,
+  "same_block_1gt_pct": 14.8,
+  "l1_pairs": 19,
+  "l1_pct_of_sameblock1gt": 2.2,
+  "l1_pct_of_all_notes": 0.3,
+  "multi_block_sustain_pairs": 2442,
+  "l1_run_hist": {
+   "2": 19
+  },
+  "l1_max_run": 2,
+  "per_instrument": {
+   "0": {
+    "notes": 2038,
+    "l1_pairs": 647
+   },
+   "15": {
+    "notes": 3800,
+    "l1_pairs": 215
+   }
+  }
+ }
+]

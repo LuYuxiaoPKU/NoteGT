@@ -1,0 +1,117 @@
+﻿
+ChannelAccess (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.sounds
+Class ChannelAccess
+java.lang.Object
+net.minecraft.client.sounds.ChannelAccess
+public class ChannelAccess
+extends Object
+The ChannelAccess class provides access to channels for playing audio data using a given library and executor.
+Nested Class Summary
+Nested Classes
+Modifier and Type
+Class
+Description
+class&nbsp;
+ChannelAccess.ChannelHandle
+Represents a handle to a channel.
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final Set < ChannelAccess.ChannelHandle >
+channels
+&nbsp;
+(package private) final Executor
+executor
+&nbsp;
+(package private) final Library
+library
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+ChannelAccess ( Library &nbsp;library,
+Executor &nbsp;executor)
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+void
+clear ()
+&nbsp;
+CompletableFuture < ChannelAccess.ChannelHandle >
+createHandle ( Library.Pool &nbsp;systemMode)
+Creates a new channel handle for the specified system mode and returns a CompletableFuture that completes with the handle when it is created.
+void
+executeOnChannels ( Consumer < Stream < Channel >>&nbsp;sourceStreamConsumer)
+&nbsp;
+void
+scheduleTick ()
+&nbsp;
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Field Details
+channels
+private final &nbsp; Set < ChannelAccess.ChannelHandle > &nbsp; channels
+library
+final &nbsp; Library &nbsp; library
+executor
+final &nbsp; Executor &nbsp; executor
+Constructor Details
+ChannelAccess
+public &nbsp; ChannelAccess ( Library &nbsp;library,
+Executor &nbsp;executor)
+Method Details
+createHandle
+public &nbsp; CompletableFuture < ChannelAccess.ChannelHandle > &nbsp; createHandle ( Library.Pool &nbsp;systemMode)
+Creates a new channel handle for the specified system mode and returns a CompletableFuture that completes with the handle when it is created.
+Parameters:
+systemMode - systemMode the system mode to create the channel handle for
+Returns:
+a CompletableFuture that completes with the channel handle when it is created, or null if it cannot be created
+executeOnChannels
+public &nbsp; void &nbsp; executeOnChannels ( Consumer < Stream < Channel >>&nbsp;sourceStreamConsumer)
+Parameters:
+sourceStreamConsumer - the consumer to execute on the stream of channels
+scheduleTick
+public &nbsp; void &nbsp; scheduleTick ()
+clear
+public &nbsp; void &nbsp; clear ()
+

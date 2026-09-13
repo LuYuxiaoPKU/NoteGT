@@ -1,0 +1,451 @@
+[
+ {
+  "name": "dbass",
+  "sweep": [
+   {
+    "name": "dbass",
+    "reg": "F#1",
+    "len_ms": 40.0,
+    "fade_ms": 8.0,
+    "f0_file": 138.6895,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 173.9,
+       "mod_dbc": -36.24,
+       "perperiod_db": 236.8
+      },
+      "shaped": {
+       "pp_db": 99.9,
+       "mod_dbc": -9.13,
+       "perperiod_db": 46.73
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 174.41,
+       "mod_dbc": -36.54,
+       "perperiod_db": 237.1
+      },
+      "shaped": {
+       "pp_db": 104.41,
+       "mod_dbc": -9.12,
+       "perperiod_db": 67.94
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 174.58,
+       "mod_dbc": -36.65,
+       "perperiod_db": 237.63
+      },
+      "shaped": {
+       "pp_db": 108.98,
+       "mod_dbc": -9.1,
+       "perperiod_db": 225.01
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 174.6,
+       "mod_dbc": -36.54,
+       "perperiod_db": 238.08
+      },
+      "shaped": {
+       "pp_db": 113.51,
+       "mod_dbc": -9.1,
+       "perperiod_db": 225.54
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 174.71,
+       "mod_dbc": -36.64
+      },
+      "shaped": {
+       "pp_db": 118.06,
+       "mod_dbc": -9.09
+      }
+     }
+    },
+    "worst_mod": -9.09,
+    "worst_pp": 118.06
+   },
+   {
+    "name": "dbass",
+    "reg": "F#1",
+    "len_ms": 50.0,
+    "fade_ms": 8.0,
+    "f0_file": 138.6895,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 173.9,
+       "mod_dbc": -36.24,
+       "perperiod_db": 236.8
+      },
+      "shaped": {
+       "pp_db": 31.73,
+       "mod_dbc": -15.07,
+       "perperiod_db": 5.68
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 174.41,
+       "mod_dbc": -36.54,
+       "perperiod_db": 237.1
+      },
+      "shaped": {
+       "pp_db": 31.67,
+       "mod_dbc": -15.08,
+       "perperiod_db": 7.01
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 174.58,
+       "mod_dbc": -36.65,
+       "perperiod_db": 237.63
+      },
+      "shaped": {
+       "pp_db": 31.46,
+       "mod_dbc": -15.1,
+       "perperiod_db": 17.66
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 174.6,
+       "mod_dbc": -36.54,
+       "perperiod_db": 238.08
+      },
+      "shaped": {
+       "pp_db": 31.39,
+       "mod_dbc": -15.11,
+       "perperiod_db": 24.79
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 174.71,
+       "mod_dbc": -36.64
+      },
+      "shaped": {
+       "pp_db": 31.26,
+       "mod_dbc": -15.11
+      }
+     }
+    },
+    "worst_mod": -15.07,
+    "worst_pp": 31.73
+   },
+   {
+    "name": "dbass",
+    "reg": "F#1",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": 138.6895,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 173.9,
+       "mod_dbc": -36.24,
+       "perperiod_db": 236.8
+      },
+      "shaped": {
+       "pp_db": 9.69,
+       "mod_dbc": -25.17,
+       "perperiod_db": 3.11
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 174.41,
+       "mod_dbc": -36.54,
+       "perperiod_db": 237.1
+      },
+      "shaped": {
+       "pp_db": 9.69,
+       "mod_dbc": -25.19,
+       "perperiod_db": 4.07
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 174.58,
+       "mod_dbc": -36.65,
+       "perperiod_db": 237.63
+      },
+      "shaped": {
+       "pp_db": 9.65,
+       "mod_dbc": -25.19,
+       "perperiod_db": 5.15
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 174.6,
+       "mod_dbc": -36.54,
+       "perperiod_db": 238.08
+      },
+      "shaped": {
+       "pp_db": 9.64,
+       "mod_dbc": -25.21,
+       "perperiod_db": 8.07
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 174.71,
+       "mod_dbc": -36.64
+      },
+      "shaped": {
+       "pp_db": 9.61,
+       "mod_dbc": -25.21
+      }
+     }
+    },
+    "worst_mod": -25.17,
+    "worst_pp": 9.69
+   },
+   {
+    "name": "dbass",
+    "reg": "F#1",
+    "len_ms": 75.0,
+    "fade_ms": 8.0,
+    "f0_file": 138.6895,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 173.9,
+       "mod_dbc": -36.24,
+       "perperiod_db": 236.8
+      },
+      "shaped": {
+       "pp_db": 12.38,
+       "mod_dbc": -16.03,
+       "perperiod_db": 6.16
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 174.41,
+       "mod_dbc": -36.54,
+       "perperiod_db": 237.1
+      },
+      "shaped": {
+       "pp_db": 12.38,
+       "mod_dbc": -16.03,
+       "perperiod_db": 7.63
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 174.58,
+       "mod_dbc": -36.65,
+       "perperiod_db": 237.63
+      },
+      "shaped": {
+       "pp_db": 12.33,
+       "mod_dbc": -16.03,
+       "perperiod_db": 8.7
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 174.6,
+       "mod_dbc": -36.54,
+       "perperiod_db": 238.08
+      },
+      "shaped": {
+       "pp_db": 12.33,
+       "mod_dbc": -16.03,
+       "perperiod_db": 10.59
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 174.71,
+       "mod_dbc": -36.64
+      },
+      "shaped": {
+       "pp_db": 12.3,
+       "mod_dbc": -16.03
+      }
+     }
+    },
+    "worst_mod": -16.03,
+    "worst_pp": 12.38
+   },
+   {
+    "name": "dbass",
+    "reg": "F#1",
+    "len_ms": 90.0,
+    "fade_ms": 8.0,
+    "f0_file": 138.6895,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 173.9,
+       "mod_dbc": -36.24,
+       "perperiod_db": 236.8
+      },
+      "shaped": {
+       "pp_db": 10.08,
+       "mod_dbc": -16.19,
+       "perperiod_db": 7.26
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 174.41,
+       "mod_dbc": -36.54,
+       "perperiod_db": 237.1
+      },
+      "shaped": {
+       "pp_db": 10.07,
+       "mod_dbc": -16.19,
+       "perperiod_db": 8.13
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 174.58,
+       "mod_dbc": -36.65,
+       "perperiod_db": 237.63
+      },
+      "shaped": {
+       "pp_db": 10.04,
+       "mod_dbc": -16.19,
+       "perperiod_db": 7.73
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 174.6,
+       "mod_dbc": -36.54,
+       "perperiod_db": 238.08
+      },
+      "shaped": {
+       "pp_db": 10.02,
+       "mod_dbc": -16.18,
+       "perperiod_db": 16.98
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 174.71,
+       "mod_dbc": -36.64
+      },
+      "shaped": {
+       "pp_db": 10.0,
+       "mod_dbc": -16.19
+      }
+     }
+    },
+    "worst_mod": -16.18,
+    "worst_pp": 10.08
+   },
+   {
+    "name": "dbass",
+    "reg": "F#1",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": 138.6895,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 173.9,
+       "mod_dbc": -36.24,
+       "perperiod_db": 236.8
+      },
+      "shaped": {
+       "pp_db": 10.75,
+       "mod_dbc": -20.32,
+       "perperiod_db": 7.81
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 174.41,
+       "mod_dbc": -36.54,
+       "perperiod_db": 237.1
+      },
+      "shaped": {
+       "pp_db": 10.71,
+       "mod_dbc": -20.3,
+       "perperiod_db": 9.19
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 174.58,
+       "mod_dbc": -36.65,
+       "perperiod_db": 237.63
+      },
+      "shaped": {
+       "pp_db": 10.64,
+       "mod_dbc": -20.29,
+       "perperiod_db": 9.74
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 174.6,
+       "mod_dbc": -36.54,
+       "perperiod_db": 238.08
+      },
+      "shaped": {
+       "pp_db": 10.67,
+       "mod_dbc": -20.31,
+       "perperiod_db": 10.88
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 174.71,
+       "mod_dbc": -36.64
+      },
+      "shaped": {
+       "pp_db": 10.61,
+       "mod_dbc": -20.3
+      }
+     }
+    },
+    "worst_mod": -20.29,
+    "worst_pp": 10.75
+   }
+  ]
+ }
+]

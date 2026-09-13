@@ -1,0 +1,158 @@
+﻿
+ListenerTransform (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested&nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; com.mojang.blaze3d.audio
+Record Class ListenerTransform
+java.lang.Object
+java.lang.Record
+com.mojang.blaze3d.audio.ListenerTransform
+public record ListenerTransform ( Vec3 &nbsp;position, Vec3 &nbsp;forward, Vec3 &nbsp;up)
+extends Record
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final Vec3
+forward
+The field for the forward record component.
+static final ListenerTransform
+INITIAL
+&nbsp;
+private final Vec3
+position
+The field for the position record component.
+private final Vec3
+up
+The field for the up record component.
+Constructor Summary
+Constructors
+Constructor
+Description
+ListenerTransform ( Vec3 &nbsp;position,
+Vec3 &nbsp;forward,
+Vec3 &nbsp;up)
+Creates an instance of a ListenerTransform record class.
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+final boolean
+equals ( Object &nbsp;o)
+Indicates whether some other object is "equal to" this one.
+Vec3
+forward ()
+Returns the value of the forward record component.
+final int
+hashCode ()
+Returns a hash code value for this object.
+Vec3
+position ()
+Returns the value of the position record component.
+Vec3
+right ()
+&nbsp;
+final String
+toString ()
+Returns a string representation of this record class.
+Vec3
+up ()
+Returns the value of the up record component.
+Methods inherited from class&nbsp;java.lang. Object
+clone , finalize , getClass , notify , notifyAll , wait , wait , wait
+Field Details
+position
+private final &nbsp; Vec3 &nbsp; position
+The field for the position record component.
+forward
+private final &nbsp; Vec3 &nbsp; forward
+The field for the forward record component.
+up
+private final &nbsp; Vec3 &nbsp; up
+The field for the up record component.
+INITIAL
+public static final &nbsp; ListenerTransform &nbsp; INITIAL
+Constructor Details
+ListenerTransform
+public &nbsp; ListenerTransform ( Vec3 &nbsp;position,
+Vec3 &nbsp;forward,
+Vec3 &nbsp;up)
+Creates an instance of a ListenerTransform record class.
+Parameters:
+position - the value for the position record component
+forward - the value for the forward record component
+up - the value for the up record component
+Method Details
+right
+public &nbsp; Vec3 &nbsp; right ()
+toString
+public final &nbsp; String &nbsp; toString ()
+Returns a string representation of this record class. The representation contains the name of the class, followed by the name and value of each of the record components.
+Specified by:
+toString &nbsp;in class&nbsp; Record
+Returns:
+a string representation of this object
+hashCode
+public final &nbsp; int &nbsp; hashCode ()
+Returns a hash code value for this object. The value is derived from the hash code of each of the record components.
+Specified by:
+hashCode &nbsp;in class&nbsp; Record
+Returns:
+a hash code value for this object
+equals
+public final &nbsp; boolean &nbsp; equals ( Object &nbsp;o)
+Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with Objects::equals(Object,Object) .
+Specified by:
+equals &nbsp;in class&nbsp; Record
+Parameters:
+o - the object with which to compare
+Returns:
+true if this object is the same as the o argument; false otherwise.
+position
+public &nbsp; Vec3 &nbsp; position ()
+Returns the value of the position record component.
+Returns:
+the value of the position record component
+forward
+public &nbsp; Vec3 &nbsp; forward ()
+Returns the value of the forward record component.
+Returns:
+the value of the forward record component
+up
+public &nbsp; Vec3 &nbsp; up ()
+Returns the value of the up record component.
+Returns:
+the value of the up record component
+

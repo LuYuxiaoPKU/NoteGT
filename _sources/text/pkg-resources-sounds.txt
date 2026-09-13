@@ -1,0 +1,98 @@
+﻿
+net.minecraft.client.resources.sounds (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Package:
+Description
+Related Packages
+Classes and Interfaces
+Package:&nbsp;
+Description&nbsp;|&nbsp;
+Related Packages &nbsp;|&nbsp;
+Classes and Interfaces
+SEARCH
+Package net.minecraft.client.resources.sounds
+@ParametersAreNonnullByDefault
+package net.minecraft.client.resources.sounds
+Related Packages
+Package
+Description
+net.minecraft.client.resources
+&nbsp;
+net.minecraft.client.resources.language
+&nbsp;
+net.minecraft.client.resources.model
+&nbsp;
+net.minecraft.client.resources.server
+&nbsp;
+All Classes and Interfaces Interfaces Classes Enum Classes
+Class
+Description
+AbstractSoundInstance
+&nbsp;
+AbstractTickableSoundInstance
+&nbsp;
+AmbientSoundHandler
+&nbsp;
+BeeAggressiveSoundInstance
+&nbsp;
+BeeFlyingSoundInstance
+&nbsp;
+BeeSoundInstance
+&nbsp;
+BiomeAmbientSoundsHandler
+&nbsp;
+BiomeAmbientSoundsHandler.LoopSoundInstance
+&nbsp;
+BubbleColumnAmbientSoundHandler
+&nbsp;
+ElytraOnPlayerSoundInstance
+&nbsp;
+EntityBoundSoundInstance
+&nbsp;
+GuardianAttackSoundInstance
+&nbsp;
+MinecartSoundInstance
+&nbsp;
+RidingHappyGhastSoundInstance
+&nbsp;
+RidingMinecartSoundInstance
+&nbsp;
+SimpleSoundInstance
+&nbsp;
+SnifferSoundInstance
+&nbsp;
+Sound
+&nbsp;
+Sound.Type
+&nbsp;
+SoundEventRegistration
+&nbsp;
+SoundEventRegistrationSerializer
+&nbsp;
+SoundInstance
+&nbsp;
+SoundInstance.Attenuation
+&nbsp;
+TickableSoundInstance
+&nbsp;
+UnderwaterAmbientSoundHandler
+&nbsp;
+UnderwaterAmbientSoundInstances
+&nbsp;
+UnderwaterAmbientSoundInstances.SubSound
+&nbsp;
+UnderwaterAmbientSoundInstances.UnderwaterAmbientSoundInstance
+&nbsp;
+

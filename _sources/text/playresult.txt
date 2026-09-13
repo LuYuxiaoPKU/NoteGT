@@ -1,0 +1,113 @@
+﻿
+SoundEngine.PlayResult (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Enum Constants
+Field
+Method
+Detail:
+Enum Constants
+Field
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Enum Constants &nbsp;|&nbsp;
+Field&nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Enum Constants &nbsp;|&nbsp;
+Field&nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.sounds
+Enum Class SoundEngine.PlayResult
+java.lang.Object
+java.lang.Enum < SoundEngine.PlayResult >
+net.minecraft.client.sounds.SoundEngine.PlayResult
+All Implemented Interfaces:
+Serializable , Comparable < SoundEngine.PlayResult > , Constable
+Enclosing class:
+SoundEngine
+public static enum SoundEngine.PlayResult
+extends Enum < SoundEngine.PlayResult >
+Nested Class Summary
+Nested classes/interfaces inherited from class&nbsp;java.lang. Enum
+Enum.EnumDesc < E extends Enum < E >>
+Enum Constant Summary
+Enum Constants
+Enum Constant
+Description
+NOT_STARTED
+&nbsp;
+STARTED
+&nbsp;
+STARTED_SILENTLY
+&nbsp;
+Constructor Summary
+Constructors
+Modifier
+Constructor
+Description
+private
+PlayResult ()
+&nbsp;
+Method Summary
+All Methods Static Methods Concrete Methods
+Modifier and Type
+Method
+Description
+static SoundEngine.PlayResult
+valueOf ( String &nbsp;name)
+Returns the enum constant of this class with the specified name.
+static SoundEngine.PlayResult []
+values ()
+Returns an array containing the constants of this enum class, in
+the order they are declared.
+Methods inherited from class&nbsp;java.lang. Enum
+clone , compareTo , describeConstable , equals , finalize , getDeclaringClass , hashCode , name , ordinal , toString , valueOf
+Methods inherited from class&nbsp;java.lang. Object
+getClass , notify , notifyAll , wait , wait , wait
+Enum Constant Details
+STARTED
+public static final &nbsp; SoundEngine.PlayResult &nbsp; STARTED
+STARTED_SILENTLY
+public static final &nbsp; SoundEngine.PlayResult &nbsp; STARTED_SILENTLY
+NOT_STARTED
+public static final &nbsp; SoundEngine.PlayResult &nbsp; NOT_STARTED
+Constructor Details
+PlayResult
+private &nbsp; PlayResult ()
+Method Details
+values
+public static &nbsp; SoundEngine.PlayResult [] &nbsp; values ()
+Returns an array containing the constants of this enum class, in
+the order they are declared.
+Returns:
+an array containing the constants of this enum class, in the order they are declared
+valueOf
+public static &nbsp; SoundEngine.PlayResult &nbsp; valueOf ( String &nbsp;name)
+Returns the enum constant of this class with the specified name.
+The string must match exactly an identifier used to declare an
+enum constant in this class. (Extraneous whitespace characters are
+not permitted.)
+Parameters:
+name - the name of the enum constant to be returned.
+Returns:
+the enum constant with the specified name
+Throws:
+IllegalArgumentException - if this enum class has no constant with the specified name
+NullPointerException - if the argument is null
+

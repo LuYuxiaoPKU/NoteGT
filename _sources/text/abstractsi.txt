@@ -1,0 +1,256 @@
+﻿
+AbstractSoundInstance (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.resources.sounds
+Class AbstractSoundInstance
+java.lang.Object
+net.minecraft.client.resources.sounds.AbstractSoundInstance
+All Implemented Interfaces:
+SoundInstance
+Direct Known Subclasses:
+AbstractTickableSoundInstance , SimpleSoundInstance
+public abstract class AbstractSoundInstance
+extends Object
+implements SoundInstance
+Nested Class Summary
+Nested classes/interfaces inherited from interface&nbsp;net.minecraft.client.resources.sounds. SoundInstance
+SoundInstance.Attenuation
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+protected SoundInstance.Attenuation
+attenuation
+&nbsp;
+protected int
+delay
+The number of ticks between repeating the sound
+protected final ResourceLocation
+location
+&nbsp;
+protected boolean
+looping
+&nbsp;
+protected float
+pitch
+&nbsp;
+protected RandomSource
+random
+&nbsp;
+protected boolean
+relative
+&nbsp;
+protected Sound
+sound
+&nbsp;
+protected final SoundSource
+source
+&nbsp;
+protected float
+volume
+&nbsp;
+protected double
+x
+&nbsp;
+protected double
+y
+&nbsp;
+protected double
+z
+&nbsp;
+Constructor Summary
+Constructors
+Modifier
+Constructor
+Description
+protected
+AbstractSoundInstance ( ResourceLocation &nbsp;location,
+SoundSource &nbsp;source,
+RandomSource &nbsp;random)
+&nbsp;
+protected
+AbstractSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+RandomSource &nbsp;random)
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+SoundInstance.Attenuation
+getAttenuation ()
+&nbsp;
+int
+getDelay ()
+&nbsp;
+ResourceLocation
+getLocation ()
+&nbsp;
+float
+getPitch ()
+&nbsp;
+Sound
+getSound ()
+&nbsp;
+SoundSource
+getSource ()
+&nbsp;
+float
+getVolume ()
+&nbsp;
+double
+getX ()
+&nbsp;
+double
+getY ()
+&nbsp;
+double
+getZ ()
+&nbsp;
+boolean
+isLooping ()
+&nbsp;
+boolean
+isRelative ()
+&nbsp;
+WeighedSoundEvents
+resolve ( SoundManager &nbsp;handler)
+&nbsp;
+String
+toString ()
+&nbsp;
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , wait , wait , wait
+Methods inherited from interface&nbsp;net.minecraft.client.resources.sounds. SoundInstance
+canPlaySound , canStartSilent , getStream
+Field Details
+sound
+@Nullable
+protected &nbsp; Sound &nbsp; sound
+source
+protected final &nbsp; SoundSource &nbsp; source
+location
+protected final &nbsp; ResourceLocation &nbsp; location
+volume
+protected &nbsp; float &nbsp; volume
+pitch
+protected &nbsp; float &nbsp; pitch
+x
+protected &nbsp; double &nbsp; x
+y
+protected &nbsp; double &nbsp; y
+z
+protected &nbsp; double &nbsp; z
+looping
+protected &nbsp; boolean &nbsp; looping
+delay
+protected &nbsp; int &nbsp; delay
+The number of ticks between repeating the sound
+attenuation
+protected &nbsp; SoundInstance.Attenuation &nbsp; attenuation
+relative
+protected &nbsp; boolean &nbsp; relative
+random
+protected &nbsp; RandomSource &nbsp; random
+Constructor Details
+AbstractSoundInstance
+protected &nbsp; AbstractSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+RandomSource &nbsp;random)
+AbstractSoundInstance
+protected &nbsp; AbstractSoundInstance ( ResourceLocation &nbsp;location,
+SoundSource &nbsp;source,
+RandomSource &nbsp;random)
+Method Details
+getLocation
+public &nbsp; ResourceLocation &nbsp; getLocation ()
+Specified by:
+getLocation &nbsp;in interface&nbsp; SoundInstance
+resolve
+@Nullable
+public &nbsp; WeighedSoundEvents &nbsp; resolve ( SoundManager &nbsp;handler)
+Specified by:
+resolve &nbsp;in interface&nbsp; SoundInstance
+getSound
+@Nullable
+public &nbsp; Sound &nbsp; getSound ()
+Specified by:
+getSound &nbsp;in interface&nbsp; SoundInstance
+getSource
+public &nbsp; SoundSource &nbsp; getSource ()
+Specified by:
+getSource &nbsp;in interface&nbsp; SoundInstance
+isLooping
+public &nbsp; boolean &nbsp; isLooping ()
+Specified by:
+isLooping &nbsp;in interface&nbsp; SoundInstance
+getDelay
+public &nbsp; int &nbsp; getDelay ()
+Specified by:
+getDelay &nbsp;in interface&nbsp; SoundInstance
+getVolume
+public &nbsp; float &nbsp; getVolume ()
+Specified by:
+getVolume &nbsp;in interface&nbsp; SoundInstance
+getPitch
+public &nbsp; float &nbsp; getPitch ()
+Specified by:
+getPitch &nbsp;in interface&nbsp; SoundInstance
+getX
+public &nbsp; double &nbsp; getX ()
+Specified by:
+getX &nbsp;in interface&nbsp; SoundInstance
+getY
+public &nbsp; double &nbsp; getY ()
+Specified by:
+getY &nbsp;in interface&nbsp; SoundInstance
+getZ
+public &nbsp; double &nbsp; getZ ()
+Specified by:
+getZ &nbsp;in interface&nbsp; SoundInstance
+getAttenuation
+public &nbsp; SoundInstance.Attenuation &nbsp; getAttenuation ()
+Specified by:
+getAttenuation &nbsp;in interface&nbsp; SoundInstance
+isRelative
+public &nbsp; boolean &nbsp; isRelative ()
+Specified by:
+isRelative &nbsp;in interface&nbsp; SoundInstance
+toString
+public &nbsp; String &nbsp; toString ()
+Overrides:
+toString &nbsp;in class&nbsp; Object
+

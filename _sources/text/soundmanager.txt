@@ -1,0 +1,353 @@
+﻿
+SoundManager (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.sounds
+Class SoundManager
+java.lang.Object
+net.neoforged.neoforge.resource.ContextAwareReloadListener
+net.minecraft.server.packs.resources.SimplePreparableReloadListener < SoundManager.Preparations >
+net.minecraft.client.sounds.SoundManager
+All Implemented Interfaces:
+PreparableReloadListener
+public class SoundManager
+extends SimplePreparableReloadListener < SoundManager.Preparations >
+The SoundManager class is responsible for managing sound events and playing sounds.
+It handles sound event registrations, caching of sound resources, and sound playback.
+Nested Class Summary
+Nested Classes
+Modifier and Type
+Class
+Description
+protected static class&nbsp;
+SoundManager.Preparations
+The Preparations class represents the prepared sound event registrations and caches for applying to the sound manager.
+Nested classes/interfaces inherited from interface&nbsp;net.minecraft.server.packs.resources. PreparableReloadListener
+PreparableReloadListener.PreparationBarrier
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+static final Sound
+EMPTY_SOUND
+&nbsp;
+static final ResourceLocation
+EMPTY_SOUND_LOCATION
+&nbsp;
+private static final Gson
+GSON
+&nbsp;
+static final Sound
+INTENTIONALLY_EMPTY_SOUND
+&nbsp;
+static final WeighedSoundEvents
+INTENTIONALLY_EMPTY_SOUND_EVENT
+&nbsp;
+static final ResourceLocation
+INTENTIONALLY_EMPTY_SOUND_LOCATION
+&nbsp;
+(package private) static final org.slf4j.Logger
+LOGGER
+&nbsp;
+private final Map < ResourceLocation , WeighedSoundEvents >
+registry
+&nbsp;
+private static final TypeToken < Map < String , SoundEventRegistration >>
+SOUND_EVENT_REGISTRATION_TYPE
+&nbsp;
+private final Map < ResourceLocation , Resource >
+soundCache
+&nbsp;
+private final SoundEngine
+soundEngine
+&nbsp;
+private static final String
+SOUNDS_PATH
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+SoundManager ( Options &nbsp;options,
+MusicManager &nbsp;musicManager)
+&nbsp;
+Method Summary
+All Methods Static Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+void
+addListener ( SoundEventListener &nbsp;listener)
+&nbsp;
+protected void
+apply ( SoundManager.Preparations &nbsp;object,
+ResourceManager &nbsp;resourceManager,
+ProfilerFiller &nbsp;profiler)
+Applies the prepared sound event registrations and caches to the sound manager.
+void
+destroy ()
+&nbsp;
+void
+emergencyShutdown ()
+&nbsp;
+List < String >
+getAvailableSoundDevices ()
+&nbsp;
+Collection < ResourceLocation >
+getAvailableSounds ()
+&nbsp;
+String
+getDebugString ()
+&nbsp;
+ListenerTransform
+getListenerTransform ()
+&nbsp;
+WeighedSoundEvents
+getSoundEvent ( ResourceLocation &nbsp;location)
+Returns The sound event associated with the specific ResourceLocation , or null if not found.
+boolean
+isActive ( SoundInstance &nbsp;sound)
+Checks if the specified sound is active (playing or scheduled to be played).
+void
+pauseAllExcept ( SoundSource ...&nbsp;soundSources)
+&nbsp;
+SoundEngine.PlayResult
+play ( SoundInstance &nbsp;sound)
+&nbsp;
+void
+playDelayed ( SoundInstance &nbsp;sound,
+int&nbsp;delay)
+Plays a sound with a delay in ticks.
+protected SoundManager.Preparations
+prepare ( ResourceManager &nbsp;resourceManager,
+ProfilerFiller &nbsp;profiler)
+Performs any reloading that can be done off-thread, such as file IO
+void
+queueTickingSound ( TickableSoundInstance &nbsp;tickableSound)
+Queues a ticking sound to be played.
+void
+reload ()
+&nbsp;
+void
+removeListener ( SoundEventListener &nbsp;listener)
+&nbsp;
+void
+resume ()
+&nbsp;
+void
+setVolume ( SoundInstance &nbsp;sound,
+float&nbsp;volume)
+&nbsp;
+void
+stop ()
+&nbsp;
+void
+stop ( SoundInstance &nbsp;sound)
+&nbsp;
+void
+stop ( ResourceLocation &nbsp;id,
+SoundSource &nbsp;category)
+Stops all sounds associated with the specified ID and category.
+void
+tick (boolean&nbsp;isGamePaused)
+Updates the sound manager's tick state.
+void
+updateSource ( Camera &nbsp;activeRenderInfo)
+Updates the sound source position based on the active render info.
+void
+updateSourceVolume ( SoundSource &nbsp;category,
+float&nbsp;volume)
+Updates the volume of the specified sound source category.
+(package private) static boolean
+validateSoundResource ( Sound &nbsp;sound,
+ResourceLocation &nbsp;location,
+ResourceProvider &nbsp;resourceProvider)
+Validates a sound resource
+Methods inherited from class&nbsp;net.minecraft.server.packs.resources. SimplePreparableReloadListener
+reload
+Methods inherited from class&nbsp;net.neoforged.neoforge.resource. ContextAwareReloadListener
+getContext , getRegistryLookup , injectContext , makeConditionalOps , makeConditionalOps
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Methods inherited from interface&nbsp;net.minecraft.server.packs.resources. PreparableReloadListener
+getName
+Field Details
+EMPTY_SOUND_LOCATION
+public static final &nbsp; ResourceLocation &nbsp; EMPTY_SOUND_LOCATION
+EMPTY_SOUND
+public static final &nbsp; Sound &nbsp; EMPTY_SOUND
+INTENTIONALLY_EMPTY_SOUND_LOCATION
+public static final &nbsp; ResourceLocation &nbsp; INTENTIONALLY_EMPTY_SOUND_LOCATION
+INTENTIONALLY_EMPTY_SOUND_EVENT
+public static final &nbsp; WeighedSoundEvents &nbsp; INTENTIONALLY_EMPTY_SOUND_EVENT
+INTENTIONALLY_EMPTY_SOUND
+public static final &nbsp; Sound &nbsp; INTENTIONALLY_EMPTY_SOUND
+LOGGER
+static final &nbsp; org.slf4j.Logger &nbsp; LOGGER
+SOUNDS_PATH
+private static final &nbsp; String &nbsp; SOUNDS_PATH
+See Also:
+Constant Field Values
+GSON
+private static final &nbsp; Gson &nbsp; GSON
+SOUND_EVENT_REGISTRATION_TYPE
+private static final &nbsp; TypeToken < Map < String , SoundEventRegistration >> &nbsp; SOUND_EVENT_REGISTRATION_TYPE
+registry
+private final &nbsp; Map < ResourceLocation , WeighedSoundEvents > &nbsp; registry
+soundEngine
+private final &nbsp; SoundEngine &nbsp; soundEngine
+soundCache
+private final &nbsp; Map < ResourceLocation , Resource > &nbsp; soundCache
+Constructor Details
+SoundManager
+public &nbsp; SoundManager ( Options &nbsp;options,
+MusicManager &nbsp;musicManager)
+Method Details
+prepare
+protected &nbsp; SoundManager.Preparations &nbsp; prepare ( ResourceManager &nbsp;resourceManager,
+ProfilerFiller &nbsp;profiler)
+Performs any reloading that can be done off-thread, such as file IO
+Specified by:
+prepare &nbsp;in class&nbsp; SimplePreparableReloadListener < SoundManager.Preparations >
+Parameters:
+resourceManager - The resource manager in-charge of loading sound files
+profiler - The sound profiler
+apply
+protected &nbsp; void &nbsp; apply ( SoundManager.Preparations &nbsp;object,
+ResourceManager &nbsp;resourceManager,
+ProfilerFiller &nbsp;profiler)
+Applies the prepared sound event registrations and caches to the sound manager.
+Specified by:
+apply &nbsp;in class&nbsp; SimplePreparableReloadListener < SoundManager.Preparations >
+Parameters:
+object - The prepared sound event registrations and caches
+resourceManager - The resource manager
+profiler - The profiler
+getAvailableSoundDevices
+public &nbsp; List < String > &nbsp; getAvailableSoundDevices ()
+getListenerTransform
+public &nbsp; ListenerTransform &nbsp; getListenerTransform ()
+validateSoundResource
+static &nbsp; boolean &nbsp; validateSoundResource ( Sound &nbsp;sound,
+ResourceLocation &nbsp;location,
+ResourceProvider &nbsp;resourceProvider)
+Validates a sound resource
+Parameters:
+sound - The sound to validate
+location - The location of the sound event
+resourceProvider - The resource provider
+Returns:
+true if the sound resource is valid, false otherwise
+getSoundEvent
+@Nullable
+public &nbsp; WeighedSoundEvents &nbsp; getSoundEvent ( ResourceLocation &nbsp;location)
+Returns The sound event associated with the specific ResourceLocation , or null if not found.
+Parameters:
+location - The location of the sound event
+Returns:
+The sound event associated with the specific ResourceLocation , or null if not found
+getAvailableSounds
+public &nbsp; Collection < ResourceLocation > &nbsp; getAvailableSounds ()
+queueTickingSound
+public &nbsp; void &nbsp; queueTickingSound ( TickableSoundInstance &nbsp;tickableSound)
+Queues a ticking sound to be played.
+Parameters:
+tickableSound - The ticking sound instance
+play
+public &nbsp; SoundEngine.PlayResult &nbsp; play ( SoundInstance &nbsp;sound)
+playDelayed
+public &nbsp; void &nbsp; playDelayed ( SoundInstance &nbsp;sound,
+int&nbsp;delay)
+Plays a sound with a delay in ticks.
+Parameters:
+sound - The sound instance to play
+delay - The delay in ticks before playing the sound
+updateSource
+public &nbsp; void &nbsp; updateSource ( Camera &nbsp;activeRenderInfo)
+Updates the sound source position based on the active render info.
+Parameters:
+activeRenderInfo - The active render info
+pauseAllExcept
+public &nbsp; void &nbsp; pauseAllExcept ( SoundSource ...&nbsp;soundSources)
+stop
+public &nbsp; void &nbsp; stop ()
+destroy
+public &nbsp; void &nbsp; destroy ()
+emergencyShutdown
+public &nbsp; void &nbsp; emergencyShutdown ()
+tick
+public &nbsp; void &nbsp; tick (boolean&nbsp;isGamePaused)
+Updates the sound manager's tick state.
+Parameters:
+isGamePaused - true if the game is paused, false otherwise
+resume
+public &nbsp; void &nbsp; resume ()
+updateSourceVolume
+public &nbsp; void &nbsp; updateSourceVolume ( SoundSource &nbsp;category,
+float&nbsp;volume)
+Updates the volume of the specified sound source category.
+Parameters:
+category - The sound source category
+volume - The new volume
+stop
+public &nbsp; void &nbsp; stop ( SoundInstance &nbsp;sound)
+setVolume
+public &nbsp; void &nbsp; setVolume ( SoundInstance &nbsp;sound,
+float&nbsp;volume)
+isActive
+public &nbsp; boolean &nbsp; isActive ( SoundInstance &nbsp;sound)
+Checks if the specified sound is active (playing or scheduled to be played).
+Parameters:
+sound - The sound instance to check
+Returns:
+true if the sound is active, false otherwise
+addListener
+public &nbsp; void &nbsp; addListener ( SoundEventListener &nbsp;listener)
+removeListener
+public &nbsp; void &nbsp; removeListener ( SoundEventListener &nbsp;listener)
+stop
+public &nbsp; void &nbsp; stop (@Nullable
+ResourceLocation &nbsp;id,
+@Nullable
+SoundSource &nbsp;category)
+Stops all sounds associated with the specified ID and category.
+Parameters:
+id - The ID of the sounds to stop, or null to stop all sounds
+category - The category of the sounds to stop, or null to stop sounds from
+all categories
+getDebugString
+public &nbsp; String &nbsp; getDebugString ()
+reload
+public &nbsp; void &nbsp; reload ()
+

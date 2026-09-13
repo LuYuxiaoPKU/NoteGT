@@ -1,0 +1,255 @@
+﻿
+NoteBlockInstrument (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Enum Constants
+Field
+Method
+Detail:
+Enum Constants
+Field
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Enum Constants &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Enum Constants &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.world.level.block.state.properties
+Enum Class NoteBlockInstrument
+java.lang.Object
+java.lang.Enum < NoteBlockInstrument >
+net.minecraft.world.level.block.state.properties.NoteBlockInstrument
+All Implemented Interfaces:
+Serializable , Comparable < NoteBlockInstrument > , Constable , StringRepresentable
+public enum NoteBlockInstrument
+extends Enum < NoteBlockInstrument >
+implements StringRepresentable
+Nested Class Summary
+Nested Classes
+Modifier and Type
+Class
+Description
+(package private) static enum&nbsp;
+NoteBlockInstrument.Type
+&nbsp;
+Nested classes/interfaces inherited from class&nbsp;java.lang. Enum
+Enum.EnumDesc < E extends Enum < E >>
+Nested classes/interfaces inherited from interface&nbsp;net.minecraft.util. StringRepresentable
+StringRepresentable.EnumCodec < E extends Enum < E > & StringRepresentable >, StringRepresentable.StringRepresentableCodec < S extends StringRepresentable >
+Enum Constant Summary
+Enum Constants
+Enum Constant
+Description
+BANJO
+&nbsp;
+BASEDRUM
+&nbsp;
+BASS
+&nbsp;
+BELL
+&nbsp;
+BIT
+&nbsp;
+CHIME
+&nbsp;
+COW_BELL
+&nbsp;
+CREEPER
+&nbsp;
+CUSTOM_HEAD
+&nbsp;
+DIDGERIDOO
+&nbsp;
+DRAGON
+&nbsp;
+FLUTE
+&nbsp;
+GUITAR
+&nbsp;
+HARP
+&nbsp;
+HAT
+&nbsp;
+IRON_XYLOPHONE
+&nbsp;
+PIGLIN
+&nbsp;
+PLING
+&nbsp;
+SKELETON
+&nbsp;
+SNARE
+&nbsp;
+WITHER_SKELETON
+&nbsp;
+XYLOPHONE
+&nbsp;
+ZOMBIE
+&nbsp;
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final String
+name
+&nbsp;
+private final Holder < SoundEvent >
+soundEvent
+&nbsp;
+private final NoteBlockInstrument.Type
+type
+&nbsp;
+Fields inherited from interface&nbsp;net.minecraft.util. StringRepresentable
+PRE_BUILT_MAP_THRESHOLD
+Constructor Summary
+Constructors
+Modifier
+Constructor
+Description
+private
+NoteBlockInstrument ( String &nbsp;name,
+Holder < SoundEvent >&nbsp;soundEvent,
+NoteBlockInstrument.Type &nbsp;type)
+&nbsp;
+Method Summary
+All Methods Static Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+String
+getSerializedName ()
+&nbsp;
+Holder < SoundEvent >
+getSoundEvent ()
+&nbsp;
+boolean
+hasCustomSound ()
+&nbsp;
+boolean
+isTunable ()
+&nbsp;
+static NoteBlockInstrument
+valueOf ( String &nbsp;name)
+Returns the enum constant of this class with the specified name.
+static NoteBlockInstrument []
+values ()
+Returns an array containing the constants of this enum class, in
+the order they are declared.
+boolean
+worksAboveNoteBlock ()
+&nbsp;
+Methods inherited from class&nbsp;java.lang. Enum
+clone , compareTo , describeConstable , equals , finalize , getDeclaringClass , hashCode , name , ordinal , toString , valueOf
+Methods inherited from class&nbsp;java.lang. Object
+getClass , notify , notifyAll , wait , wait , wait
+Enum Constant Details
+HARP
+public static final &nbsp; NoteBlockInstrument &nbsp; HARP
+BASEDRUM
+public static final &nbsp; NoteBlockInstrument &nbsp; BASEDRUM
+SNARE
+public static final &nbsp; NoteBlockInstrument &nbsp; SNARE
+HAT
+public static final &nbsp; NoteBlockInstrument &nbsp; HAT
+BASS
+public static final &nbsp; NoteBlockInstrument &nbsp; BASS
+FLUTE
+public static final &nbsp; NoteBlockInstrument &nbsp; FLUTE
+BELL
+public static final &nbsp; NoteBlockInstrument &nbsp; BELL
+GUITAR
+public static final &nbsp; NoteBlockInstrument &nbsp; GUITAR
+CHIME
+public static final &nbsp; NoteBlockInstrument &nbsp; CHIME
+XYLOPHONE
+public static final &nbsp; NoteBlockInstrument &nbsp; XYLOPHONE
+IRON_XYLOPHONE
+public static final &nbsp; NoteBlockInstrument &nbsp; IRON_XYLOPHONE
+COW_BELL
+public static final &nbsp; NoteBlockInstrument &nbsp; COW_BELL
+DIDGERIDOO
+public static final &nbsp; NoteBlockInstrument &nbsp; DIDGERIDOO
+BIT
+public static final &nbsp; NoteBlockInstrument &nbsp; BIT
+BANJO
+public static final &nbsp; NoteBlockInstrument &nbsp; BANJO
+PLING
+public static final &nbsp; NoteBlockInstrument &nbsp; PLING
+ZOMBIE
+public static final &nbsp; NoteBlockInstrument &nbsp; ZOMBIE
+SKELETON
+public static final &nbsp; NoteBlockInstrument &nbsp; SKELETON
+CREEPER
+public static final &nbsp; NoteBlockInstrument &nbsp; CREEPER
+DRAGON
+public static final &nbsp; NoteBlockInstrument &nbsp; DRAGON
+WITHER_SKELETON
+public static final &nbsp; NoteBlockInstrument &nbsp; WITHER_SKELETON
+PIGLIN
+public static final &nbsp; NoteBlockInstrument &nbsp; PIGLIN
+CUSTOM_HEAD
+public static final &nbsp; NoteBlockInstrument &nbsp; CUSTOM_HEAD
+Field Details
+name
+private final &nbsp; String &nbsp; name
+soundEvent
+private final &nbsp; Holder < SoundEvent > &nbsp; soundEvent
+type
+private final &nbsp; NoteBlockInstrument.Type &nbsp; type
+Constructor Details
+NoteBlockInstrument
+private &nbsp; NoteBlockInstrument ( String &nbsp;name,
+Holder < SoundEvent >&nbsp;soundEvent,
+NoteBlockInstrument.Type &nbsp;type)
+Method Details
+values
+public static &nbsp; NoteBlockInstrument [] &nbsp; values ()
+Returns an array containing the constants of this enum class, in
+the order they are declared.
+Returns:
+an array containing the constants of this enum class, in the order they are declared
+valueOf
+public static &nbsp; NoteBlockInstrument &nbsp; valueOf ( String &nbsp;name)
+Returns the enum constant of this class with the specified name.
+The string must match exactly an identifier used to declare an
+enum constant in this class. (Extraneous whitespace characters are
+not permitted.)
+Parameters:
+name - the name of the enum constant to be returned.
+Returns:
+the enum constant with the specified name
+Throws:
+IllegalArgumentException - if this enum class has no constant with the specified name
+NullPointerException - if the argument is null
+getSerializedName
+public &nbsp; String &nbsp; getSerializedName ()
+Specified by:
+getSerializedName &nbsp;in interface&nbsp; StringRepresentable
+getSoundEvent
+public &nbsp; Holder < SoundEvent > &nbsp; getSoundEvent ()
+isTunable
+public &nbsp; boolean &nbsp; isTunable ()
+hasCustomSound
+public &nbsp; boolean &nbsp; hasCustomSound ()
+worksAboveNoteBlock
+public &nbsp; boolean &nbsp; worksAboveNoteBlock ()
+

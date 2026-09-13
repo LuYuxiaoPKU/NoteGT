@@ -1,0 +1,23 @@
+{
+  "harp": "F#3",
+  "pling": "F#3",
+  "bit": "F#3",
+  "banjo": "F#3",
+  "iron_xylophone": "F#3",
+  "trumpet": "F#3",
+  "trumpet_exposed": "F#3",
+  "flute": "F#4",
+  "cow_bell": "F#4",
+  "bell": "F#5",
+  "icechime": "F#5",
+  "xylobone": "F#5",
+  "guitar": "F#2",
+  "trumpet_weathered": "F#2",
+  "trumpet_oxidized": "F#2",
+  "dbass": "F#1",
+  "didgeridoo": "F#1",
+  "bdrum": "percussion",
+  "snare": "percussion",
+  "sdrum": "percussion",
+  "click": "percussion"
+}

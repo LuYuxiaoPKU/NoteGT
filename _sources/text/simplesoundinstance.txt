@@ -1,0 +1,218 @@
+﻿
+SimpleSoundInstance (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field&nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.resources.sounds
+Class SimpleSoundInstance
+java.lang.Object
+net.minecraft.client.resources.sounds.AbstractSoundInstance
+net.minecraft.client.resources.sounds.SimpleSoundInstance
+All Implemented Interfaces:
+SoundInstance
+public class SimpleSoundInstance
+extends AbstractSoundInstance
+Nested Class Summary
+Nested classes/interfaces inherited from interface&nbsp;net.minecraft.client.resources.sounds. SoundInstance
+SoundInstance.Attenuation
+Field Summary
+Fields inherited from class&nbsp;net.minecraft.client.resources.sounds. AbstractSoundInstance
+attenuation , delay , location , looping , pitch , random , relative , sound , source , volume , x , y , z
+Constructor Summary
+Constructors
+Modifier
+Constructor
+Description
+&nbsp;
+SimpleSoundInstance ( ResourceLocation &nbsp;location,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+boolean&nbsp;looping,
+int&nbsp;delay,
+SoundInstance.Attenuation &nbsp;attenuation,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z,
+boolean&nbsp;relative)
+&nbsp;
+private
+SimpleSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+boolean&nbsp;looping,
+int&nbsp;delay,
+SoundInstance.Attenuation &nbsp;attenuation,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z)
+&nbsp;
+&nbsp;
+SimpleSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z)
+&nbsp;
+&nbsp;
+SimpleSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+BlockPos &nbsp;entity)
+&nbsp;
+Method Summary
+All Methods Static Methods Concrete Methods
+Modifier and Type
+Method
+Description
+static SimpleSoundInstance
+forAmbientAddition ( SoundEvent &nbsp;sound)
+&nbsp;
+static SimpleSoundInstance
+forAmbientMood ( SoundEvent &nbsp;soundEvent,
+RandomSource &nbsp;random,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z)
+&nbsp;
+static SimpleSoundInstance
+forJukeboxSong ( SoundEvent &nbsp;sound,
+Vec3 &nbsp;pos)
+&nbsp;
+static SimpleSoundInstance
+forLocalAmbience ( SoundEvent &nbsp;sound,
+float&nbsp;volume,
+float&nbsp;pitch)
+&nbsp;
+static SimpleSoundInstance
+forMusic ( SoundEvent &nbsp;sound,
+float&nbsp;volume)
+&nbsp;
+static SimpleSoundInstance
+forUI ( Holder < SoundEvent >&nbsp;soundHolder,
+float&nbsp;pitch)
+&nbsp;
+static SimpleSoundInstance
+forUI ( SoundEvent &nbsp;sound,
+float&nbsp;pitch)
+&nbsp;
+static SimpleSoundInstance
+forUI ( SoundEvent &nbsp;sound,
+float&nbsp;pitch,
+float&nbsp;volume)
+&nbsp;
+Methods inherited from class&nbsp;net.minecraft.client.resources.sounds. AbstractSoundInstance
+getAttenuation , getDelay , getLocation , getPitch , getSound , getSource , getVolume , getX , getY , getZ , isLooping , isRelative , resolve , toString
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , wait , wait , wait
+Methods inherited from interface&nbsp;net.minecraft.client.resources.sounds. SoundInstance
+canPlaySound , canStartSilent , getStream
+Constructor Details
+SimpleSoundInstance
+public &nbsp; SimpleSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+BlockPos &nbsp;entity)
+SimpleSoundInstance
+public &nbsp; SimpleSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z)
+SimpleSoundInstance
+private &nbsp; SimpleSoundInstance ( SoundEvent &nbsp;soundEvent,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+boolean&nbsp;looping,
+int&nbsp;delay,
+SoundInstance.Attenuation &nbsp;attenuation,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z)
+SimpleSoundInstance
+public &nbsp; SimpleSoundInstance ( ResourceLocation &nbsp;location,
+SoundSource &nbsp;source,
+float&nbsp;volume,
+float&nbsp;pitch,
+RandomSource &nbsp;random,
+boolean&nbsp;looping,
+int&nbsp;delay,
+SoundInstance.Attenuation &nbsp;attenuation,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z,
+boolean&nbsp;relative)
+Method Details
+forUI
+public static &nbsp; SimpleSoundInstance &nbsp; forUI ( SoundEvent &nbsp;sound,
+float&nbsp;pitch)
+forUI
+public static &nbsp; SimpleSoundInstance &nbsp; forUI ( Holder < SoundEvent >&nbsp;soundHolder,
+float&nbsp;pitch)
+forUI
+public static &nbsp; SimpleSoundInstance &nbsp; forUI ( SoundEvent &nbsp;sound,
+float&nbsp;pitch,
+float&nbsp;volume)
+forMusic
+public static &nbsp; SimpleSoundInstance &nbsp; forMusic ( SoundEvent &nbsp;sound,
+float&nbsp;volume)
+forJukeboxSong
+public static &nbsp; SimpleSoundInstance &nbsp; forJukeboxSong ( SoundEvent &nbsp;sound,
+Vec3 &nbsp;pos)
+forLocalAmbience
+public static &nbsp; SimpleSoundInstance &nbsp; forLocalAmbience ( SoundEvent &nbsp;sound,
+float&nbsp;volume,
+float&nbsp;pitch)
+forAmbientAddition
+public static &nbsp; SimpleSoundInstance &nbsp; forAmbientAddition ( SoundEvent &nbsp;sound)
+forAmbientMood
+public static &nbsp; SimpleSoundInstance &nbsp; forAmbientMood ( SoundEvent &nbsp;soundEvent,
+RandomSource &nbsp;random,
+double&nbsp;x,
+double&nbsp;y,
+double&nbsp;z)
+

@@ -1,0 +1,248 @@
+﻿
+Library (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; com.mojang.blaze3d.audio
+Class Library
+java.lang.Object
+com.mojang.blaze3d.audio.Library
+public class Library
+extends Object
+Nested Class Summary
+Nested Classes
+Modifier and Type
+Class
+Description
+(package private) static interface&nbsp;
+Library.ChannelPool
+&nbsp;
+(package private) static class&nbsp;
+Library.CountingChannelPool
+&nbsp;
+static enum&nbsp;
+Library.Pool
+&nbsp;
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private long
+context
+&nbsp;
+private long
+currentDevice
+&nbsp;
+private static final int
+DEFAULT_CHANNEL_COUNT
+&nbsp;
+private String
+defaultDeviceName
+&nbsp;
+private static final Library.ChannelPool
+EMPTY
+&nbsp;
+private final Listener
+listener
+&nbsp;
+(package private) static final org.slf4j.Logger
+LOGGER
+&nbsp;
+private static final int
+NO_DEVICE
+&nbsp;
+private Library.ChannelPool
+staticChannels
+&nbsp;
+private Library.ChannelPool
+streamingChannels
+&nbsp;
+private boolean
+supportsDisconnections
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+Library ()
+&nbsp;
+Method Summary
+All Methods Static Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+Channel
+acquireChannel ( Library.Pool &nbsp;pool)
+Acquires a sound channel based on the given mode.
+void
+cleanup ()
+&nbsp;
+private IntBuffer
+createAttributes ( MemoryStack &nbsp;memoryStack,
+boolean&nbsp;enableHrtf)
+&nbsp;
+List < String >
+getAvailableSoundDevices ()
+&nbsp;
+private int
+getChannelCount ()
+&nbsp;
+String
+getCurrentDeviceName ()
+&nbsp;
+String
+getDebugString ()
+&nbsp;
+static String
+getDefaultDeviceName ()
+&nbsp;
+Listener
+getListener ()
+&nbsp;
+boolean
+hasDefaultDeviceChanged ()
+&nbsp;
+void
+init ( String &nbsp;deviceSpecifier,
+boolean&nbsp;enableHrtf)
+Initializes the OpenAL device and context.
+boolean
+isCurrentDeviceDisconnected ()
+&nbsp;
+private static long
+openDeviceOrFallback ( String &nbsp;deviceSpecifier)
+Opens the specified audio device, or the default device if the specifier is null.
+void
+releaseChannel ( Channel &nbsp;channel)
+Releases a channel.
+private static OptionalLong
+tryOpenDevice ( String &nbsp;deviceSpecifier)
+Attempts to open the specified audio device.
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , toString , wait , wait , wait
+Field Details
+LOGGER
+static final &nbsp; org.slf4j.Logger &nbsp; LOGGER
+NO_DEVICE
+private static final &nbsp; int &nbsp; NO_DEVICE
+See Also:
+Constant Field Values
+DEFAULT_CHANNEL_COUNT
+private static final &nbsp; int &nbsp; DEFAULT_CHANNEL_COUNT
+See Also:
+Constant Field Values
+currentDevice
+private &nbsp; long &nbsp; currentDevice
+context
+private &nbsp; long &nbsp; context
+supportsDisconnections
+private &nbsp; boolean &nbsp; supportsDisconnections
+defaultDeviceName
+@Nullable
+private &nbsp; String &nbsp; defaultDeviceName
+EMPTY
+private static final &nbsp; Library.ChannelPool &nbsp; EMPTY
+staticChannels
+private &nbsp; Library.ChannelPool &nbsp; staticChannels
+streamingChannels
+private &nbsp; Library.ChannelPool &nbsp; streamingChannels
+listener
+private final &nbsp; Listener &nbsp; listener
+Constructor Details
+Library
+public &nbsp; Library ()
+Method Details
+init
+public &nbsp; void &nbsp; init (@Nullable
+String &nbsp;deviceSpecifier,
+boolean&nbsp;enableHrtf)
+Initializes the OpenAL device and context.
+Parameters:
+deviceSpecifier - A string specifying the name of the audio device to use,
+or null to use the default device.
+enableHrtf - Whether to enable HRTF (head-related transfer function)
+for spatial audio.
+Throws:
+IllegalStateException - if an error occurs during initialization.
+createAttributes
+private &nbsp; IntBuffer &nbsp; createAttributes ( MemoryStack &nbsp;memoryStack,
+boolean&nbsp;enableHrtf)
+getChannelCount
+private &nbsp; int &nbsp; getChannelCount ()
+getDefaultDeviceName
+@Nullable
+public static &nbsp; String &nbsp; getDefaultDeviceName ()
+getCurrentDeviceName
+public &nbsp; String &nbsp; getCurrentDeviceName ()
+hasDefaultDeviceChanged
+public &nbsp; boolean &nbsp; hasDefaultDeviceChanged ()
+openDeviceOrFallback
+private static &nbsp; long &nbsp; openDeviceOrFallback (@Nullable
+String &nbsp;deviceSpecifier)
+Opens the specified audio device, or the default device if the specifier is null.
+Parameters:
+deviceSpecifier - The name of the audio device to open, or null to open
+the default device.
+Returns:
+The handle of the opened device.
+Throws:
+IllegalStateException - if the device cannot be opened.
+tryOpenDevice
+private static &nbsp; OptionalLong &nbsp; tryOpenDevice (@Nullable
+String &nbsp;deviceSpecifier)
+Attempts to open the specified audio device.
+Parameters:
+deviceSpecifier - A string specifying the name of the audio device to open
+, or null to use the default device.
+Returns:
+an OptionalLong containing the handle of the opened device if successful, or empty if the device could not be opened
+cleanup
+public &nbsp; void &nbsp; cleanup ()
+getListener
+public &nbsp; Listener &nbsp; getListener ()
+acquireChannel
+@Nullable
+public &nbsp; Channel &nbsp; acquireChannel ( Library.Pool &nbsp;pool)
+Acquires a sound channel based on the given mode.
+releaseChannel
+public &nbsp; void &nbsp; releaseChannel ( Channel &nbsp;channel)
+Releases a channel.
+Parameters:
+channel - The channel to release.
+getDebugString
+public &nbsp; String &nbsp; getDebugString ()
+getAvailableSoundDevices
+public &nbsp; List < String > &nbsp; getAvailableSoundDevices ()
+isCurrentDeviceDisconnected
+public &nbsp; boolean &nbsp; isCurrentDeviceDisconnected ()
+

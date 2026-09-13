@@ -1,0 +1,415 @@
+[
+ {
+  "name": "bit",
+  "sweep": [
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 40.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.8599,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 71.5,
+       "mod_dbc": -48.14,
+       "perperiod_db": 53.45
+      },
+      "shaped": {
+       "pp_db": 104.08,
+       "mod_dbc": -8.96,
+       "perperiod_db": 218.93
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 70.76,
+       "mod_dbc": -44.96
+      },
+      "shaped": {
+       "pp_db": 108.58,
+       "mod_dbc": -8.95
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 70.27,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 113.18,
+       "mod_dbc": -8.93
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 70.67,
+       "mod_dbc": -45.03
+      },
+      "shaped": {
+       "pp_db": 117.7,
+       "mod_dbc": -8.93
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 70.49,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 122.26,
+       "mod_dbc": -8.92
+      }
+     }
+    },
+    "worst_mod": -8.92,
+    "worst_pp": 122.26
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 50.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.8599,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 71.5,
+       "mod_dbc": -48.14,
+       "perperiod_db": 53.45
+      },
+      "shaped": {
+       "pp_db": 43.66,
+       "mod_dbc": -14.2,
+       "perperiod_db": 29.03
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 70.76,
+       "mod_dbc": -44.96
+      },
+      "shaped": {
+       "pp_db": 43.62,
+       "mod_dbc": -14.21
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 70.27,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 43.48,
+       "mod_dbc": -14.22
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 70.67,
+       "mod_dbc": -45.03
+      },
+      "shaped": {
+       "pp_db": 43.43,
+       "mod_dbc": -14.23
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 70.49,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 43.34,
+       "mod_dbc": -14.24
+      }
+     }
+    },
+    "worst_mod": -14.2,
+    "worst_pp": 43.66
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 60.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.8599,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 71.5,
+       "mod_dbc": -48.14,
+       "perperiod_db": 53.45
+      },
+      "shaped": {
+       "pp_db": 6.86,
+       "mod_dbc": -27.89,
+       "perperiod_db": 3.83
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 70.76,
+       "mod_dbc": -44.96
+      },
+      "shaped": {
+       "pp_db": 6.86,
+       "mod_dbc": -27.81
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 70.27,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 6.83,
+       "mod_dbc": -27.81
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 70.67,
+       "mod_dbc": -45.03
+      },
+      "shaped": {
+       "pp_db": 6.85,
+       "mod_dbc": -27.77
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 70.49,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 6.83,
+       "mod_dbc": -27.78
+      }
+     }
+    },
+    "worst_mod": -27.77,
+    "worst_pp": 6.86
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 75.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.8599,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 71.5,
+       "mod_dbc": -48.14,
+       "perperiod_db": 53.45
+      },
+      "shaped": {
+       "pp_db": 7.91,
+       "mod_dbc": -14.84,
+       "perperiod_db": 9.72
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 70.76,
+       "mod_dbc": -44.96
+      },
+      "shaped": {
+       "pp_db": 7.88,
+       "mod_dbc": -14.91
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 70.27,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 7.84,
+       "mod_dbc": -14.92
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 70.67,
+       "mod_dbc": -45.03
+      },
+      "shaped": {
+       "pp_db": 7.92,
+       "mod_dbc": -14.82
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 70.49,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 7.91,
+       "mod_dbc": -14.83
+      }
+     }
+    },
+    "worst_mod": -14.82,
+    "worst_pp": 7.92
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 90.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.8599,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 71.5,
+       "mod_dbc": -48.14,
+       "perperiod_db": 53.45
+      },
+      "shaped": {
+       "pp_db": 7.9,
+       "mod_dbc": -12.95,
+       "perperiod_db": 7.96
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 70.76,
+       "mod_dbc": -44.96
+      },
+      "shaped": {
+       "pp_db": 7.92,
+       "mod_dbc": -12.86
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 70.27,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 7.84,
+       "mod_dbc": -13.0
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 70.67,
+       "mod_dbc": -45.03
+      },
+      "shaped": {
+       "pp_db": 7.92,
+       "mod_dbc": -12.86
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 70.49,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 7.91,
+       "mod_dbc": -12.88
+      }
+     }
+    },
+    "worst_mod": -12.86,
+    "worst_pp": 7.92
+   },
+   {
+    "name": "bit",
+    "reg": "F#3",
+    "len_ms": 120.0,
+    "fade_ms": 8.0,
+    "f0_file": 370.8599,
+    "notes": {
+     "0": {
+      "p": 0.5,
+      "naive": {
+       "pp_db": 71.5,
+       "mod_dbc": -48.14,
+       "perperiod_db": 53.45
+      },
+      "shaped": {
+       "pp_db": 8.39,
+       "mod_dbc": -13.96,
+       "perperiod_db": 8.33
+      }
+     },
+     "6": {
+      "p": 0.7071,
+      "naive": {
+       "pp_db": 70.76,
+       "mod_dbc": -44.96
+      },
+      "shaped": {
+       "pp_db": 8.14,
+       "mod_dbc": -14.34
+      }
+     },
+     "12": {
+      "p": 1.0,
+      "naive": {
+       "pp_db": 70.27,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 8.06,
+       "mod_dbc": -14.43
+      }
+     },
+     "18": {
+      "p": 1.4142,
+      "naive": {
+       "pp_db": 70.67,
+       "mod_dbc": -45.03
+      },
+      "shaped": {
+       "pp_db": 8.23,
+       "mod_dbc": -14.14
+      }
+     },
+     "24": {
+      "p": 2.0,
+      "naive": {
+       "pp_db": 70.49,
+       "mod_dbc": -44.3
+      },
+      "shaped": {
+       "pp_db": 8.17,
+       "mod_dbc": -14.23
+      }
+     }
+    },
+    "worst_mod": -13.96,
+    "worst_pp": 8.39
+   }
+  ]
+ }
+]

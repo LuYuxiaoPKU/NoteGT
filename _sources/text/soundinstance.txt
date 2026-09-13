@@ -1,0 +1,147 @@
+﻿
+SoundInstance (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field&nbsp;|&nbsp;
+Constr&nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field&nbsp;|&nbsp;
+Constr&nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.resources.sounds
+Interface SoundInstance
+All Known Subinterfaces:
+TickableSoundInstance
+All Known Implementing Classes:
+AbstractSoundInstance , AbstractTickableSoundInstance , BeeAggressiveSoundInstance , BeeFlyingSoundInstance , BeeSoundInstance , BiomeAmbientSoundsHandler.LoopSoundInstance , ElytraOnPlayerSoundInstance , EntityBoundSoundInstance , GuardianAttackSoundInstance , MinecartSoundInstance , RidingHappyGhastSoundInstance , RidingMinecartSoundInstance , SimpleSoundInstance , SnifferSoundInstance , UnderwaterAmbientSoundInstances.SubSound , UnderwaterAmbientSoundInstances.UnderwaterAmbientSoundInstance
+public interface SoundInstance
+Nested Class Summary
+Nested Classes
+Modifier and Type
+Interface
+Description
+static enum&nbsp;
+SoundInstance.Attenuation
+&nbsp;
+Method Summary
+All Methods Static Methods Instance Methods Abstract Methods Default Methods
+Modifier and Type
+Method
+Description
+default boolean
+canPlaySound ()
+&nbsp;
+default boolean
+canStartSilent ()
+&nbsp;
+static RandomSource
+createUnseededRandom ()
+&nbsp;
+SoundInstance.Attenuation
+getAttenuation ()
+&nbsp;
+int
+getDelay ()
+&nbsp;
+ResourceLocation
+getLocation ()
+&nbsp;
+float
+getPitch ()
+&nbsp;
+Sound
+getSound ()
+&nbsp;
+SoundSource
+getSource ()
+&nbsp;
+default CompletableFuture < AudioStream >
+getStream ( SoundBufferLibrary &nbsp;soundBuffers,
+Sound &nbsp;sound,
+boolean&nbsp;looping)
+&nbsp;
+float
+getVolume ()
+&nbsp;
+double
+getX ()
+&nbsp;
+double
+getY ()
+&nbsp;
+double
+getZ ()
+&nbsp;
+boolean
+isLooping ()
+&nbsp;
+boolean
+isRelative ()
+&nbsp;
+WeighedSoundEvents
+resolve ( SoundManager &nbsp;manager)
+&nbsp;
+Method Details
+getLocation
+ResourceLocation &nbsp; getLocation ()
+resolve
+@Nullable
+WeighedSoundEvents &nbsp; resolve ( SoundManager &nbsp;manager)
+getSound
+@Nullable
+Sound &nbsp; getSound ()
+getSource
+SoundSource &nbsp; getSource ()
+isLooping
+boolean &nbsp; isLooping ()
+isRelative
+boolean &nbsp; isRelative ()
+getDelay
+int &nbsp; getDelay ()
+getVolume
+float &nbsp; getVolume ()
+getPitch
+float &nbsp; getPitch ()
+getX
+double &nbsp; getX ()
+getY
+double &nbsp; getY ()
+getZ
+double &nbsp; getZ ()
+getAttenuation
+SoundInstance.Attenuation &nbsp; getAttenuation ()
+canStartSilent
+default &nbsp; boolean &nbsp; canStartSilent ()
+canPlaySound
+default &nbsp; boolean &nbsp; canPlaySound ()
+createUnseededRandom
+static &nbsp; RandomSource &nbsp; createUnseededRandom ()
+getStream
+default &nbsp; CompletableFuture < AudioStream > &nbsp; getStream ( SoundBufferLibrary &nbsp;soundBuffers,
+Sound &nbsp;sound,
+boolean&nbsp;looping)
+

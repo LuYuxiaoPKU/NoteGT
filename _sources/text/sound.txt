@@ -1,0 +1,212 @@
+﻿
+Sound (NeoForge 1.21.8-21.8.54)
+var pathtoroot = "../../../../../";
+loadScripts(document, 'script');
+JavaScript is disabled on your browser.
+&nbsp; &nbsp; &nbsp;
+Skip navigation links
+Overview
+Package
+Class
+Use
+Tree
+Deprecated
+Index
+Help
+Summary:
+Nested
+Field
+Constr
+Method
+Detail:
+Field
+Constr
+Method
+Summary:&nbsp;
+Nested &nbsp;|&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+Detail:&nbsp;
+Field &nbsp;|&nbsp;
+Constr &nbsp;|&nbsp;
+Method
+SEARCH
+Package &nbsp; net.minecraft.client.resources.sounds
+Class Sound
+java.lang.Object
+net.minecraft.client.resources.sounds.Sound
+All Implemented Interfaces:
+Weighted < Sound >
+public class Sound
+extends Object
+implements Weighted < Sound >
+Nested Class Summary
+Nested Classes
+Modifier and Type
+Class
+Description
+static enum&nbsp;
+Sound.Type
+&nbsp;
+Field Summary
+Fields
+Modifier and Type
+Field
+Description
+private final int
+attenuationDistance
+&nbsp;
+private final ResourceLocation
+location
+&nbsp;
+private final SampledFloat
+pitch
+&nbsp;
+private final boolean
+preload
+&nbsp;
+static final FileToIdConverter
+SOUND_LISTER
+&nbsp;
+private final boolean
+stream
+&nbsp;
+private final Sound.Type
+type
+&nbsp;
+private final SampledFloat
+volume
+&nbsp;
+private final int
+weight
+&nbsp;
+Constructor Summary
+Constructors
+Constructor
+Description
+Sound ( ResourceLocation &nbsp;location,
+SampledFloat &nbsp;volume,
+SampledFloat &nbsp;pitch,
+int&nbsp;weight,
+Sound.Type &nbsp;type,
+boolean&nbsp;stream,
+boolean&nbsp;preload,
+int&nbsp;attenuationDistance)
+&nbsp;
+Method Summary
+All Methods Instance Methods Concrete Methods
+Modifier and Type
+Method
+Description
+int
+getAttenuationDistance ()
+&nbsp;
+ResourceLocation
+getLocation ()
+&nbsp;
+ResourceLocation
+getPath ()
+&nbsp;
+SampledFloat
+getPitch ()
+&nbsp;
+Sound
+getSound ( RandomSource &nbsp;randomSource)
+Retrieves the sound associated with the element.
+Sound.Type
+getType ()
+&nbsp;
+SampledFloat
+getVolume ()
+&nbsp;
+int
+getWeight ()
+&nbsp;
+void
+preloadIfRequired ( SoundEngine &nbsp;engine)
+Preloads the sound if required by the sound engine.
+boolean
+shouldPreload ()
+&nbsp;
+boolean
+shouldStream ()
+&nbsp;
+String
+toString ()
+&nbsp;
+Methods inherited from class&nbsp;java.lang. Object
+clone , equals , finalize , getClass , hashCode , notify , notifyAll , wait , wait , wait
+Field Details
+SOUND_LISTER
+public static final &nbsp; FileToIdConverter &nbsp; SOUND_LISTER
+location
+private final &nbsp; ResourceLocation &nbsp; location
+volume
+private final &nbsp; SampledFloat &nbsp; volume
+pitch
+private final &nbsp; SampledFloat &nbsp; pitch
+weight
+private final &nbsp; int &nbsp; weight
+type
+private final &nbsp; Sound.Type &nbsp; type
+stream
+private final &nbsp; boolean &nbsp; stream
+preload
+private final &nbsp; boolean &nbsp; preload
+attenuationDistance
+private final &nbsp; int &nbsp; attenuationDistance
+Constructor Details
+Sound
+public &nbsp; Sound ( ResourceLocation &nbsp;location,
+SampledFloat &nbsp;volume,
+SampledFloat &nbsp;pitch,
+int&nbsp;weight,
+Sound.Type &nbsp;type,
+boolean&nbsp;stream,
+boolean&nbsp;preload,
+int&nbsp;attenuationDistance)
+Method Details
+getLocation
+public &nbsp; ResourceLocation &nbsp; getLocation ()
+getPath
+public &nbsp; ResourceLocation &nbsp; getPath ()
+getVolume
+public &nbsp; SampledFloat &nbsp; getVolume ()
+getPitch
+public &nbsp; SampledFloat &nbsp; getPitch ()
+getWeight
+public &nbsp; int &nbsp; getWeight ()
+Specified by:
+getWeight &nbsp;in interface&nbsp; Weighted < Sound >
+getSound
+public &nbsp; Sound &nbsp; getSound ( RandomSource &nbsp;randomSource)
+Retrieves the sound associated with the element.
+The sound is obtained using the provided random source.
+Specified by:
+getSound &nbsp;in interface&nbsp; Weighted < Sound >
+Parameters:
+randomSource - the random source used for sound selection
+Returns:
+The sound associated with the element
+preloadIfRequired
+public &nbsp; void &nbsp; preloadIfRequired ( SoundEngine &nbsp;engine)
+Preloads the sound if required by the sound engine.
+This method is called to preload the sound associated with the element into the sound engine, ensuring it is ready for playback.
+Specified by:
+preloadIfRequired &nbsp;in interface&nbsp; Weighted < Sound >
+Parameters:
+engine - the sound engine used for sound preloading
+getType
+public &nbsp; Sound.Type &nbsp; getType ()
+shouldStream
+public &nbsp; boolean &nbsp; shouldStream ()
+shouldPreload
+public &nbsp; boolean &nbsp; shouldPreload ()
+getAttenuationDistance
+public &nbsp; int &nbsp; getAttenuationDistance ()
+toString
+public &nbsp; String &nbsp; toString ()
+Overrides:
+toString &nbsp;in class&nbsp; Object
+
